@@ -7,32 +7,42 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 
 {
-    public function index() 
+    public function index()
 
 	{
-		$userNames = \App\User::all()->map->name;
+		$firstNames = \App\User::all()->map->firstname;
 
-		return view('welcome', compact('userNames'));
+		return view('welcome', compact('firstNames'));
 	}
 
-	public function create() 
+	public function create()
 
 	{
 		return view('welcome');
 	}
 
 
-	public function store() 
+	public function store()
 
 	{
-		$user = new \App\User();
+      request()->validate([
+        'firstname'             => 'required|max:255|string',
+        'lastname'              => 'required|max:255|string',
+        'email'                 => 'required|max:255|email',
+        'phone'                 => 'required|numeric|nullable',
+        'country'               => 'required|max:255|string'
+      ]);
 
-		$user->name = request('name');
-		$user->password = request('password');
-		$user->email = request('email');
+		  $user = new \App\User();
 
-		$user->save();
+  		$user->firstname = request('firstname');
+      $user->lastname = request('lastname');
+      $user->phone = request('phone');
+  		$user->email = request('email');
+      $user->country = request('country');
 
-		return redirect('/');
+  		$user->save();
+
+  		return redirect('/');
 	}
 }
