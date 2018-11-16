@@ -40,13 +40,18 @@ class LeadController extends Controller
     {
         $validatedFormData = $request->validated();
 
-        $emailRecipient = 'jeremy.kenedy@sq1.com';  // <- This will received from the form.
-
         $lead = new Lead();
         $lead->fill($validatedFormData)->save();
 
-        Mail::to($emailRecipient)->send(new ContactMail($validatedFormData));
+        Mail::to($validatedFormData['email'])->send(new ContactMail($validatedFormData));
 
-        return redirect('/')->withSuccess('Yay, welcome to the party!');
+        $selectedDealership = Dealership::find('dealer');
+
+        $data = [
+            'success'            => trans('app.leadStoredSuccess'),
+            'selectedDealership' => $selectedDealership,
+        ];
+
+        return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.
 	}
 }

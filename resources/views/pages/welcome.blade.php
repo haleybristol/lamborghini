@@ -327,8 +327,6 @@
         </div>
     </form>
 
-
-
   </section>
     <div class="notification is-danger">
       <ul>
