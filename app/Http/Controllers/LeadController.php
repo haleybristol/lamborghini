@@ -3,25 +3,42 @@
 namespace App\Http\Controllers;
 
 use App\Lead;
+use App\Mail\ContactMail;
 use App\Http\Requests\LeadCapture;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class LeadController extends Controller
-
 {
-  public function index()
+    /**
+     * Show the app homepage
+     *
+     * @return Response
+     */
+    public function index()
 	{
 		$firstNames = \App\Lead::all()->map->firstname;
 
 		return view('pages.welcome', compact('firstNames'));
 	}
 
-	public function store(LeadCapture $request)
-  {
-      $formData = $request->validated();
-      $lead = new Lead();
-      $lead->fill($formData)->save();
+    /**
+     * Method to process and store a new lead.
+     *
+     * @param  LeadCapture $request
+     * @return Response
+     */
+	public function processLead(LeadCapture $request)
+    {
+        $validatedFormData = $request->validated();
 
-  		return redirect('/')->withSuccess('Yay, welcome to the party!');
+        $emailRecipient = 'jeremy.kenedy@sq1.com';  // <- This will received from the form.
+
+        $lead = new Lead();
+        $lead->fill($validatedFormData)->save();
+
+        Mail::to($emailRecipient)->send(new ContactMail($validatedFormData));
+
+        return redirect('/')->withSuccess('Yay, welcome to the party!');
 	}
 }

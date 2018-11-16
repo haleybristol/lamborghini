@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-
-
-
 @section('content')
 
   <section class="hero-img">
@@ -26,8 +23,10 @@
     <p>Leave your details below to have our concierge set an appointment.</p>
   </section>
   <section class="container">
-    <form id="form" method="POST" actions="/">
-        {{ csrf_field()}}
+
+    <form id="form" method="POST" action="{{ route('sendLead') }}" >
+        {!! csrf_field() !!}
+
         <div class="dot-container">
           <div class="row">
             <div class="col-12 col-sm-6">
@@ -312,11 +311,16 @@
             <input type="checkbox" id="policy">
             <label for="policy">View our <a href="/">privacy policy</a>. I agree to the processing of my personal data for marketing purposes.</label>
           </div>
-          <div class="send">
-              <button type="submit"><a href="/">SEND ME INFORMATION</a></button>
-          </div>
+            <div class="send">
+                <button type="submit">
+                    SEND ME INFORMATION
+                </button>
+            </div>
         </div>
     </form>
+
+
+
   </section>
     <div class="notification is-danger">
       <ul>

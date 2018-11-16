@@ -10,20 +10,55 @@ class Lead extends Model
     use Notifiable;
 
     /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'leads';
+
+    /**
+     * The attributes that are not mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [
+        'id'
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'phone', 'country'
+        'firstname',
+        'lastname',
+        'email',
+        'phone',
+        'country'
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * Typecasted dates.
      *
      * @var array
      */
-    protected $hidden = [
-        'remember_token',
+    protected $dates = [
+        'created_at',
+        'updated_at'
     ];
+
+    /**
+     * Typecasting is awesome.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'firstname'     => 'string',
+        'lastname'      => 'string',
+        'email'         => 'string',
+        'phone'         => 'string',
+        'country'       => 'string'
+    ];
+
 }

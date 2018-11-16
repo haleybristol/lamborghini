@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Lamborghini</title>
 
@@ -12,12 +13,7 @@
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://use.fontawesome.com/6f1feaf27e.js"></script>
-        {{-- Scripts --}}
-        <script>
-            window.Laravel = {!! json_encode([
-                'csrfToken' => csrf_token(),
-            ]) !!};
-        </script>
+
         @stack('head')
     </head>
     <body>
