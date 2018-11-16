@@ -6,13 +6,26 @@
     height: 100px;
   }
   .navbar-inner {
-    width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     @include media-breakpoint-up(sm) {
-      padding: 0 30px;
+      max-width: 540px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include media-breakpoint-up(md) {
+        max-width: 720px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 960px;
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: 1140px;
     }
     .logo-container {
       width: 60px;
@@ -37,6 +50,9 @@
     .request {
       height: 60px;
       width: calc(100% - 60px);
+      &:hover {
+        cursor: pointer;
+      }
       @include media-breakpoint-up(sm) {
         height: auto;
       }
@@ -48,6 +64,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &:hover {
+        cursor: pointer;
+      }
       @include media-breakpoint-up(sm) {
         height: 36px;
         width: 36px;
@@ -55,6 +74,11 @@
       .btn-lang {
         color: white;
         font-weight: 300;
+        background: #515053;
+        border:none;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
     .btn-brand {

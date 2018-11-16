@@ -10479,7 +10479,6 @@ a.text-dark:focus {
 }
 
 .nav .navbar-inner {
-  width: 1500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10490,11 +10489,34 @@ a.text-dark:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
   .nav .navbar-inner {
-    padding: 0 30px;
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav .navbar-inner {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav .navbar-inner {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav .navbar-inner {
+    max-width: 1140px;
   }
 }
 
@@ -10540,6 +10562,10 @@ a.text-dark:focus {
   width: calc(100% - 60px);
 }
 
+.nav .navbar-inner .request:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .nav .navbar-inner .request {
     height: auto;
@@ -10561,6 +10587,10 @@ a.text-dark:focus {
           justify-content: center;
 }
 
+.nav .navbar-inner .lang-container:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .nav .navbar-inner .lang-container {
     height: 36px;
@@ -10571,6 +10601,12 @@ a.text-dark:focus {
 .nav .navbar-inner .lang-container .btn-lang {
   color: white;
   font-weight: 300;
+  background: #515053;
+  border: none;
+}
+
+.nav .navbar-inner .lang-container .btn-lang:hover {
+  cursor: pointer;
 }
 
 .nav .navbar-inner .btn-brand {
@@ -10625,6 +10661,46 @@ button:focus {
   outline: none;
 }
 
+input,
+select {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 160px;
+  color: #252424;
+  font-weight: 300;
+  width: 98%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  input,
+  select {
+    margin-bottom: 0;
+  }
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B1B1B1;
+}
+
+.col-12 > select {
+  border-bottom: 1px solid #B1B1B1;
+  border-radius: 0;
+}
+
+.col-12 > select option {
+  color: #252424;
+}
+
 .full {
   width: 100%;
   margin-top: 10px;
@@ -10633,15 +10709,11 @@ button:focus {
 .full div {
   width: 82%;
   margin: 0 auto;
-  border-bottom: .6px solid black;
+  border-bottom: 1px solid black;
 }
 
 .light {
   font-weight: 300;
-}
-
-.lamb-container {
-  padding: 2rem 1.1rem;
 }
 
 .fit {
@@ -10678,6 +10750,10 @@ button:focus {
 
 /* bootstrap modal overrides */
 
+.container {
+  padding: 25px 15px;
+}
+
 .modal {
   top: 20vh;
 }
@@ -10699,10 +10775,23 @@ button:focus {
   opacity: 1;
 }
 
+.close:hover {
+  cursor: pointer;
+}
+
+/* end bootstrap modal overrides */
+
 form button {
   background: #e0b401;
   border: none;
   width: 100%;
+  height: 36px;
+}
+
+@media (min-width: 576px) {
+  form button {
+    width: 226px;
+  }
 }
 
 form button a {
@@ -10712,25 +10801,65 @@ form button a {
   width: 100%;
 }
 
-form input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
+form .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
   cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
-form .checkmark {
+form .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+form .form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #1B1B1B;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+form .form-group input:checked + label:after {
+  content: '';
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+  top: 5px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid #1B1B1B;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+form .check-send {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 form .dot-container {
   padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  form .dot-container .row {
+    margin-bottom: 40px;
+  }
 }
 
 form .circle {
@@ -10749,5 +10878,47 @@ form .circle {
 form .send {
   width: 100%;
   margin-top: 20px;
+}
+
+footer {
+  background-color: #333333;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  color: white;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+footer .container .foot-right {
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  footer .container .foot-right {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+
+footer a {
+  margin-top: 10px;
+  color: white;
+  text-decoration: underline;
 }
 

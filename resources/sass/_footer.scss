@@ -1,0 +1,31 @@
+footer {
+
+  background-color: #333333;
+  width: 100%;
+  p {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    padding-right: 0;
+    padding-left: 0;
+    .foot-right {
+      margin-top: 20px;
+      @include media-breakpoint-up(sm) {
+        text-align: right;
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: underline;
+  }
+}

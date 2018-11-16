@@ -8,41 +8,41 @@
   <section class="hero-img">
     <img class="img-fluid" src="{{ asset('img/iceland-hero.jpg') }}">
   </section>
-  <section class="intro lamb-container">
+  <section class="container intro">
       <h1>URUS</h1>
       <p>Supercar performance. SUV practicality. But don’t worry: this is every gram a Lamborghini.</p>
       <a href="#form">REQUEST INFO <i class="fa fa-chevron-right"></i></a>
   </section>
   <div class="fit"><img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}"></div>
-  <section class="emotion lamb-container">
+  <section class="container emotion">
     <h1>EMOTION</h1>
       <p>The Urus was made to evoke emotions. None of them subtle.</p>
       <p>One glimpse of the Urus and you’ll see the Lamborghini pedigree. In its silhouette there’s a little Murcielago; in the muscular proportions, the Countach. But now the drama comes with a dash of discernment: four seats, four-wheel steering, and four-wheel drive. It’s form and function in equal measure.</p>
      </p>Still convinced this isn’t a pure Lamborghini? Push the accelerator. You’ll unleash a 4.0 litre bi-turbo engine good for 650 HP and an exhaust note that would make Pavarotti proud.<p>
   </section>
   <div class="fit"><img class="img-fluid" src="{{ asset('img/blue-urus-dust.jpg') }}"></div>
-  <section class="journey lamb-container">
+  <section class="container journey text-center">
     <h1><strong>START</strong> <span class="light">YOUR JOURNEY</span></h1>
     <p>Leave your details below to have our concierge set an appointment.</p>
   </section>
-  <section class="lamb-container">
+  <section class="container">
     <form id="form" method="POST" actions="/">
         {{ csrf_field()}}
         <div class="dot-container">
           <div class="row">
             <div class="col-12 col-sm-6">
-              <span class="circle"></span><input type="text" name="firstname" placeholder="First Name">
+              <span class="circle"></span><input type="text" name="firstname" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'">
             </div>
             <div class="col-12 col-sm-6">
-              <span class="circle"></span><input type="text" name="lastname" placeholder="Last Name">
+              <span class="circle"></span><input type="text" name="lastname" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-sm-6">
-              <span class="circle"></span><input type="email" name="email" placeholder="Email">
+              <span class="circle"></span><input type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
             </div>
             <div class="col-12 col-sm-6">
-              <span class="circle"></span><input type="number" name="phone" placeholder="Phone Number">
+              <span class="circle"></span><input type="number" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
             </div>
           </div>
           <div class="row">
@@ -307,12 +307,15 @@
             </div>
           </div>
         </div>
-          <div class="privacy-policy">
-            <input type="checkbox" name="policy">View our <a href="/">privacy policy</a>. I agree to the processing of my personal data for marketing purposes.
+        <div class="check-send">
+          <div class="form-group">
+            <input type="checkbox" id="policy">
+            <label for="policy">View our <a href="/">privacy policy</a>. I agree to the processing of my personal data for marketing purposes.</label>
           </div>
-      <div class="send">
-          <button type="submit"><a href="/">SEND ME INFORMATION</a></button>
-      </div>
+          <div class="send">
+              <button type="submit"><a href="/">SEND ME INFORMATION</a></button>
+          </div>
+        </div>
     </form>
   </section>
     <div class="notification is-danger">
