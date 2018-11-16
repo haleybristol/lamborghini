@@ -71,6 +71,15 @@ input {
     height: 100%;
     object-fit: cover;
   }
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+.images {
+  display: none;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
 }
 .flex-center {
     align-items: center;
@@ -200,4 +209,11 @@ form {
     margin-top: 20px;
   }
 
+}
+image[Attributes Style] {
+  clip-path: url(#block0_skew-mask);
+  x: 0;
+  y: 0;
+  height: 100%;
+  width: 100%;
 }

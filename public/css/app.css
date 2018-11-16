@@ -10726,6 +10726,22 @@ input {
      object-fit: cover;
 }
 
+@media (min-width: 576px) {
+  .fit {
+    display: none;
+  }
+}
+
+.images {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .images {
+    display: block;
+  }
+}
+
 .flex-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
