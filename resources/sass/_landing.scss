@@ -1,0 +1,129 @@
+html, body {
+    background-color: #fff;
+    color: #252424;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+a {
+  color: #252424;
+  outline: none;
+  &:hover {
+    text-decoration:none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+.full {
+  width: 100%;
+  margin-top: 10px;
+  div {
+    width: 82%;
+    margin: 0 auto;
+    border-bottom: .6px solid black;
+  }
+}
+.light {
+  font-weight: 300;
+}
+.lamb-container {
+  padding: 2rem 1.1rem;
+}
+.fit {
+  height: 190px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+  margin-top: 60px;
+  @include media-breakpoint-up(sm) {
+    margin-top: 100px;
+  }
+}
+/* bootstrap modal overrides */
+.modal {
+  top: 20vh;
+}
+.modal-backdrop {
+  z-index: 100;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-content {
+  padding: 20px;
+  border-radius: 0;
+}
+.close {
+  opacity: 1;
+}
+form {
+  button {
+    background: #e0b401;
+    border: none;
+    width: 100%;
+    a {
+      color: white;
+      font-weight: 300;
+      font-size: 16px;
+      width: 100%;
+
+    }
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  }
+
+
+  .dot-container {
+    padding: 0 20px;
+  }
+  .circle {
+    position: absolute;
+    margin: auto;
+    top: 11px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px #e0b401;
+  }
+  .col-12 {
+    // border-bottom: 1px solid #B1B1B1;
+  }
+  .send {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}

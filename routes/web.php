@@ -12,8 +12,8 @@
 */
 
 
-Route::get('/', 'UserController@index');
+Route::get('/', 'LeadController@index');
 
-Route::post('/', 'UserController@create');
+Route::post('/', 'LeadController@create');
 
-Route::post('/', 'UserController@store');
+Route::post('/', 'LeadController@store');
