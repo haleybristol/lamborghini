@@ -300,12 +300,20 @@
             </div>
             <div class="col-12 col-sm-6">
               <span class="circle"></span>
-              <select name="dealer">
-                <option value="">Preferred Dealership</option>
-              </select>
+
+                <select name="dealer" id="dealer" class="form-control">
+                    <option value="">Preferred Dealership</option>
+                    @foreach ($dealerShips as $dealership)
+                        <option value="{{ $dealership->id }}" data-contact_name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-phone="{{ $dealership->phone }}">
+                            {{ $dealership->store_name }}
+                        </option>
+                    @endforeach
+                </select>
+
             </div>
           </div>
         </div>
+
         <div class="check-send">
           <div class="form-group">
             <input type="checkbox" id="policy">

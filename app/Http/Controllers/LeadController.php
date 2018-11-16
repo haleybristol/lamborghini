@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Lead;
+use App\Dealership;
 use App\Mail\ContactMail;
 use App\Http\Requests\LeadCapture;
 use Illuminate\Http\Request;
@@ -19,7 +20,14 @@ class LeadController extends Controller
 	{
 		$firstNames = \App\Lead::all()->map->firstname;
 
-		return view('pages.welcome', compact('firstNames'));
+        $dealerShips = Dealership::all();
+
+        $data = [
+            'firstNames'    => $firstNames,
+            'dealerShips'   => $dealerShips,
+        ];
+
+		return view('pages.welcome', $data);
 	}
 
     /**
