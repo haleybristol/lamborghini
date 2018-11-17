@@ -22,7 +22,6 @@ class CreateDealershipsTable extends Migration
             $table->string('phone', 100)->nullable();
             $table->string('address', 255)->nullable();
             $table->timestamps();
-            $table->unique([DB::raw('email(191)')]);
             $table->unique([DB::raw('store_name(191)')]);
         });
     }
