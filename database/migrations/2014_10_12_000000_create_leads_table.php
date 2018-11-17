@@ -18,8 +18,10 @@ class CreateLeadsTable extends Migration
             $table->string('firstname', 255);
             $table->string('lastname', 255);
             $table->string('phone', 100);
+            $table->string('email', 191);
             $table->string('country', 255);
             $table->timestamps();
+            $table->unique([DB::raw('email(191)')]);
         });
     }
 
