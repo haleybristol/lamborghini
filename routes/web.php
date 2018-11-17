@@ -13,7 +13,4 @@
 
 
 Route::get('/', 'LeadController@index');
-
-Route::post('/', 'LeadController@create');
-
-Route::post('/', 'LeadController@store');
+Route::post('/send', 'LeadController@processLead')->name('sendLead');

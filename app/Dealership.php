@@ -2,19 +2,16 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
-class Lead extends Model
+class Dealership extends Model
 {
-    use Notifiable;
-
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'leads';
+    protected $table = 'dealerships';
 
     /**
      * The attributes that are not mass assignable.
@@ -31,11 +28,12 @@ class Lead extends Model
      * @var array
      */
     protected $fillable = [
-        'firstname',
-        'lastname',
+        'store_name',
+        'contact_name',
         'email',
+        'language',
         'phone',
-        'country'
+        'address',
     ];
 
     /**
@@ -54,11 +52,12 @@ class Lead extends Model
      * @var array
      */
     protected $casts = [
-        'firstname'     => 'string',
-        'lastname'      => 'string',
+        'store_name'    => 'string',
+        'contact_name'  => 'string',
         'email'         => 'string',
+        'language'      => 'string',
         'phone'         => 'string',
-        'country'       => 'string'
+        'address'       => 'string',
     ];
 
 }

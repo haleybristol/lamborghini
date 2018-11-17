@@ -24,11 +24,11 @@ class ContactMail extends Mailable
      */
     public function __construct($validatedData)
     {
-      $this->firstname = array_key_exists('firstname', $validatedData) ? $validatedData['firstname'] : null;
-      $this->lastname = array_key_exists('lastname', $validatedData) ? $validatedData['lastname'] : null;
-      $this->phone = array_key_exists('phone', $validatedData) ? $validatedData['phone'] : null;
-      $this->email = array_key_exists('email', $validatedData) ? $validatedData['email'] : null;
-      $this->country = array_key_exists('country', $validatedData) ? $validatedData['country'] : null;
+        $this->firstname = array_key_exists('firstname', $validatedData) ? $validatedData['firstname'] : null;
+        $this->lastname = array_key_exists('lastname', $validatedData) ? $validatedData['lastname'] : null;
+        $this->phone = array_key_exists('phone', $validatedData) ? $validatedData['phone'] : null;
+        $this->email = array_key_exists('email', $validatedData) ? $validatedData['email'] : null;
+        $this->country = array_key_exists('country', $validatedData) ? $validatedData['country'] : null;
     }
 
     /**

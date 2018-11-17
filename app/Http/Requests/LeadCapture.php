@@ -31,7 +31,8 @@ class LeadCapture extends FormRequest
             'lastname'              => 'required|max:255|string',
             'email'                 => 'required|max:255|email|unique:leads',
             'phone'                 => 'required|max:255|string|nullable',
-            'country'               => 'required|max:255|string'
+            'country'               => 'required|max:255|string',
+            'dealer'                => 'required',
         ];
     }
 }
