@@ -10629,6 +10629,43 @@ a.text-dark:focus {
   font-weight: 300;
 }
 
+/* bootstrap modal overrides */
+
+.modal {
+  top: 20vh;
+}
+
+.modal-backdrop {
+  z-index: 100;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 0;
+}
+
+.modal-body {
+  text-transform: uppercase;
+}
+
+.modal-body a:hover {
+  color: white;
+  background: #e0b401;
+  padding: 10px 40px;
+}
+
+.close {
+  opacity: 1;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
 html,
 body {
   background-color: #fff;
@@ -10659,46 +10696,6 @@ button {
 
 button:focus {
   outline: none;
-}
-
-input,
-select {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-  border: 0px solid;
-  height: 20px;
-  width: 160px;
-  color: #252424;
-  font-weight: 300;
-  width: 98%;
-  margin-bottom: 30px;
-}
-
-@media (min-width: 576px) {
-  input,
-  select {
-    margin-bottom: 0;
-  }
-}
-
-input:focus,
-select:focus {
-  outline: none;
-}
-
-input {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #B1B1B1;
-}
-
-.col-12 > select {
-  border-bottom: 1px solid #B1B1B1;
-  border-radius: 0;
-}
-
-.col-12 > select option {
-  color: #252424;
 }
 
 .full {
@@ -10764,38 +10761,9 @@ input {
   }
 }
 
-/* bootstrap modal overrides */
-
 .container {
   padding: 25px 15px;
 }
-
-.modal {
-  top: 20vh;
-}
-
-.modal-backdrop {
-  z-index: 100;
-}
-
-.modal-header {
-  border-bottom: none;
-}
-
-.modal-content {
-  padding: 20px;
-  border-radius: 0;
-}
-
-.close {
-  opacity: 1;
-}
-
-.close:hover {
-  cursor: pointer;
-}
-
-/* end bootstrap modal overrides */
 
 form button {
   background: #e0b401;
@@ -10894,6 +10862,177 @@ form .circle {
 form .send {
   width: 100%;
   margin-top: 20px;
+}
+
+form input,
+form select {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  border: 0px solid;
+  height: 22px;
+  width: 160px;
+  color: #252424;
+  font-weight: 300;
+  width: 98%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  form input,
+  form select {
+    margin-bottom: 0;
+  }
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+}
+
+form input {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B1B1B1;
+}
+
+form select {
+  border-radius: 0;
+}
+
+form select option {
+  color: #252424;
+}
+
+/* Dropdown select styling */
+
+label.field {
+  border-radius: 2px;
+  color: #666;
+  display: block;
+  opacity: 0;
+  position: relative;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  z-index: 1;
+}
+
+label.field span {
+  color: inherit;
+  display: block;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  -webkit-transition-property: color, font-size, top;
+  transition-property: color, font-size, top;
+  z-index: 1;
+}
+
+label.field span.required::after {
+  color: inherit;
+  content: "*";
+  display: block;
+  height: 20px;
+  left: -20px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 20px;
+}
+
+.error label.field span {
+  color: #F02318;
+}
+
+label.field .psuedo_select {
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  border-color: #B1B1B1;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  padding-top: 24px;
+  outline: 0;
+  z-index: 1;
+}
+
+label.field .psuedo_select::after {
+  background: url("data:image/svg+xml;utf8,<svg fill='#666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+label.field .psuedo_select .selected {
+  height: 24px;
+  left: 1px;
+  line-height: 24px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  will-change: transform;
+}
+
+label.field .psuedo_select ul {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  display: block;
+  height: 0;
+  list-style: none;
+  margin-top: 2px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1px;
+  pointer-events: none;
+  -webkit-transition-property: height, opacity;
+  transition-property: height, opacity;
+  width: 100%;
+  z-index: 2;
+}
+
+label.field .psuedo_select ul li {
+  height: 32px;
+  color: #666;
+  padding: 4px 10px;
+}
+
+label.field .psuedo_select ul li:hover {
+  color: #252424;
+  background: #F1F1F1;
+}
+
+label.field .deselect {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+label.field.focused ul {
+  opacity: 1;
+  pointer-events: all;
 }
 
 footer {
