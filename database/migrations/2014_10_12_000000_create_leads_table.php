@@ -15,13 +15,13 @@ class CreateLeadsTable extends Migration
     {
         Schema::create('leads', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('firstname', 225);
-            $table->string('lastname', 225);
+            $table->string('firstname', 255);
+            $table->string('lastname', 255);
             $table->string('phone', 100);
-            $table->string('email', 225)->unique();
-            $table->string('country', 400);
-            $table->rememberToken();
+            $table->string('email', 191);
+            $table->string('country', 255);
             $table->timestamps();
+            $table->unique([DB::raw('email(191)')]);
         });
     }
 
