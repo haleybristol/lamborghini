@@ -1,0 +1,20 @@
+.js-cookie-consent {
+    background: rgba($darkgrey, .95);
+    bottom: 0;
+    left: 0;
+    padding: 2em 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    .cookie-consent__message {
+        color: $white;
+      font-size: 1.1em;
+      padding: 0 3em;
+    }
+    .js-cookie-consent-agree {
+        &.cookie-consent__agree {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+}
