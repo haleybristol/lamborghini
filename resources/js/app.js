@@ -15,12 +15,12 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
-
+// We are not using VUE JS ON THIS APP - If we do need to us this we need to look at the cookie consent javascript collition.
+// const app = new Vue({
+//     el: '#app'
+// });
 
    ////////////////////////////////////
   // prerequisite utility functions //
@@ -238,4 +238,4 @@ f: {
 		}
 	}
 }}
-window.onload = form.f.init.register
+window.onload = form.f.init.register;

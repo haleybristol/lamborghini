@@ -8,8 +8,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Components
+@import 'buttons';
 @import 'nav';
 @import 'modal';
-@import 'landing';
 @import 'form';
 @import 'footer';
+@import 'cookie-warning';
+
+// Pages
+@import 'landing';
