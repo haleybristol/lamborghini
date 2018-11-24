@@ -18,7 +18,6 @@
     </head>
     <body>
         <div id="app">
-            @include('partials.messages')
             @include('partials.nav')
 
             <main>

@@ -1,5 +1,5 @@
-@extends('layouts.app') @section('content')
-
+@extends('layouts.app') 
+@section('content')
 
 <section class="hero-img">
   <img class="img-fluid" src="{{ asset('img/yellow-urus.jpg') }}">
@@ -22,7 +22,7 @@
 
           <clipPath id="block0_skew-mask">
             <polygon fill="green" points="0.02 1.19, 1 0.0238, 1 1.19, 0 1.19"></polygon>
-          </clipPath>z
+          </clipPath>
 
           <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMidYMid slice" x="0" y="0" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg"
           class="ng-scope" style="opacity: 1;"></image>
@@ -51,15 +51,5 @@
 <br>
 <div class="eu-cookies text-center">@include('cookieConsent::index')</div>
 </section>
-
-<div class="notification is-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-      <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-
-
 
 @endsection

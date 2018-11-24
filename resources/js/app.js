@@ -212,7 +212,7 @@ f: {
 								}, time, nested_child, value)
 							}
 						}
-					} else if (child.tagName == "SPAN") {
+					} else if (child.tagName == "A") {
 						util.f.addStyle(child, "Opacity", "0")
 				   }
 			   }

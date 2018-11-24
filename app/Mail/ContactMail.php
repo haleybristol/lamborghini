@@ -16,6 +16,7 @@ class ContactMail extends Mailable
     public $phone;
     public $email;
     public $country;
+    public $dealer;
 
     /**
      * Create a new message instance.
@@ -29,6 +30,7 @@ class ContactMail extends Mailable
         $this->phone = array_key_exists('phone', $validatedData) ? $validatedData['phone'] : null;
         $this->email = array_key_exists('email', $validatedData) ? $validatedData['email'] : null;
         $this->country = array_key_exists('country', $validatedData) ? $validatedData['country'] : null;
+        $this->dealer = array_key_exists('dealer', $validatedData) ? $validatedData['dealer'] : null;
     }
 
     /**
