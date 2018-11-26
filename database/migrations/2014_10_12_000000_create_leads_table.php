@@ -22,7 +22,6 @@ class CreateLeadsTable extends Migration
             $table->string('country', 255);
             $table->string('dealer', 255);
             $table->timestamps();
-            $table->unique([DB::raw('email(191)')]);
         });
     }
 

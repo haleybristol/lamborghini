@@ -82,18 +82,16 @@
       }
     }
     .btn-brand {
-      background: #e0b401;
+      background: $lambo-yellow;
       border: none;
       height: 100%;
       width: 100%;
+      color:white;
+        font-weight: 300;
       @include media-breakpoint-up(sm) {
         margin-right: 20px;
         width: 155px;
         height: 36px;
-      }
-      a {
-        color:white;
-        font-weight: 300;
       }
     }
   }

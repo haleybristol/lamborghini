@@ -5,7 +5,7 @@
     </div>
     <div class="right-nav">
       <div class="request">
-        <button class="btn-brand"><a href="#form">REQUEST INFO</a></button>
+        <button class="btn-brand" href="#form">REQUEST INFO</button>
       </div>
       <div class="lang-container">
         <!-- Button trigger modal -->

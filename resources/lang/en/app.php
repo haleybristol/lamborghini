@@ -9,6 +9,6 @@ return [
     |
     */
 
-    'leadStoredSuccess' => 'Yay. Welcome !!',
+    'leadStoredSuccess' => 'Thank you!!',
 
 ];

@@ -18,7 +18,12 @@ a {
   }
 }
 button {
+  cursor: pointer;
   outline: none;
+  background: $lambo-yellow;
+  &:hover {
+    background:#cca300;
+  }
   &:focus {
     outline: none;
   }
