@@ -18,13 +18,10 @@ class LeadController extends Controller
      */
     public function index()
 	{
-        $firstNames = \App\Lead::all()->map->firstname;
-        $lastNames = \App\Lead::all()->map->lastname;
 
         $dealerShips = Dealership::all();
 
         $data = [
-            'firstNames'    => $firstNames,
             'dealerShips'   => $dealerShips,
         ];
 

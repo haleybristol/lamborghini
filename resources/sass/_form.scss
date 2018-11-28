@@ -30,7 +30,7 @@ form {
     content:'';
     -webkit-appearance: none;
     background-color: transparent;
-    border: 1px solid #1B1B1B;
+    border: 1px solid $font-color;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
     padding: 5px;
     display: inline-block;
@@ -48,24 +48,26 @@ form {
     left: 4px;
     width: 4px;
     height: 8px;
-    border: solid #1B1B1B;
+    border: solid #b1b1b1;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
 
-  .check-send {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+ 
   .dot-container {
     padding: 0 20px;
-    max-width: 800px;
-    margin: 0 auto;
 
     @include media-breakpoint-up(sm) {
       .row:nth-child(1), .row:nth-child(2) {
         margin-bottom: 40px;
       }
+    }
+  }
+  .check-send, .dot-container {
+    max-width: 750px;
+    margin-right: auto;
+    @include media-breakpoint-up(lg) {
+      max-width: 67%;
     }
   }
   .circle {
@@ -102,6 +104,9 @@ form {
   input {
       padding-bottom: 8px;
       border-bottom: 1px solid #B1B1B1;
+      &::placeholder {
+        color: $font-color;
+      }
   }
   .required {
     border-bottom: 1px solid $lambo-yellow;
@@ -147,7 +152,7 @@ form {
 }
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
-  color: gray;
+  color: $font-color;
   font-weight: 300;
   &:hover {
     cursor: pointer;

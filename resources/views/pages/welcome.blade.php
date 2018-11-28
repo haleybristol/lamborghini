@@ -1,70 +1,100 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <section class="hero-img">
-        <img class="img-fluid" src="{{ asset('img/yellow-urus.jpg') }}">
-    </section>
-
-    <section class="container intro">
-        <h1>
-            URUS
-        </h1>
-        <p>
-            Supercar performance. SUV practicality. But don’t worry: this is every gram a Lamborghini.
-        </p>
-        <a href="#form">
-            REQUEST INFO <i class="fa fa-chevron-right"></i>
-        </a>
-    </section>
-
-    <div class="fit">
-        <img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}">
-    </div>
-
-    <section class="container emotion">
-        <div class="row">
-            <div class="images img-1">
-                <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
-                    <desc>
-                        The rear of a dark Urus as it travels in a metropolitan setting.
-                    </desc>
-                    <svg viewBox="0 0 1 1.19" preserveAspectRatio="xMidYMid slice">
-                        <polygon fill="white" points="0 1.19, 1 0, 1 1.19, 0 1.19"></polygon>
-                        <clipPath id="block0_skew-mask">
-                            <polygon fill="green" points="0.02 1.19, 1 0.0238, 1 1.19, 0 1.19"></polygon>
-                        </clipPath>
-                        <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMidYMid slice" x="0" y="0" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" class="ng-scope" style="opacity: 1;"></image>
-                    </svg>
-                </svg>
-            </div>
-            <div class="column small-five small-push-one reset last">
-                <h1>
-                    EMOTION
-                </h1>
-                <p>
-                    The Urus was made to evoke emotions. None of them subtle.
-                </p>
-                <p>
-                    One glimpse of the Urus and you’ll see the Lamborghini pedigree. In its silhouette there’s a little Murcielago; in the muscular proportions, the Countach. But now the drama comes with a dash of discernment: four seats, four-wheel steering, and four-wheel drive. It’s form and function in equal measure.
-                </p>
-                <p>
-                    Still convinced this isn’t a pure Lamborghini? Push the accelerator. You’ll unleash a 4.0 litre bi-turbo engine good for 650 HP and an exhaust note that would make Pavarotti proud.
-                </p>
+<div class="hero-fit">
+    <img class="img-fluid mobile" src="{{ asset('img/yellow-urus.jpg') }}">
+    <img class="img-fluid desktop" src="{{ asset('img/yellow-urus-zoom.jpg') }}">
+        <div class="hero-copy">
+            <div class="container">
+                <h1><strong>URUS</strong></h1>
+                <div class="hash-container"><p class="hashtag">#SINCEWEMADEITPOSSIBLE</p></div>
             </div>
         </div>
-    </section>
+</div>
 
-    <div class="fit">
-        <img class="img-fluid" src="{{ asset('img/blue-urus-dust.jpg') }}">
+<div class="fit">
+    <img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}">
+</div>
+
+<section id="block0" class="stripe container block0 fullwidth">
+      
+    <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
+        <desc>The rear of a dark Urus as it travels in a metropolitan setting.</desc>            
+        <svg viewBox="0 0 1 1.19" preserveAspectRatio="xMidYMid slice">
+            <polygon fill="white" points="0 1.19, 1 0, 1 1.19, 0 1.19"></polygon>
+            <clipPath id="block0_skew-mask">
+                <polygon fill="green" points="0.02 1.19, 1 0.0238, 1 1.19, 0 1.19"></polygon>
+            </clipPath>
+                <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMidYMid slice" x="0" y="0" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" class="ng-scope" style="opacity: 1;"></image>
+        </svg>
+    </svg>
+    <div class="column small-five small-push-one reset last">
+        <div class="boxcontent">
+            <h1><strong>SUV FUNCTIONALITY.</strong> <span>SUPER SPORTS CAR SOUL.</span></h1>
+            <p>The Urus: a pure Lamborghini in its own right.</P>
+            <p>You can see that unmistakable DNA in the extreme proportions. The distinctive silhouette with dynamic flying coupé line. And, of course, the outstanding performance and driving dynamics. All of which culminates in the world’s first Super Sports Utility Vehicle.</p>
+            <p>Start your journey now. Leave your details below to have our concierge set an appointment.</p>
+        </div>
+        @include('partials.form')
+    </div>
+    <div class="image-mobile hidden-over-small">
+        <div style="background-image:url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg)"></div>
+    </div>
+    
+</section>
+        <div class="images">  
+        <svg id="block2-skew-3" class="skew-left" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
+            <desc>A blue Urus seen from the front as it travels down a dusty dirt road</desc>
+            <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
+                <clipPath id="block2-skew-3-mask">
+                    <polygon fill="green" points="0.86767105974871 0, 2.5 0, 1.6609003688227 1 , 0.028571428571429 1, 0.86767105974871 0"></polygon>
+                </clipPath>
+
+                <image clip-path="url(#block2-skew-3-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-right_1.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-right_1.jpg" class="ng-scope" style="opacity: 1;"></image>
+
+            </svg>
+        </svg>
+        <svg id="block2-skew-2" class="skew-right" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
+                <desc>A coal gray Urus, seen from the side, as it travels along a city street </desc>            <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
+                <clipPath id="block2-skew-2-mask">
+                    <polygon fill="yellow" points="0.83909963117728 0, 2.5 0, 1.6609003688227 1 , 0 1, 0.83909963117728 0"></polygon>
+                </clipPath>
+
+                <image clip-path="url(#block2-skew-2-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-left_1.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-left_1.jpg" class="ng-scope" style="opacity: 1;"></image>
+
+            </svg>
+        </svg>
     </div>
 
-    @include('partials.form')
-
-    <br>
-
-    <div class="eu-cookies text-center">
-        @include('cookieConsent::index')
+<section class="container emotion">
+    <div class="row">
+        <div class="column small-five small-push-one reset last">
+            <h1>
+                EMOTION
+            </h1>
+            <p>
+                The Urus was made to evoke emotions. None of them subtle.
+            </p>
+            <p>
+                One glimpse of the Urus and you’ll see the Lamborghini pedigree. In its silhouette there’s a little Murcielago; in the muscular proportions, the Countach. But now the drama comes with a dash of discernment: four seats, four-wheel steering, and four-wheel drive. It’s form and function in equal measure.
+            </p>
+            <p>
+                Still convinced this isn’t a pure Lamborghini? Push the accelerator. You’ll unleash a 4.0 litre bi-turbo engine good for 650 HP and an exhaust note that would make Pavarotti proud.
+            </p>
+        </div>
     </div>
+</section>
+
+<div class="fit">
+    <img class="img-fluid" src="{{ asset('img/blue-urus-dust.jpg') }}">
+</div>
+
+
+
+<br>
+
+<div class="eu-cookies text-center">
+    @include('cookieConsent::index')
+</div>
 
 @endsection
