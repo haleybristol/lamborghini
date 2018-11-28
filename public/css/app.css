@@ -10823,29 +10823,30 @@ form button {
   }
 }
 
-form .form-group input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
+form .check-box {
+  position: relative;
 }
 
-form .form-group label {
-  position: relative;
+form .check-box input {
+  height: initial;
+  width: initial;
+  top: 8px;
+  position: absolute;
+}
+
+form .check-box label {
   cursor: pointer;
   font-size: 12px;
 }
 
-form .form-group label:before {
+form .check-box label:before {
   content: '';
   -webkit-appearance: none;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #252424;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 5px;
+  padding: 6px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -10853,7 +10854,7 @@ form .form-group label:before {
   margin-right: 10px;
 }
 
-form .form-group input:checked + label:after {
+form .check-box input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
@@ -10888,6 +10889,13 @@ form .dot-container {
   form .check-send,
   form .dot-container {
     max-width: 66%;
+  }
+}
+
+@media (min-width: 1200px) {
+  form .check-send,
+  form .dot-container {
+    max-width: 62%;
   }
 }
 
@@ -10951,22 +10959,6 @@ form input::placeholder {
   color: #252424;
 }
 
-form .required {
-  border-bottom: 1px solid #e0b401;
-}
-
-form .required::-webkit-input-placeholder {
-  color: #e0b401;
-}
-
-form .required::-ms-input-placeholder {
-  color: #e0b401;
-}
-
-form .required::placeholder {
-  color: #e0b401;
-}
-
 /* Dropdown select styling */
 
 /*the container must be positioned relative:*/
@@ -10985,8 +10977,18 @@ form .required::placeholder {
 }
 
 .custom-select select {
-  display: none;
-  /*hide original SELECT element:*/
+  background: transparent;
+  height: 0;
+  color: transparent;
+  position: absolute;
+  z-index: -10;
+}
+
+.custom-select select option {
+  z-index: -10;
+  background: transparent;
+  height: 0;
+  color: transparent;
 }
 
 /*style the arrow inside the select element:*/
@@ -11197,7 +11199,7 @@ button:focus {
 }
 
 .fit {
-  height: 190px;
+  height: 225px;
 }
 
 .fit img {
@@ -11332,6 +11334,12 @@ button:focus {
   }
 }
 
+@media (min-width: 1200px) {
+  .boxcontent {
+    max-width: 75%;
+  }
+}
+
 .boxcontent h1 {
   font-size: 23px;
   margin-bottom: 20px;
@@ -11386,10 +11394,10 @@ button:focus {
 }
 
 .skew-images .skew-bottom {
-  width: 33rem;
-  height: 311px;
+  width: 50rem;
+  height: 300px;
   top: 35.5rem;
-  right: calc(50% + 390px);
+  right: calc(50% + 320px);
 }
 
 .row-content.fullwidth {

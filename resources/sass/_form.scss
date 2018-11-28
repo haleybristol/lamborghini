@@ -12,28 +12,28 @@ form {
       width: 226px;
     }
   }
-  .form-group input {
-    padding: 0;
+  .check-box {
+    position: relative;
+  }
+  .check-box input {
     height: initial;
     width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
+    top: 8px;
+    position: absolute;
   }
 
-  .form-group label {
-    position: relative;
+  .check-box label {
     cursor: pointer;
     font-size: 12px;
   }
 
-  .form-group label:before {
+  .check-box label:before {
     content:'';
     -webkit-appearance: none;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid $font-color;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 5px;
+    padding: 6px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -41,7 +41,7 @@ form {
     margin-right: 10px;
   }
 
-  .form-group input:checked + label:after {
+  .check-box input:checked + label:after {
     content: '';
     display: block;
     position: absolute;
@@ -69,6 +69,9 @@ form {
     margin-right: auto;
     @include media-breakpoint-up(lg) {
       max-width:66%;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width:62%;
     }
   }
   .circle {
@@ -109,13 +112,6 @@ form {
         color: $font-color;
       }
   }
-  .required {
-    border-bottom: 1px solid $lambo-yellow;
-    &::placeholder {
-      color: $lambo-yellow;
-    }
-  }
-
 }
 
 /* Dropdown select styling */
@@ -134,7 +130,17 @@ form {
 
 }
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
+  background: transparent;
+  height: 0;
+  color: transparent;
+  position: absolute;
+  z-index: -10;
+  option {
+    z-index: -10;
+    background: transparent;
+    height: 0;
+    color: transparent;
+  }
 }
 /*style the arrow inside the select element:*/
 .select-selected:after {
