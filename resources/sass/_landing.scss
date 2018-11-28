@@ -31,12 +31,15 @@ button {
 
 /* bootstrap override */
 .container {
-  padding: 25px;
+  padding: 15px;
+  @include media-breakpoint-up(sm) {
+    padding: 25px;
+  }
   @include media-breakpoint-up(lg) {
     max-width: 1160px;
   }
     @include media-breakpoint-up(xl) {
-      max-width: 1340px;
+      max-width: 1540px;
   }
 }
 
@@ -108,11 +111,10 @@ button {
     width: 100%;
     margin: 0 auto;
     left: 0;
-    padding: 1em;
     z-index: 2;
     bottom: 2%;
     @include media-breakpoint-up(md) {
-      bottom: 12%;
+      bottom: 8%;
     }
     @include media-breakpoint-up(lg) {
       bottom: 20%;
@@ -149,12 +151,19 @@ button {
 
 
 .boxcontent {
+  padding-top: 20px;
+  @include media-breakpoint-up(sm) {
   padding-top: 60px;
+  }
   @include media-breakpoint-up(lg) {
-    max-width: 80%
+    max-width: 85%
   }
   h1 {
+    font-size: 23px;
     margin-bottom: 20px;
+    @include media-breakpoint-up(sm) {
+      font-size: 2.24rem;
+    }
   }
   p {
     font-size: 16px;
@@ -169,19 +178,33 @@ button {
   width: 66rem;
   top: -31rem;
 }
-
-.skew-left {
-  width: 86rem;
-  height: 29rem;
-  top: -2rem;
-  right: calc(50% - 2.5rem);
-}
-
-.skew-right {
-  width: 75rem;
-  height: 30rem;
-  top: -3rem;
-  left: calc(50% - 22rem);
+.skew-images {
+  position: relative;
+  height: 36rem;
+  z-index: 0;
+  display: none;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+  .skew-left {
+    width: 86rem;
+    height: 30rem;
+    top: 4rem;
+    right: calc(50% - 2rem);
+  }
+  
+  .skew-right {
+    width: 75rem;
+    height: 30rem;
+    top: 2.5rem;
+    left: calc(50% - 22rem);
+  }
+  .skew-bottom {
+    width: 33rem;
+    height: 311px;
+    top: 35.5rem;
+    right: calc(50% + 390px);
+  }
 }
 
 .row-content.fullwidth {
@@ -191,7 +214,6 @@ button {
 .block0 {
     overflow: visible;
     z-index: 3;
-    height: 45.5rem;
     margin-bottom: 0;
 
 }
@@ -211,12 +233,12 @@ svg {
 }
 
 section {
-      position: relative;
+    position: relative;
     overflow: hidden;
 }
 
-.images {
-  position: relative;
-  height: 96rem;
-  z-index: 0;
+
+.emotion {
+  max-width: 800px;
+  margin-left: auto;
 }

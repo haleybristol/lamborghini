@@ -13,19 +13,19 @@
     width: 100%;
     @include media-breakpoint-up(sm) {
       max-width: 540px;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 25px;
+      padding-left: 25px;
       margin-right: auto;
       margin-left: auto;
     }
     @include media-breakpoint-up(md) {
-        max-width: 720px;
+        max-width: 768px;
     }
     @include media-breakpoint-up(lg) {
-      max-width: 960px;
+      max-width: 100%;
     }
     @include media-breakpoint-up(xl) {
-        max-width: 1340px;
+        max-width: 1540px;
     }
     .logo-container {
       width: 60px;

@@ -12,10 +12,6 @@
         </div>
 </div>
 
-<div class="fit">
-    <img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}">
-</div>
-
 <section id="block0" class="stripe container block0 fullwidth">
       
     <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
@@ -40,9 +36,9 @@
     <div class="image-mobile hidden-over-small">
         <div style="background-image:url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg)"></div>
     </div>
-    
+
 </section>
-        <div class="images">  
+    <div class="skew-images">  
         <svg id="block2-skew-3" class="skew-left" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
             <desc>A blue Urus seen from the front as it travels down a dusty dirt road</desc>
             <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
@@ -50,7 +46,7 @@
                     <polygon fill="green" points="0.86767105974871 0, 2.5 0, 1.6609003688227 1 , 0.028571428571429 1, 0.86767105974871 0"></polygon>
                 </clipPath>
 
-                <image clip-path="url(#block2-skew-3-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-right_1.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-right_1.jpg" class="ng-scope" style="opacity: 1;"></image>
+                <image clip-path="url(#block2-skew-3-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="{{ asset('img/blue-urus-dust.jpg') }}" lazy-src="{{ asset('img/blue-urus-dust.jpg') }}" class="ng-scope" style="opacity: 1;"></image>
 
             </svg>
         </svg>
@@ -64,14 +60,25 @@
 
             </svg>
         </svg>
+        <svg id="block2-skew-1" class="skew-bottom" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
+                <desc>A yellow Urus stopped on a dirt road, as seen from the rear.</desc>            <svg viewBox="0 0 1.5 1" preserveAspectRatio="xMidYMid slice">
+                <clipPath id="block2-skew-1-mask">
+                                            <polygon fill="red" points="0 0.028571428571429, 1.4760257248235 0.028571428571429, 0.66090036882272 1 , 0 1, 0 0.028571428571429"></polygon>                                                          </clipPath>
+
+                <image clip-path="url(#block2-skew-1-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/intern-bottom_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/intern-bottom_4.jpg" class="ng-scope" style="opacity: 1;"></image>
+
+            </svg>
+        </svg>
     </div>
 
+<div class="fit">
+    <img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}">
+</div>
+
 <section class="container emotion">
-    <div class="row">
+
         <div class="column small-five small-push-one reset last">
-            <h1>
-                EMOTION
-            </h1>
+            <h1><b>EMOTION</b></h1>
             <p>
                 The Urus was made to evoke emotions. None of them subtle.
             </p>
@@ -82,14 +89,7 @@
                 Still convinced this isn’t a pure Lamborghini? Push the accelerator. You’ll unleash a 4.0 litre bi-turbo engine good for 650 HP and an exhaust note that would make Pavarotti proud.
             </p>
         </div>
-    </div>
 </section>
-
-<div class="fit">
-    <img class="img-fluid" src="{{ asset('img/blue-urus-dust.jpg') }}">
-</div>
-
-
 
 <br>
 

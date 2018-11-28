@@ -10628,8 +10628,8 @@ a.text-dark:focus {
 @media (min-width: 576px) {
   .nav .navbar-inner {
     max-width: 540px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -10637,19 +10637,19 @@ a.text-dark:focus {
 
 @media (min-width: 768px) {
   .nav .navbar-inner {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 992px) {
   .nav .navbar-inner {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .nav .navbar-inner {
-    max-width: 1340px;
+    max-width: 1540px;
   }
 }
 
@@ -10803,6 +10803,10 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
+form {
+  margin: 30px 0;
+}
+
 form button {
   background: #e0b401;
   color: white;
@@ -10883,7 +10887,7 @@ form .dot-container {
 @media (min-width: 992px) {
   form .check-send,
   form .dot-container {
-    max-width: 67%;
+    max-width: 66%;
   }
 }
 
@@ -11148,7 +11152,13 @@ button:focus {
 /* bootstrap override */
 
 .container {
-  padding: 25px;
+  padding: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: 25px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11159,7 +11169,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1340px;
+    max-width: 1540px;
   }
 }
 
@@ -11256,14 +11266,13 @@ button:focus {
   width: 100%;
   margin: 0 auto;
   left: 0;
-  padding: 1em;
   z-index: 2;
   bottom: 2%;
 }
 
 @media (min-width: 768px) {
   .hero-fit .hero-copy {
-    bottom: 12%;
+    bottom: 8%;
   }
 }
 
@@ -11308,17 +11317,30 @@ button:focus {
 }
 
 .boxcontent {
-  padding-top: 60px;
+  padding-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .boxcontent {
+    padding-top: 60px;
+  }
 }
 
 @media (min-width: 992px) {
   .boxcontent {
-    max-width: 80%;
+    max-width: 85%;
   }
 }
 
 .boxcontent h1 {
+  font-size: 23px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .boxcontent h1 {
+    font-size: 2.24rem;
+  }
 }
 
 .boxcontent p {
@@ -11336,18 +11358,38 @@ button:focus {
   top: -31rem;
 }
 
-.skew-left {
-  width: 86rem;
-  height: 29rem;
-  top: -2rem;
-  right: calc(50% - 2.5rem);
+.skew-images {
+  position: relative;
+  height: 36rem;
+  z-index: 0;
+  display: none;
 }
 
-.skew-right {
+@media (min-width: 576px) {
+  .skew-images {
+    display: block;
+  }
+}
+
+.skew-images .skew-left {
+  width: 86rem;
+  height: 30rem;
+  top: 4rem;
+  right: calc(50% - 2rem);
+}
+
+.skew-images .skew-right {
   width: 75rem;
   height: 30rem;
-  top: -3rem;
+  top: 2.5rem;
   left: calc(50% - 22rem);
+}
+
+.skew-images .skew-bottom {
+  width: 33rem;
+  height: 311px;
+  top: 35.5rem;
+  right: calc(50% + 390px);
 }
 
 .row-content.fullwidth {
@@ -11357,7 +11399,6 @@ button:focus {
 .block0 {
   overflow: visible;
   z-index: 3;
-  height: 45.5rem;
   margin-bottom: 0;
 }
 
@@ -11384,9 +11425,8 @@ section {
   overflow: hidden;
 }
 
-.images {
-  position: relative;
-  height: 96rem;
-  z-index: 0;
+.emotion {
+  max-width: 800px;
+  margin-left: auto;
 }
 
