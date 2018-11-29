@@ -56,16 +56,18 @@
                     <polygon fill="yellow" points="0.83909963117728 0, 2.5 0, 1.6609003688227 1 , 0 1, 0.83909963117728 0"></polygon>
                 </clipPath>
 
-                <image clip-path="url(#block2-skew-2-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-left_1.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/design-left_1.jpg" class="ng-scope" style="opacity: 1;"></image>
+                <image clip-path="url(#block2-skew-2-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="{{ asset('img/back-seats.jpg') }}" lazy-src="{{ asset('img/back-seats.jpg') }}" class="ng-scope" style="opacity: 1;"></image>
 
             </svg>
         </svg>
         <svg id="block2-skew-1" class="skew-bottom" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
-                <desc>A yellow Urus stopped on a dirt road, as seen from the rear.</desc>            <svg viewBox="0 0 1.5 1" preserveAspectRatio="xMidYMid slice">
+                <desc>A yellow Urus stopped on a dirt road, as seen from the rear.</desc>            
+                <svg viewBox="0 0 1.5 1" preserveAspectRatio="xMidYMid slice">
                 <clipPath id="block2-skew-1-mask">
-                                            <polygon fill="red" points="0 0.028571428571429, 1.4760257248235 0.028571428571429, 0.66090036882272 1 , 0 1, 0 0.028571428571429"></polygon>                                                          </clipPath>
+                    <polygon fill="red" points="0 0.028571428571429, 1.4760257248235 0.028571428571429, 0.66090036882272 1 , 0 1, 0 0.028571428571429"></polygon>
+                </clipPath>
 
-                <image clip-path="url(#block2-skew-1-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/intern-bottom_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/intern-bottom_4.jpg" class="ng-scope" style="opacity: 1;"></image>
+                <image clip-path="url(#block2-skew-1-mask)" preserveAspectRatio="xMidYMid slice" height="100%" width="100%" xlink:href="{{ asset('img/urus-landscape.jpg') }}" lazy-src="{{ asset('img/blur-city.jpg') }}" class="ng-scope" style="opacity: 1;"></image>
 
             </svg>
         </svg>
