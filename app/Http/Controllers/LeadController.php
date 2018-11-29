@@ -46,8 +46,10 @@ class LeadController extends Controller
         $selectedDealership = Dealership::find('dealer');
 
         $data = [
-            'success'            => trans('app.leadStoredSuccess'),
-            'selectedDealership' => $selectedDealership,
+            'thanks'               => trans('app.thanks'),
+            'copy'                  => trans('app.thanksCopy'),
+            'button'                => trans('app.dealerButton'),
+            'selectedDealership'    => $selectedDealership,
         ];
 
         return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.

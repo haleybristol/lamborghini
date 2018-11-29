@@ -25,7 +25,7 @@
         </svg>
     </svg>
     <div class="column small-five small-push-one reset last">
-        <div class="boxcontent">
+        <div class="boxcontent {{ session()->has('thanks') ? 'success' : '' }}"> 
             <h1><strong>SUV FUNCTIONALITY.</strong> <span>SUPER SPORTS CAR SOUL.</span></h1>
             <p>The Urus: a pure Lamborghini in its own right.</P>
             <p>You can see that unmistakable DNA in the extreme proportions. The distinctive silhouette with dynamic flying coupé line. And, of course, the outstanding performance and driving dynamics. All of which culminates in the world’s first Super Sports Utility Vehicle.</p>
@@ -36,8 +36,9 @@
     <div class="image-mobile hidden-over-small">
         <div style="background-image:url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg)"></div>
     </div>
+    </section>
 
-</section>
+
     <div class="skew-images">  
         <svg id="block2-skew-3" class="skew-left" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
             <desc>A blue Urus seen from the front as it travels down a dusty dirt road</desc>

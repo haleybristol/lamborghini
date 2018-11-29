@@ -1,4 +1,4 @@
-<form id="form" method="POST" action="{{ route('sendLead') }}" >
+<form id="form" method="POST" action="{{ route('sendLead') }}" class="{{ session()->has('thanks') ? 'success' : '' }}">
 	{!! csrf_field() !!}
 	
 	<div class="dot-container">
@@ -302,20 +302,12 @@
 	</div>
 </form>
 
-
-@if(session()->has('success'))
-
-<div class="row">
-    <div class="col-12">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="nc-icon nc-simple-remove" aria-hidden="true"></i>
-            </button>
-            <p>
-                {!! session('success') !!}
-            </p>
-        </div>
-    </div>
+@if(session()->has('thanks'))
+<div class="column small-five small-push-one reset last">
+	<div class="thanks">
+		{!! session('thanks') !!}
+		<p>	{!! session('copy') !!} </p>
+		<button class="btn btn-primary">	{!! session('button') !!} </button>
+	</div>
 </div>
-
 @endif

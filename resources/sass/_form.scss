@@ -190,3 +190,30 @@ form {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* hide form section on successfully completing form */
+.success {
+  display: none;
+}
+
+.thanks {
+  padding-top: 20px;
+  @include media-breakpoint-up(sm) {
+  padding-top: 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 588px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 85%
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 75%
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+

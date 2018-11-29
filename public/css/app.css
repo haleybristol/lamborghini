@@ -11055,6 +11055,48 @@ form input::placeholder {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* hide form section on successfully completing form */
+
+.success {
+  display: none;
+}
+
+.thanks {
+  padding-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .thanks {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .thanks {
+    height: 588px;
+  }
+}
+
+@media (min-width: 992px) {
+  .thanks {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .thanks {
+    max-width: 75%;
+  }
+}
+
+.thanks h1 {
+  text-transform: uppercase;
+}
+
+.thanks p {
+  font-weight: 300;
+}
+
 footer {
   background-color: #333333;
   width: 100%;
