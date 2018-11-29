@@ -17,7 +17,7 @@ a {
     outline: none;
   }
 }
-button {
+button:not(.close) {
   cursor: pointer;
   outline: none;
   background: $lambo-yellow;

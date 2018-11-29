@@ -307,7 +307,7 @@
 	<div class="thanks">
 		{!! session('thanks') !!}
 		<p>	{!! session('copy') !!} </p>
-		<button class="btn btn-primary" href="{!! session('website') !!}">	{!! session('button') !!} </button>
+		<a class="btn btn-primary" href="{!! session('website') !!}">	{!! session('button') !!} </a>
 	</div>
 	
 </div>

@@ -25,11 +25,11 @@
         </svg>
     </svg>
     <div class="column small-five small-push-one reset last">
-        <div class="boxcontent {{ session()->has('thanks') ? 'success' : '' }}"> 
+        <div class="boxcontent"> 
             <h1><strong>SUV FUNCTIONALITY.</strong> <span>SUPER SPORTS CAR SOUL.</span></h1>
             <p>The Urus: a pure Lamborghini in its own right.</P>
             <p>You can see that unmistakable DNA in the extreme proportions. The distinctive silhouette with dynamic flying coupé line. And, of course, the outstanding performance and driving dynamics. All of which culminates in the world’s first Super Sports Utility Vehicle.</p>
-            <p>Start your journey now. Leave your details below to have our concierge set an appointment.</p>
+            <p class="{{ session()->has('thanks') ? 'success' : '' }}">Start your journey now. Leave your details below to have our concierge set an appointment.</p>
         </div>
         @include('partials.form')
     </div>

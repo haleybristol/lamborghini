@@ -11067,34 +11067,33 @@ form input::placeholder {
 
 @media (min-width: 576px) {
   .thanks {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 
 @media (min-width: 992px) {
   .thanks {
-    height: 588px;
+    height: 357px;
   }
 }
 
 @media (min-width: 992px) {
   .thanks {
-    max-width: 85%;
+    max-width: 67%;
   }
 }
 
-@media (min-width: 1200px) {
-  .thanks {
-    max-width: 75%;
-  }
-}
-
-.thanks h1 {
+.thanks h2 {
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.thanks h2 span {
+  font-weight: 200;
 }
 
 .thanks p {
-  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -11179,17 +11178,17 @@ a:focus {
   outline: none;
 }
 
-button {
+button:not(.close) {
   cursor: pointer;
   outline: none;
   background: #e0b401;
 }
 
-button:hover {
+button:not(.close):hover {
   background: #cca300;
 }
 
-button:focus {
+button:not(.close):focus {
   outline: none;
 }
 
