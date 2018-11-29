@@ -39,17 +39,22 @@ class LeadController extends Controller
         $validatedFormData = $request->validated();
 
         $lead = new Lead();
+
         $lead->fill($validatedFormData)->save();
+
+        $dealerObj = Dealership::where('store_name', $validatedFormData['dealer'])->first();
 
         Mail::to($validatedFormData['email'])->send(new ContactMail($validatedFormData));
 
         $selectedDealership = Dealership::find('dealer');
+        $selectedWebsite = Dealership::find('website');
 
         $data = [
-            'thanks'               => trans('app.thanks'),
+            'thanks'                => trans('app.thanks'),
             'copy'                  => trans('app.thanksCopy'),
             'button'                => trans('app.dealerButton'),
             'selectedDealership'    => $selectedDealership,
+            'website'               => $dealerObj->website,
         ];
 
         return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.

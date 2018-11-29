@@ -14,21 +14,655 @@ class DealershipsSeeder extends Seeder
     {
         $dealerships = [
             [
-                'store_name'    => 'Sq1 Lambos',
-                'contact_name'  => 'Haley',
-                'email'         => 'haley.bristol@sq1.com',
+                'store_name'    => 'Lamborghini Baku',
+                'contact_name'  => 'Asiya S. Jafarova',
+                'email'         => 'a.jafarova@autolux-az.com',
                 'language'      => 'English',
-                'phone'         => '3035035033',
-                'address'       => '209 SW Oak St. Suite 100',
+                'country'       => 'Azerbaijan',
+                'address'       => '4 Parliament avenue, Flame Towers, Baku 1006, Azerbaijan',
+                'website'       => 'https://www.baku.lamborghini/en',
+                
             ],
             [
-                'store_name'    => 'Ansira Lambos',
-                'contact_name'  => 'Jeremy',
-                'email'         => 'jeremy.kenedy@sq1.com',
+                'store_name'    => 'Lamborghini Cape Town',
+                'contact_name'  => 'Jessica Baker',
+                'email'         => 'jessica.baker@lamborghini.co.za',
+                'language'      => 'English',
+                'country'       => 'South Africa',
+                'address'       => '8 Bridgeway, Century City, Cape Town, 7441, South Africa',
+                'website'       => 'https://www.capetown.lamborghini/en',
+                
+            ],
+            [
+                'store_name'    => 'Lamborghini Khobar',
+                'contact_name'  => 'Ranin Aloufi',
+                'email'         => 'aloufi.ranin@samaco.com.sa',
+                'language'      => 'Arabic',
+                'country'       => 'Saudi Arabia',
+                'address'       => 'Prince Sultan Road, Qurtoba, Al Khobar 34235, Saudi Arabia',
+                'website'       => 'https://www.lamborghini.com/en-en/ownership/dealer-locator',
+                
+            ],
+            [
+                'store_name'    => 'Lamborghini Tunbridge Wells',
+                'contact_name'  => 'Marketing Manager',
+                'email'         => 'sales.lamborghinikent@grange.co.uk',
+                'language'      => 'English',
+                'country'       => 'England',
+                'address'       => 'Dowding Way Tunbridge Wells',
+                'website'       => 'http://www.grange.co.uk/',
+                
+            ],
+            [
+                'store_name'    => 'Lamborghini Bordeaux',
+                'contact_name'  => 'Sophie Basteres',
+                'email'         => 'emails.basteres@lamborghini-bordeaux.fr',
+                'language'      => 'French',
+                'country'       => 'France',
+                'address'       => 'addr7, Avenue Pierre Mendes France 33700 MERIGNAC 33700 Bordeauxess',
+                'website'       => 'https://www.bordeaux.lamborghini/fr',
+                
+            ],
+            [
+                'store_name'    => 'Lamborghini Istanbul',
+                'contact_name'  => 'Ebru Belen',
+                'email'         => 'EBelen@audi.com.tr',
+                'language'      => 'English',
+                'country'       => 'Turkey',
+                'address'       => 'Maslak Mahallesi, Doğuş Center, Maslak Mah, Ahi Evran Cd. No: 4, 34485 Sarıyer, Turkey',
+                'website'       => 'https://www.istanbul.lamborghini/en',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
                 'language'      => 'German',
-                'phone'         => '3035035033',
-                'address'       => '209 SW Oak St. Suite 600',
-            ]
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
+            [
+                'store_name'    => 'LamborghiniCapeTown',
+                'contact_name'  => 'JessicaBaker',
+                'email'         => 'emailllllll',
+                'language'      => 'German',
+                'country'       => 'Azerbaijan',
+                'address'       => 'address',
+                'website'       => 'bakulambor',
+                
+            ],
         ];
 
         foreach ($dealerships as $dealership) {
@@ -39,8 +673,10 @@ class DealershipsSeeder extends Seeder
                     'contact_name'  => $dealership['contact_name'],
                     'email'         => $dealership['email'],
                     'language'      => $dealership['language'],
-                    'phone'         => $dealership['phone'],
+                    'country'       => $dealership['country'],
                     'address'       => $dealership['address'],
+                    'website'       => $dealership['website'],
+                    
                 ]);
             }
         }

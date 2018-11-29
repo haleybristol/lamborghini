@@ -277,10 +277,10 @@
 			<div class="col-12 col-sm-6">
 				<span class="circle"></span>
 				<div id="dealership" class="custom-select">
-					<select name="dealer" required>
-						<option value="" class="{{ $errors->has('dealer') ? 'required' : '' }}">Preferred Dealership</option>
+					<select name="dealer" class="dealer-select" required>
+						<option>Preferred Dealership</option>
 						@foreach ($dealerShips as $dealership)
-							<option value="{{ $dealership->store_name }}" data-contact-name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-phone="{{ $dealership->phone }}">
+							<option value="{{ $dealership->store_name }}" data-contact-name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-phone="{{ $dealership->country }}" data-website="{{ $dealership->website }}">
 							{{ $dealership->store_name }}
 							</option>
 						@endforeach
@@ -301,13 +301,14 @@
 		</div>
 	</div>
 </form>
-
+ 
 @if(session()->has('thanks'))
 <div class="column small-five small-push-one reset last">
 	<div class="thanks">
 		{!! session('thanks') !!}
 		<p>	{!! session('copy') !!} </p>
-		<button class="btn btn-primary">	{!! session('button') !!} </button>
+		<button class="btn btn-primary" href="{!! session('website') !!}">	{!! session('button') !!} </button>
 	</div>
+	
 </div>
 @endif

@@ -32,8 +32,10 @@ class Dealership extends Model
         'contact_name',
         'email',
         'language',
-        'phone',
+        'country',
         'address',
+        'website',
+        
     ];
 
     /**
@@ -56,8 +58,10 @@ class Dealership extends Model
         'contact_name'  => 'string',
         'email'         => 'string',
         'language'      => 'string',
-        'phone'         => 'string',
+        'country'       => 'string',
         'address'       => 'string',
+        'website'       => 'string',
+        
     ];
 
 }
