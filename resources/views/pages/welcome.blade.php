@@ -75,7 +75,7 @@
     </div>
 
 <div class="fit">
-    <img class="img-fluid" src="{{ asset('img/blur-city.jpg') }}">
+    <img class="img-fluid" src="{{ asset('img/back-seats.jpg') }}">
 </div>
 
 <section class="container emotion">
