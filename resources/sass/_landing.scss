@@ -21,7 +21,7 @@ a {
   }
 }
 button:not(.close):not(.btn-lang) {
-  cursor: grab;
+  cursor: pointer;
   outline: none;
   height: 36px;
   padding: 0 25px;
@@ -36,7 +36,7 @@ button:not(.close):not(.btn-lang) {
 }
 
 button.close, .btn-lang {
-  cursor: grab;
+  cursor: pointer;
   outline: none;
   &:focus {
     outline: none;

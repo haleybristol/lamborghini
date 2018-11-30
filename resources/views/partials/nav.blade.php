@@ -1,41 +1,13 @@
 <nav class="nav fixed-top">
   <div class="navbar-inner">
-    <div class="logo-container">
-      <img src="{{ asset('img/lambo-logo.png') }}">
-    </div>
-    <div class="right-nav">
-      <div class="request">
-        <button class="btn-brand"><a href="#scroll-to" class="anchor">{!! trans('nav.info') !!}</a></button>
-      </div>
-      <div class="lang-container">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn-lang" data-toggle="modal" data-target="#lang-modal">{{ LaravelLocalization::getCurrentLocale() }}</button>
-
 		<div class="logo-container">
 		<img src="{{ asset('img/lambo-logo.png') }}">
 		</div>
-
+		
 		<div class="right-nav">
-
 			<div class="request">
-				<!-- Button trigger modal -->
-				<button class="btn-brand" data-toggle="modal" data-target="#info-modal">{!! trans('nav.info') !!}</button>
-				<!-- Modal -->
-				<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
-								<span class="icon-close">&#10005;</span>
-							</button>
-
-							<div class="modal-body text-center">
-								<p>{!! trans('nav.infoModal') !!}</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<button class="btn-brand"><a href="#scroll-to" class="anchor">{!! trans('nav.info') !!}</a></button>
 			</div>
-
 			<div class="lang-container">
 				<!-- Button trigger modal -->
 				<button type="button" class="btn-lang" data-toggle="modal" data-target="#lang-modal">{{ LaravelLocalization::getCurrentLocale() }}</button>

@@ -67,7 +67,7 @@
       align-items: center;
       justify-content: center;
       &:hover {
-        cursor: grab;
+        cursor: pointer;
       }
       @include media-breakpoint-up(sm) {
         height: 36px;
@@ -80,7 +80,7 @@
         border:none;
         text-transform: uppercase;
         &:hover {
-          cursor: grab;
+          cursor: pointer;
         }
       }
     }
@@ -89,16 +89,20 @@
       border: none;
       height: 100%;
       width: 100%;
-      color: white;
-      font-weight: 300;
+      cursor: pointer;
       &:hover {
         background: #cca300;
+        cursor: pointer;
       }
       @include media-breakpoint-up(sm) {
         margin-right: 20px;
         width: auto;
         height: 36px;
         padding: 0 20px;
+      }
+      a {
+        color: white;
+        font-weight: 300;
       }
     }
   }
