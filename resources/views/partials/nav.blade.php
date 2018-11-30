@@ -5,11 +5,11 @@
     </div>
     <div class="right-nav">
       <div class="request">
-        <button class="btn-brand"><a href="#form">REQUEST INFO</a></button>
+        <button class="btn-brand"><a href="#form">{!! trans('nav.info') !!}</a></button>
       </div>
       <div class="lang-container">
         <!-- Button trigger modal -->
-        <button type="button" class="btn-lang" data-toggle="modal" data-target="#lang-modal">EN</button>
+        <button type="button" class="btn-lang" data-toggle="modal" data-target="#lang-modal">{{ LaravelLocalization::getCurrentLocale() }}</button>
 
         <!-- Modal -->
         <div class="modal fade" id="lang-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -18,11 +18,16 @@
               <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
                 <span class="icon-close">&#10005;</span>
               </button>
-              <h5 class="modal-title text-center"><span class="light">CHOOSE</span> <strong>YOUR LANGUAGE</strong></h5>
+              <h5 class="modal-title text-center"><span class="light">{!! trans('nav.choose') !!}</span> <strong>{!! trans('nav.yourlang') !!}</strong></h5>
               <div class="full"><div></div></div>
-              <div class="modal-body row  text-center">
-                <div class="col-6"><a href="#">Russian</a></div>
-                <div class="col-6"><a href="#">German</a></div>
+              <div class="modal-body text-center">
+              @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                  <li>
+                      <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                          {{ $properties['native'] }}
+                      </a>
+                  </li>
+              @endforeach
               </div>
             </div>
           </div>

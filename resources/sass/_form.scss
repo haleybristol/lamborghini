@@ -110,6 +110,7 @@ form {
       border-bottom: 1px solid #B1B1B1;
       &::placeholder {
         color: $font-color;
+        text-transform: capitalize;
       }
   }
 }
@@ -161,6 +162,7 @@ form {
 .select-items div,.select-selected {
   color: $font-color;
   font-weight: 300;
+  text-transform: capitalize;
   &:hover {
     cursor: pointer;
   }

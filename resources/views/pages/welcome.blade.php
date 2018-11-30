@@ -11,7 +11,9 @@
             </div>
         </div>
 </div>
+<ul>
 
+</ul>
 <section id="block0" class="stripe container block0 fullwidth">
       
     <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
@@ -26,10 +28,10 @@
     </svg>
     <div class="column small-five small-push-one reset last">
         <div class="boxcontent"> 
-            <h1><strong>SUV FUNCTIONALITY.</strong> <span>SUPER SPORTS CAR SOUL.</span></h1>
-            <p>The Urus: a pure Lamborghini in its own right.</P>
-            <p>You can see that unmistakable DNA in the extreme proportions. The distinctive silhouette with dynamic flying coupé line. And, of course, the outstanding performance and driving dynamics. All of which culminates in the world’s first Super Sports Utility Vehicle.</p>
-            <p class="{{ session()->has('thanks') ? 'success' : '' }}">Start your journey now. Leave your details below to have our concierge set an appointment.</p>
+            <h1><strong>{!! trans('app.block1.header') !!}</strong> <span>{!! trans('app.block1.headerSpan') !!}</span></h1>
+            <p> {!! trans('app.block1.line1') !!} </p>
+            <p> {!! trans('app.block1.line2') !!} </p>
+            <p class="{{ session()->has('thanks') ? 'success' : '' }}"> {!! trans('app.block1.line3') !!} </p>
         </div>
         @include('partials.form')
     </div>

@@ -50,9 +50,9 @@ class LeadController extends Controller
         $selectedWebsite = Dealership::find('website');
 
         $data = [
-            'thanks'                => trans('app.thanks'),
-            'copy'                  => trans('app.thanksCopy'),
-            'button'                => trans('app.dealerButton'),
+            'thanks'                => trans('form.thanks'),
+            'copy'                  => trans('form.thanksCopy'),
+            'button'                => trans('form.dealerButton'),
             'selectedDealership'    => $selectedDealership,
             'website'               => $dealerObj->website,
         ];

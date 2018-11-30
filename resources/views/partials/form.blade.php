@@ -23,7 +23,7 @@
 				<span class="circle country"></span>
 				<div class="custom-select {{ $errors->has('country') ? 'required' : '' }}" id="country" class="psuedo_select">
 					<select name="country" required>
-						<option value="">Country or Region</option>
+						<option value="">{!! trans('form.placeholder.country') !!}</option>
 						<option>Afghanistan</option>
 						<option>Albania</option>
 						<option>Algeria</option>
@@ -278,7 +278,7 @@
 				<span class="circle"></span>
 				<div id="dealership" class="custom-select">
 					<select name="dealer" class="dealer-select" required>
-						<option>Preferred Dealership</option>
+						<option>{!! trans('form.placeholder.dealer') !!}</option>
 						@foreach ($dealerShips as $dealership)
 							<option value="{{ $dealership->store_name }}" data-contact-name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-phone="{{ $dealership->country }}" data-website="{{ $dealership->website }}">
 							{{ $dealership->store_name }}
@@ -292,11 +292,11 @@
 	<div class="check-send">
 		<div class="check-box">
 			<input type="checkbox" id="policy" name="checkbox" required>
-			<label for="policy">View our <a href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank"><u>privacy policy</u></a>. I agree to the processing of my personal data for marketing purposes.</label>
+			<label for="policy">{!! trans('form.policy.view') !!} <a href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank"><u>{!! trans('form.policy.privacy') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send">
 			<button type="submit">
-				SEND ME INFORMATION
+				{!! trans('form.placeholder.send') !!}
 			</button>
 		</div>
 	</div>

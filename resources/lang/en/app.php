@@ -8,8 +8,12 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'thanks' => '<h2><b>Thank you</b> <span>for your interest</span></h2>',
-    'thanksCopy' => 'We are processing your information and you will be receiving more details via email. While you wait, please visit the dealership website in your region to learn more about Lamborghini.',
-    'dealerButton'  => 'Go to Dealership',
+    'block1' => [
+        'header'        => 'SUV FUNCTIONALITY.',
+        'headerSpan'    => 'SUPER SPORTS CAR SOUL.',
+        'line1'         => 'The Urus: a pure Lamborghini in its own right.',
+        'line2'         => 'You can see that unmistakable DNA in the extreme proportions. The distinctive silhouette with dynamic flying coupé line. And, of course, the outstanding performance and driving dynamics. All of which culminates in the world’s first Super Sports Utility Vehicle.',
+        'line3'         => 'Start your journey now. Leave your details below to have our concierge set an appointment.'
+    ],
 
 ];

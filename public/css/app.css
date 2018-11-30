@@ -10702,6 +10702,8 @@ a.text-dark:focus {
 @media (min-width: 576px) {
   .nav .navbar-inner .request {
     height: auto;
+    width: auto;
+    margin-right: 20px;
   }
 }
 
@@ -10736,6 +10738,7 @@ a.text-dark:focus {
   font-weight: 300;
   background: #515053;
   border: none;
+  text-transform: uppercase;
 }
 
 .nav .navbar-inner .lang-container .btn-lang:hover {
@@ -10756,8 +10759,9 @@ a.text-dark:focus {
 @media (min-width: 576px) {
   .nav .navbar-inner .btn-brand {
     margin-right: 20px;
-    width: 155px;
+    width: auto;
     height: 36px;
+    padding: 0 20px;
   }
 }
 
@@ -10793,6 +10797,10 @@ a.text-dark:focus {
   color: white;
   background: #e0b401;
   padding: 10px 40px;
+}
+
+.modal-title {
+  text-transform: uppercase;
 }
 
 .close {
@@ -10949,14 +10957,17 @@ form input {
 
 form input::-webkit-input-placeholder {
   color: #252424;
+  text-transform: capitalize;
 }
 
 form input::-ms-input-placeholder {
   color: #252424;
+  text-transform: capitalize;
 }
 
 form input::placeholder {
   color: #252424;
+  text-transform: capitalize;
 }
 
 /* Dropdown select styling */
@@ -11017,6 +11028,7 @@ form input::placeholder {
 .select-selected {
   color: #252424;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .select-items div:hover,
@@ -11178,17 +11190,30 @@ a:focus {
   outline: none;
 }
 
-button:not(.close) {
+button:not(.close):not(.btn-lang) {
   cursor: pointer;
   outline: none;
+  width: auto;
+  height: 36px;
+  padding: 0 25px;
   background: #e0b401;
+  text-transform: uppercase;
 }
 
-button:not(.close):hover {
+button:not(.close):not(.btn-lang):hover {
   background: #cca300;
 }
 
-button:not(.close):focus {
+button:not(.close):not(.btn-lang):focus {
+  outline: none;
+}
+
+button.close {
+  cursor: pointer;
+  outline: none;
+}
+
+button.close:focus {
   outline: none;
 }
 
@@ -11384,6 +11409,7 @@ button:not(.close):focus {
 .boxcontent h1 {
   font-size: 23px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 576px) {

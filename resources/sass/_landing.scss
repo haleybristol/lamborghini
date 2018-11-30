@@ -17,13 +17,25 @@ a {
     outline: none;
   }
 }
-button:not(.close) {
+button:not(.close):not(.btn-lang) {
   cursor: pointer;
   outline: none;
+  width: auto;
+  height: 36px;
+  padding: 0 25px;
   background: $lambo-yellow;
+  text-transform: uppercase;
   &:hover {
     background:#cca300;
   }
+  &:focus {
+    outline: none;
+  }
+}
+
+button.close {
+  cursor: pointer;
+  outline: none;
   &:focus {
     outline: none;
   }
@@ -164,6 +176,7 @@ button:not(.close) {
   h1 {
     font-size: 23px;
     margin-bottom: 20px;
+    text-transform: uppercase;
     @include media-breakpoint-up(sm) {
       font-size: 2.24rem;
     }

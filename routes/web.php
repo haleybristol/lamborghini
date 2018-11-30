@@ -11,6 +11,8 @@
 |
 */
 
-
-Route::get('/', 'LeadController@index');
-Route::post('/send', 'LeadController@processLead')->name('sendLead');
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+    Route::get('/', 'LeadController@index');
+    Route::post('/send', 'LeadController@processLead')->name('sendLead');
+});
