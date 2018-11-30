@@ -10793,10 +10793,8 @@ a.text-dark:focus {
   text-transform: uppercase;
 }
 
-.modal-body a:hover {
-  color: white;
-  background: #e0b401;
-  padding: 10px 40px;
+.modal-body li {
+  padding-bottom: 5px;
 }
 
 .modal-title {

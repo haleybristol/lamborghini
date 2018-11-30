@@ -15,10 +15,8 @@
 }
 .modal-body {
   text-transform: uppercase;
-  a:hover {
-    color: white;
-    background: $lambo-yellow;
-    padding: 10px 40px;
+  li {
+    padding-bottom: 5px;
   }
 }
 .modal-title {
