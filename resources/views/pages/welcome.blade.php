@@ -11,10 +11,8 @@
             </div>
         </div>
 </div>
-<ul>
 
-</ul>
-<section id="block0" class="stripe container block0 fullwidth">
+<section id="block0" class="stripe container block0 fullwidth"><span id="scroll-to"></span>
       
     <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
         <desc>The rear of a dark Urus as it travels in a metropolitan setting.</desc>            
@@ -38,7 +36,7 @@
     <div class="image-mobile hidden-over-small">
         <div style="background-image:url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg)"></div>
     </div>
-    </section>
+</section>
 
 
     <div class="skew-images">  

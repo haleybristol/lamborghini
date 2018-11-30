@@ -5,7 +5,7 @@
     </div>
     <div class="right-nav">
       <div class="request">
-        <button class="btn-brand"><a href="#form">{!! trans('nav.info') !!}</a></button>
+        <button class="btn-brand"><a href="#scroll-to" class="anchor">{!! trans('nav.info') !!}</a></button>
       </div>
       <div class="lang-container">
         <!-- Button trigger modal -->

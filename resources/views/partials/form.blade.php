@@ -1,4 +1,4 @@
-<form id="form" method="POST" action="{{ route('sendLead') }}" class="{{ session()->has('thanks') ? 'success' : '' }}">
+<form method="POST" action="{{ route('sendLead') }}" class="{{ session()->has('thanks') ? 'success' : '' }}">
 	{!! csrf_field() !!}
 	
 	<div class="dot-container">

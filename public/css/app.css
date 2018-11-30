@@ -11166,6 +11166,10 @@ footer a {
   padding: 0 3em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: #fff;
@@ -11477,6 +11481,12 @@ button.close:focus,
   overflow: visible;
   z-index: 3;
   margin-bottom: 0;
+  position: relative;
+}
+
+#scroll-to {
+  position: absolute;
+  top: -100px;
 }
 
 #block0_skew {
