@@ -20,7 +20,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'Azerbaijan',
                 'address'       => '4 Parliament avenue, Flame Towers, Baku 1006, Azerbaijan',
-                'website'       => 'https://www.baku.lamborghini/en',
+                'website'       => 'baku.lamborghini/en',
                 
             ],
             [
@@ -30,7 +30,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'South Africa',
                 'address'       => '8 Bridgeway, Century City, Cape Town, 7441, South Africa',
-                'website'       => 'https://www.capetown.lamborghini/en',
+                'website'       => 'capetown.lamborghini/en',
                 
             ],
             [
@@ -40,7 +40,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'Arabic',
                 'country'       => 'Saudi Arabia',
                 'address'       => 'Prince Sultan Road, Qurtoba, Al Khobar 34235, Saudi Arabia',
-                'website'       => 'https://www.lamborghini.com/en-en/ownership/dealer-locator',
+                'website'       => 'lamborghini.com/en-en/ownership/dealer-locator',
                 
             ],
             [
@@ -50,7 +50,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'England',
                 'address'       => 'Dowding Way Tunbridge Wells',
-                'website'       => 'http://www.grange.co.uk/',
+                'website'       => 'grange.co.uk/',
                 
             ],
             [
@@ -60,7 +60,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'French',
                 'country'       => 'France',
                 'address'       => 'addr7, Avenue Pierre Mendes France 33700 MERIGNAC 33700 Bordeauxess',
-                'website'       => 'https://www.bordeaux.lamborghini/fr',
+                'website'       => 'bordeaux.lamborghini/fr',
                 
             ],
             [
@@ -70,7 +70,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'Turkey',
                 'address'       => 'Maslak Mahallesi, Doğuş Center, Maslak Mah, Ahi Evran Cd. No: 4, 34485 Sarıyer, Turkey',
-                'website'       => 'https://www.istanbul.lamborghini/en',
+                'website'       => 'istanbul.lamborghini/en',
                 
             ],
             [
@@ -80,7 +80,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'Romania',
                 'address'       => 'x, Bulevardul Pipera 1 -sect. L, Voluntari 077190, Voluntari 077190, Romania',
-                'website'       => 'https://www/bucharest.lamborghini/en',
+                'website'       => 'bucharest.lamborghini/en',
                 
             ],
             [
@@ -90,7 +90,7 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'Arabic',
                 'country'       => 'Beirut',
                 'address'       => 'Corniche Du Fleuve, Achrafieh 1100 2806 Beirut',
-                'website'       => 'https://www/beirut.lamborghini/en',
+                'website'       => 'beirut.lamborghini/en',
                 
             ],
             [
@@ -100,87 +100,87 @@ class DealershipsSeeder extends Seeder
                 'language'      => 'English',
                 'country'       => 'South Africa',
                 'address'       => 'William Nicol and Bryanston Drive Bryanston - Johannesburg',
-                'website'       => 'https://www/johannesburg.lamborghini/en',
+                'website'       => 'johannesburg.lamborghini/en',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
-                'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'store_name'    => 'Lamborghini Riyadh',
+                'contact_name'  => 'Ranin Aloufi',
+                'email'         => 'aloufi.ranin@samaco.com.sa',
+                'language'      => 'Arabic',
+                'country'       => 'Saudi Arabia',
+                'address'       => 'Pr. Mohammed Bin Abdul Aziz Street Riyadh',
+                'website'       => 'riyadh.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
+                'store_name'    => 'Lamborghini Tallin',
+                'contact_name'  => 'Kristiina Savva',
+                'email'         => 'kristiina.savva@auto100.ee',
                 'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'country'       => 'Estonia',
+                'address'       => 'Navigatori ärimaja, Laeva 2, 10111 Tallinn, Estonia',
+                'website'       => 'tallinn.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
+                'store_name'    => 'Lamborghini Roma',
+                'contact_name'  => 'Francesca Ghion',
+                'email'         => 'francesca.ghion@lautosport.it',
                 'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'country'       => 'Italy',
+                'address'       => 'Via Leonida Bissolati 62 Roma',
+                'website'       => 'roma.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
+                'store_name'    => 'Lamborghini Chelmsford',
+                'contact_name'  => 'Sian Dillamore',
+                'email'         => 'sian.dillamore@grange.co.uk',
                 'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'country'       => 'England',
+                'address'       => 'Eastern Approach, Chelmsford CM2 6PN, UK',
+                'website'       => 'chelmsford.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
+                'store_name'    => 'Lamborghini Bologna "New"',
+                'contact_name'  => 'Claudia Cassano',
+                'email'         => 'claudia.cassano@bolognapremium.it',
                 'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'country'       => 'Italy',
+                'address'       => 'Via Isonzo, 16, 40033 Casalecchio di Reno BO, Italy',
+                'website'       => 'https://www.lamborghini.com/en-en/ownership/dealer-locator',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
-                'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'store_name'    => 'Lamborghini Jeddah',
+                'contact_name'  => 'Ranin Aloufi',
+                'email'         => 'aloufi.ranin@samaco.com.sa',
+                'language'      => 'Arabic',
+                'country'       => 'Saudi Arabia',
+                'address'       => 'Prince Mohammed Bin Abdul Aziz Street (Tahlia Street) Jeddah',
+                'website'       => 'jeddah.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
+                'store_name'    => 'Lamborghini Athens',
+                'contact_name'  => 'Anastasia- Isabella Mitakakis',
+                'email'         => 'aim@tridentcars.gr',
                 'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'country'       => 'Greece',
+                'address'       => 'Char. Trikoupi 197, Kifisia 145 61, Greece',
+                'website'       => 'athens.lamborghini',
                 
             ],
             [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
-                'language'      => 'English',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
+                'store_name'    => 'Lamborghini Muscat',
+                'contact_name'  => 'Yasser Alwash',
+                'email'         => 'lamborghini@ftgroupholding.com',
+                'language'      => 'Arabic',
+                'country'       => 'Oman',
+                'address'       => 'AL KHUWAIR NEXT TO ZAKHER MALL 114 Muscat',
+                'website'       => 'muscat.lamborghini',
                 
             ],
             [

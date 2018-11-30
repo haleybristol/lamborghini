@@ -3,7 +3,7 @@
         <img style="height: 80px; padding-top: 10px;" src="https://www.lamborghini.com/themes/custom/lambo/img/base/logo.png">
     </div>
 </div>
-<div style="margin: 0 auto; max-width: 520px; min-height: 500px;">
+<div style="margin: 0 auto; max-width: 520px; min-height: 100%">
     <h1>{!! trans('email.hi') !!} {{ $contactName }}, </h1>
     <p style="font-size: 18px;">{!! trans('email.copy') !!}</p>
     <table style="border-collapse: collapse;width: 100%;">
@@ -32,15 +32,13 @@
             <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{ $dealer }}</td>
         </tr>
     </table>
-    <div style="text-align: center; margin-top: 50px;">
+    <div style="text-align: center; margin: 50px 0;">
         <a style="background: #e0b401; color: white; text-decoration: none; text-transform: uppercase; padding: 10px 20px;" href="mailto:{{ $email }}">Respond to lead</a>
     </div>
 </div>
-<footer style="margin-top: -100px; background-color: rgba(0,0,0,0.8);width: 100%;color: white;height: 100px;">
-  <div style="margin: 0 auto; max-width: 520px;">
-    <div>
+<footer style="background-color: rgba(0,0,0,0.8);width: 100%;color: white; padding: 10px;">
+  <div style="margin: 0 auto; max-width: 520px; font-size: 14px">
       <p>Copyright ©2018 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204</p>
       <a style="color: white; text-decoration: underline;" href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">Privacy Policy</a>
-    </div>
   </div>
 </footer>
