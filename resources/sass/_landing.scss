@@ -33,7 +33,7 @@ button:not(.close):not(.btn-lang) {
   }
 }
 
-button.close {
+button.close, .btn-lang {
   cursor: pointer;
   outline: none;
   &:focus {

@@ -11208,12 +11208,14 @@ button:not(.close):not(.btn-lang):focus {
   outline: none;
 }
 
-button.close {
+button.close,
+.btn-lang {
   cursor: pointer;
   outline: none;
 }
 
-button.close:focus {
+button.close:focus,
+.btn-lang:focus {
   outline: none;
 }
 

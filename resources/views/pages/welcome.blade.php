@@ -28,7 +28,7 @@
     </svg>
     <div class="column small-five small-push-one reset last">
         <div class="boxcontent"> 
-            <h1><strong>{!! trans('app.block1.header') !!}</strong> <span>{!! trans('app.block1.headerSpan') !!}</span></h1>
+            <h1><strong>{!! trans('app.block1.header') !!}</strong></h1>
             <p> {!! trans('app.block1.line1') !!} </p>
             <p> {!! trans('app.block1.line2') !!} </p>
             <p class="{{ session()->has('thanks') ? 'success' : '' }}"> {!! trans('app.block1.line3') !!} </p>

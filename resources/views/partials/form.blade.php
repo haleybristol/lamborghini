@@ -305,9 +305,9 @@
 @if(session()->has('thanks'))
 <div class="column small-five small-push-one reset last">
 	<div class="thanks">
-		{!! session('thanks') !!}
-		<p>	{!! session('copy') !!} </p>
-		<a class="btn btn-primary" href="{!! session('website') !!}">	{!! session('button') !!} </a>
+		<h2><b>{!! trans('thanks') !!}</b> <span>{!! trans('form.thanksSection.thanksInterest') !!}</span></h2>
+		<p>	{!! trans('form.thanksSection.thanksCopy') !!} </p>
+		<a class="btn btn-primary" href="{!! session('website') !!}">	{!! trans('form.thanksSection.dealerButton') !!} </a>
 	</div>
 	
 </div>

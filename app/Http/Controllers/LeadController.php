@@ -50,12 +50,11 @@ class LeadController extends Controller
         $selectedWebsite = Dealership::find('website');
 
         $data = [
-            'thanks'                => trans('form.thanks'),
-            'copy'                  => trans('form.thanksCopy'),
-            'button'                => trans('form.dealerButton'),
+            'thanks'                => trans('form.thanksSection.thanks'),
             'selectedDealership'    => $selectedDealership,
             'website'               => $dealerObj->website,
         ];
+
 
         return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.
 	}
