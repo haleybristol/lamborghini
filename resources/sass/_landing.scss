@@ -21,7 +21,7 @@ a {
   }
 }
 button:not(.close):not(.btn-lang) {
-  cursor: pointer;
+  cursor: grab;
   outline: none;
   height: 36px;
   padding: 0 25px;
@@ -36,7 +36,7 @@ button:not(.close):not(.btn-lang) {
 }
 
 button.close, .btn-lang {
-  cursor: pointer;
+  cursor: grab;
   outline: none;
   &:focus {
     outline: none;
@@ -56,6 +56,7 @@ button.close, .btn-lang {
       max-width: 1540px;
   }
 }
+/* bootstrap override */
 
 .flex-center {
   align-items: center;
@@ -95,8 +96,6 @@ button.close, .btn-lang {
     display: block;
   }
 }
-
-
 
 .hero-fit {
   height: 500px;
@@ -197,6 +196,7 @@ button.close, .btn-lang {
   width: 66rem;
   top: -31rem;
 }
+
 .skew-images {
   position: relative;
   height: 36rem;
@@ -256,8 +256,8 @@ svg {
 }
 
 section {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 

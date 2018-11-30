@@ -51,7 +51,7 @@
       height: 60px;
       width: calc(100% - 60px);
       &:hover {
-        cursor: pointer;
+        cursor: grab;
       }
       @include media-breakpoint-up(sm) {
         height: auto;
@@ -67,7 +67,7 @@
       align-items: center;
       justify-content: center;
       &:hover {
-        cursor: pointer;
+        cursor: grab;
       }
       @include media-breakpoint-up(sm) {
         height: 36px;
@@ -80,7 +80,7 @@
         border:none;
         text-transform: uppercase;
         &:hover {
-          cursor: pointer;
+          cursor: grab;
         }
       }
     }
@@ -89,6 +89,8 @@
       border: none;
       height: 100%;
       width: 100%;
+      color: white;
+      font-weight: 300;
       &:hover {
         background: #cca300;
       }
@@ -97,10 +99,6 @@
         width: auto;
         height: 36px;
         padding: 0 20px;
-      }
-      a {
-        color:white;
-        font-weight: 300;
       }
     }
   }

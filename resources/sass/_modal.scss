@@ -17,6 +17,7 @@
   text-transform: uppercase;
   li {
     padding-bottom: 5px;
+    cursor: grab;
   }
 }
 .modal-title {
@@ -25,6 +26,6 @@
 .close {
   opacity: 1;
   &:hover {
-    cursor: pointer;
+    cursor: grab;
   }
 }
