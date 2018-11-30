@@ -4,18 +4,18 @@
 	<div class="dot-container">
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<span class="circle first"></span><input class="{{ $errors->has('firstname') ? 'required' : '' }}" type="text" name="firstname" placeholder="{!! trans('form.placeholder.firstname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.firstname') !!}'" required>
+				<span class="circle first"></span><input class="{{ $errors->has('firstname') ? 'required' : '' }}" type="text" name="firstname" placeholder="{!! trans('form.placeholder.firstname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.firstname') !!}'" required value="haley">
 			</div>
 			<div class="col-12 col-sm-6">
-				<span class="circle last"></span><input class="{{ $errors->has('lastname') ? 'required' : '' }}" type="text" name="lastname" placeholder="{!! trans('form.placeholder.lastname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.lastname') !!}'" required>
+				<span class="circle last"></span><input class="{{ $errors->has('lastname') ? 'required' : '' }}" type="text" name="lastname" placeholder="{!! trans('form.placeholder.lastname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.lastname') !!}'" required value="vert">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<span class="circle email"></span><input class="{{ $errors->has('email') ? 'required' : '' }}" type="text" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'" required>
+				<span class="circle email"></span><input class="{{ $errors->has('email') ? 'required' : '' }}" type="text" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'" required value="hebristol@gmail.com">
 			</div>
 			<div class="col-12 col-sm-6">
-				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" required>
+				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" required value="23643563464">
 			</div>
 		</div>
 		<div class="row">
@@ -23,7 +23,7 @@
 				<span class="circle country"></span>
 				<div class="custom-select {{ $errors->has('country') ? 'required' : '' }}" id="country" class="psuedo_select">
 					<select name="country" required>
-						<option value="">{!! trans('form.placeholder.country') !!}</option>
+						<option value="asf">{!! trans('form.placeholder.country') !!}</option>
 						<option>Afghanistan</option>
 						<option>Albania</option>
 						<option>Algeria</option>
