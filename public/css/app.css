@@ -10696,7 +10696,8 @@ a.text-dark:focus {
 }
 
 .nav .navbar-inner .request:hover {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 @media (min-width: 576px) {
@@ -10723,7 +10724,8 @@ a.text-dark:focus {
 }
 
 .nav .navbar-inner .lang-container:hover {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 @media (min-width: 576px) {
@@ -10742,7 +10744,8 @@ a.text-dark:focus {
 }
 
 .nav .navbar-inner .lang-container .btn-lang:hover {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .nav .navbar-inner .btn-brand {
@@ -10750,6 +10753,8 @@ a.text-dark:focus {
   border: none;
   height: 100%;
   width: 100%;
+  color: white;
+  font-weight: 300;
 }
 
 .nav .navbar-inner .btn-brand:hover {
@@ -10763,11 +10768,6 @@ a.text-dark:focus {
     height: 36px;
     padding: 0 20px;
   }
-}
-
-.nav .navbar-inner .btn-brand a {
-  color: white;
-  font-weight: 300;
 }
 
 /* bootstrap modal overrides */
@@ -10793,10 +10793,10 @@ a.text-dark:focus {
   text-transform: uppercase;
 }
 
-.modal-body a:hover {
-  color: white;
-  background: #e0b401;
-  padding: 10px 40px;
+.modal-body li {
+  padding-bottom: 5px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .modal-title {
@@ -10808,7 +10808,8 @@ a.text-dark:focus {
 }
 
 .close:hover {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 form {
@@ -11191,7 +11192,8 @@ a:focus {
 }
 
 button:not(.close):not(.btn-lang) {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
   outline: none;
   width: auto;
   height: 36px;
@@ -11210,7 +11212,8 @@ button:not(.close):not(.btn-lang):focus {
 
 button.close,
 .btn-lang {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
   outline: none;
 }
 
@@ -11242,6 +11245,8 @@ button.close:focus,
     max-width: 1540px;
   }
 }
+
+/* bootstrap override */
 
 .flex-center {
   -webkit-box-align: center;
