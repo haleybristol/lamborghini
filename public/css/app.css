@@ -10844,6 +10844,18 @@ form .autocomplete {
   position: relative;
 }
 
+form .autocomplete-items {
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+  width: 89%;
+  padding-left: 10px;
+  -webkit-box-shadow: 2px 8px 10px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 2px 8px 10px 0 rgba(0, 0, 0, 0.14);
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
 form .check-box input {
   height: 4px;
   width: initial;
