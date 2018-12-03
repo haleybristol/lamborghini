@@ -10906,13 +10906,13 @@ form .check-box input:checked + label:after {
 }
 
 form .dot-container {
-  padding: 0 20px;
+  padding: 12px 20px 0;
 }
 
 @media (min-width: 576px) {
   form .dot-container .row:nth-child(1),
   form .dot-container .row:nth-child(2) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -11572,8 +11572,8 @@ section {
 
 @media (min-width: 768px) {
   .emotion {
-    height: 473px;
-    padding-top: 90px;
+    height: 489px;
+    padding-top: 125px;
   }
 }
 

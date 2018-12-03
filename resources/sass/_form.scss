@@ -71,11 +71,11 @@ form {
 
  
   .dot-container {
-    padding: 0 20px;
+    padding: 12px 20px 0;
 
     @include media-breakpoint-up(sm) {
       .row:nth-child(1), .row:nth-child(2) {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
     }
   }
