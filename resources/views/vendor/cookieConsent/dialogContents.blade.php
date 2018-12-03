@@ -7,7 +7,8 @@
     <button class="js-cookie-consent-agree cookie-consent__agree">
         {{ trans('cookieConsent::texts.agree') }}
     </button>
-    <!-- <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+
+    <button type="button" class="close cookie text-right" aria-label="Close">
         <span class="icon-close">&#10005;</span>
-    </button> -->
+    </button>
 </div>

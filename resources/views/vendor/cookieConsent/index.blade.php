@@ -46,6 +46,15 @@
                 hideCookieDialog: hideCookieDialog
             };
         })();
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+            $('.cookie').click(hideCookieDialog);
     </script>
 
 @endif
