@@ -14095,6 +14095,17 @@ function autocomplete(inp, arr) {
 
 autocomplete(document.getElementById("myInput"), countries);
 
+function hideCookie() {
+  var dialogs = document.getElementsByClassName('js-cookie-consent');
+  dialogs.style.display = 'none';
+  console.log('heyyyymoooove');
+}
+
+$(document).ready(function () {
+
+  $('.cookie').click(hideCookie);
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

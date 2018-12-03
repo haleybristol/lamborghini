@@ -2,8 +2,8 @@
 
     <p class="cookie-consent__message">
         {!! trans('cookieConsent::texts.message') !!}
-        
-        <button onclick="hideCookieDialog()" type="button" class="close cookie text-right" aria-label="Close">
+
+        <button type="button" class="close cookie text-right" aria-label="Close">
             <span class="icon-close">&#10005;</span>
         </button>
     </p>
