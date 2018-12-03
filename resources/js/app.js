@@ -196,15 +196,10 @@ document.addEventListener("click", function (e) {
 
 autocomplete(document.getElementById("myInput"), countries);
 
-function hideCookie() {
-	const dialogs = document.getElementsByClassName('js-cookie-consent');
-	dialogs.style.display = 'none';
-	console.log('heyyyymoooove');
-}
-
-
 $(document).ready(function() {
 
-$('.cookie').click(hideCookie);
+$('.cookie').click(function(){
+	$('.js-cookie-consent').remove();
+});
 
 });
