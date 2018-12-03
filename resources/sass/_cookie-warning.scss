@@ -6,10 +6,11 @@
     position: absolute;
     width: 100%;
     z-index: 9999;
+    text-align: center;
     .cookie-consent__message {
         color: $white;
       font-size: 1.1em;
-      padding: 0 3em;
+      padding: 0 1em;
     }
     .js-cookie-consent-agree {
         &.cookie-consent__agree {

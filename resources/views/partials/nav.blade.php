@@ -6,7 +6,7 @@
 		
 		<div class="right-nav">
 			<div class="request">
-				<a href="#scroll-to" class="btn btn-brand">{!! trans('nav.info') !!}</a>
+			<a href="https://www.lamborghini.com/en-en/ownership/dealer-locator" class="btn btn-brand">{!! trans('nav.info') !!}</a>
 			</div>
 			<div class="lang-container">
 				<!-- Button trigger modal -->

@@ -10760,6 +10760,9 @@ a.text-dark:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   outline: none;
 }
 
@@ -11120,6 +11123,7 @@ footer {
 
 footer p {
   margin: 0;
+  font-size: 14px;
 }
 
 footer .container {
@@ -11163,12 +11167,13 @@ footer a {
   position: absolute;
   width: 100%;
   z-index: 9999;
+  text-align: center;
 }
 
 .js-cookie-consent .cookie-consent__message {
   color: #ffffff;
   font-size: 1.1em;
-  padding: 0 3em;
+  padding: 0 1em;
 }
 
 html {
