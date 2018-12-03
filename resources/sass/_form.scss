@@ -12,18 +12,17 @@ form {
       width: 226px;
     }
   }
-  .check-box {
+  .check-box, .autocomplete {
     position: relative;
   }
   .check-box input {
     height: 4px;
     width: initial;
     position: absolute;
-    top: 4px;
+    top: 5px;
     @include media-breakpoint-up(sm) {
     top: 6px;
     }
-    
   }
 
   .check-box label {
@@ -49,13 +48,16 @@ form {
     content: '';
     display: block;
     position: absolute;
-    top: 7px;
     left: 5px;
     width: 4px;
-    height: 9px;
+    height: 10px;
+    top: 3px;
     border: solid $font-color;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+    @include media-breakpoint-up(sm) {
+      top: 7px;
+    }
   }
 
  

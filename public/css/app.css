@@ -10839,7 +10839,8 @@ form button {
   }
 }
 
-form .check-box {
+form .check-box,
+form .autocomplete {
   position: relative;
 }
 
@@ -10847,7 +10848,7 @@ form .check-box input {
   height: 4px;
   width: initial;
   position: absolute;
-  top: 4px;
+  top: 5px;
 }
 
 @media (min-width: 576px) {
@@ -10880,14 +10881,20 @@ form .check-box input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
-  top: 7px;
   left: 5px;
   width: 4px;
-  height: 9px;
+  height: 10px;
+  top: 3px;
   border: solid #252424;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+@media (min-width: 576px) {
+  form .check-box input:checked + label:after {
+    top: 7px;
+  }
 }
 
 form .dot-container {
