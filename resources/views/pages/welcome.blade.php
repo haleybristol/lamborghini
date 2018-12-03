@@ -12,7 +12,7 @@
         </div>
 </div>
 
-<section id="block0" class="stripe container block0 fullwidth"><span id="scroll-to"></span>
+<section id="block0" class="stripe container block0 fullwidth">
       
     <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
         <desc>The rear of a dark Urus as it travels in a metropolitan setting.</desc>            
