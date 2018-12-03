@@ -11207,6 +11207,10 @@ footer a {
   padding: 0 1em;
 }
 
+.js-cookie-consent .cookie {
+  color: white;
+}
+
 html,
 body {
   background-color: #fff;
