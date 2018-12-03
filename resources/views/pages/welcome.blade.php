@@ -24,7 +24,7 @@
                 <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMidYMid slice" x="0" y="0" height="100%" width="100%" xlink:href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" lazy-src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/URUS/pagina-urus/overview-right_4.jpg" class="ng-scope" style="opacity: 1;"></image>
         </svg>
     </svg>
-    <div class="column small-five small-push-one reset last">
+    <div class="copy-left">
         <div class="boxcontent"> 
             <h1>{!! trans('app.block1.header') !!}</h1>
             <p> {!! trans('app.block1.line1') !!} </p>

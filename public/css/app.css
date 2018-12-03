@@ -10819,10 +10819,6 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
-form {
-  margin: 30px 0;
-}
-
 form button {
   background: #e0b401;
   color: white;
@@ -11109,11 +11105,13 @@ form input::placeholder {
 
 .thanks {
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 576px) {
   .thanks {
     padding-top: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -11132,6 +11130,13 @@ form input::placeholder {
 .thanks h2 {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-size: 23px;
+}
+
+@media (min-width: 576px) {
+  .thanks h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .thanks h2 span {
@@ -11495,21 +11500,21 @@ button.close:focus,
 .skew-images .skew-left {
   width: 86rem;
   height: 30rem;
-  top: 4rem;
+  top: 7rem;
   right: calc(50% - 2rem);
 }
 
 .skew-images .skew-right {
   width: 75rem;
   height: 30rem;
-  top: 2.5rem;
+  top: 5rem;
   left: calc(50% - 22rem);
 }
 
 .skew-images .skew-bottom {
   width: 50rem;
   height: 30rem;
-  top: 35.5rem;
+  top: 38rem;
   right: calc(50% + 24.5rem);
 }
 
@@ -11521,7 +11526,19 @@ button.close:focus,
   overflow: visible;
   z-index: 3;
   margin-bottom: 0;
+  padding-bottom: 0;
   position: relative;
+}
+
+.block0 .copy-left {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+  .block0 .copy-left {
+    min-height: 570px;
+    margin-bottom: 0;
+  }
 }
 
 #block0_skew {
