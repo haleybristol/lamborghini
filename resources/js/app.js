@@ -198,8 +198,8 @@ autocomplete(document.getElementById("myInput"), countries);
 
 $(document).ready(function() {
 
-$('.cookie').click(function(){
-	$('.js-cookie-consent').remove();
-});
+	$('.cookie').click(function(){
+		$('.js-cookie-consent').remove();
+	});
 
 });
