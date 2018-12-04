@@ -28,8 +28,10 @@
 				<div id="dealership" class="custom-select">
 					<select name="dealer" class="dealer-select" required>
 						<option>{!! trans('form.placeholder.dealer') !!}</option>
+
 						@foreach ($dealerShips as $dealership)
-							<option value="{{ $dealership->store_name }}" data-contact-name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-phone="{{ $dealership->country }}" data-website="{{ $dealership->website }}">
+
+							<option value="{{ $dealership->store_name }}" data-contact-name="{{ $dealership->contact_name }}" data-email="{{ $dealership->email }}" data-country="{{ $dealership->country }}" data-website="{{ $dealership->website }}">
 							{{ $dealership->store_name }}
 							</option>
 						@endforeach

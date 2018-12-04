@@ -11,7 +11,9 @@ class DealershipsSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {   
+
+
         $dealerships = [
             [
                 'store_name'    => 'Lamborghini Baku',
@@ -200,15 +202,6 @@ class DealershipsSeeder extends Seeder
                 'country'       => 'France',
                 'address'       => 'Pierre Pflimlin Avenue, 68390 Sausheim, France',
                 'website'       => 'mulhouse.lamborghini',
-                
-            ],
-            [
-                'store_name'    => 'LamborghiniCapeTown',
-                'contact_name'  => 'JessicaBaker',
-                'email'         => 'emailllllll',
-                'country'       => 'Azerbaijan',
-                'address'       => 'address',
-                'website'       => 'bakulambor',
                 
             ],
             [
@@ -565,9 +558,14 @@ class DealershipsSeeder extends Seeder
 
         ];
 
+        usort($dealerships, function ($item1, $item2) {
+            return $dealerships = $item1['store_name'] <=> $item2['store_name'];
+        });
+        
         foreach ($dealerships as $dealership) {
             $newDealer = Dealership::where('store_name', '=', $dealership['store_name'])->first();
             if ($newDealer === null) {
+
                 $newDealer = Dealership::create([
                     'store_name'    => $dealership['store_name'],
                     'contact_name'  => $dealership['contact_name'],

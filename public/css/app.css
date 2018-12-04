@@ -11117,12 +11117,6 @@ form input::placeholder {
 
 @media (min-width: 992px) {
   .thanks {
-    height: 357px;
-  }
-}
-
-@media (min-width: 992px) {
-  .thanks {
     max-width: 67%;
   }
 }
