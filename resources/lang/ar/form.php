@@ -20,8 +20,7 @@ return [
     ],
     
     'thanksSection' => [
-        'thanks'            => 'Thank you',
-        'thanksInterest'        => 'for your interest',
+        'thanks'            => '<b>Thank you</b></span>for your interest</span>',
 
         'thanksCopy'        => 'We are processing your information and you will be receiving more details via email. While you wait, please visit the dealership website in your region to learn more about Lamborghini.',
 
