@@ -11240,6 +11240,7 @@ button:not(.close):not(.btn-lang) {
   outline: none;
   height: 45px;
   padding: 0 25px;
+  width: auto;
   background: #e0b401;
   text-transform: uppercase;
 }
