@@ -50,13 +50,11 @@ class LeadController extends Controller
         
         Mail::to($validatedFormData['email'])->send(new ContactMail($validatedFormData, $contactName));
 
-        
         $data = [
             'thanks'                => trans('form.thanksSection.thanks'),
             'selectedDealership'    => $selectedDealership,
             'website'               => $dealerObj->website,
         ];
-
 
         return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.
 	}
