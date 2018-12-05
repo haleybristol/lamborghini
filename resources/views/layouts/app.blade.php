@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <link rel="shortcut icon" type="image/png" href="https://www.lamborghini.com/themes/custom/lambo/img/base/logo.png"/>
         <title>Lamborghini</title>
 
         <!-- Fonts -->
@@ -14,6 +14,7 @@
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://use.fontawesome.com/6f1feaf27e.js"></script>
+
 
         @stack('head')
     </head>
