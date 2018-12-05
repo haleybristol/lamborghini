@@ -48,7 +48,7 @@ class LeadController extends Controller
 
         $selectedDealership = Dealership::find('dealer');
         
-        Mail::to($validatedFormData['email'])->send(new ContactMail($validatedFormData, $contactName));
+        Mail::to($dealerObj->email)->send(new ContactMail($validatedFormData, $contactName));
 
         $data = [
             'thanks'                => trans('form.thanksSection.thanks'),

@@ -16,6 +16,15 @@ class DealershipsSeeder extends Seeder
 
         $dealerships = [
             [
+                'store_name'    => 'PORTLAND TEST',
+                'contact_name'  => 'Haley Bristol',
+                'email'         => 'haley.bristol@sq1.com',
+                'country'       => 'Africa',
+                'address'       => 'somewher in africa',
+                'website'       => 'sq1.com',
+                
+            ],
+            [
                 'store_name'    => 'ENGLAND TEST',
                 'contact_name'  => 'Jeff Hall',
                 'email'         => 'Jeff.Hall@Ansira.com',

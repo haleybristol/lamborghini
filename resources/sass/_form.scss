@@ -129,6 +129,12 @@ form {
         text-transform: capitalize;
       }
   }
+  .required {
+    display: block;
+  }
+  .valid-email {
+    display: none;
+  }
 }
 
 /* Dropdown select styling */

@@ -9,8 +9,8 @@ return [
         'number'         => 'Phone Number',
         'country'       => 'Country/Region',
         'dealer'        => 'Preferred Dealership',
-        'send'          => 'Send me information'
-
+        'send'          => 'Send me information',
+        'valid-email'   => 'Must include valid email',
     ],
 
     'policy' => [
