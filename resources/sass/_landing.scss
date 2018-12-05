@@ -59,6 +59,24 @@ button.close, .btn-lang {
 }
 /* bootstrap override */
 
+/* custom object-fit for ie */
+.ie {
+  display: none;
+}
+.ie-container {
+  height: 500px;
+  width: 100%;
+}
+.custom-object-fit {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  .featured-image {
+    opacity: 0;
+  }
+}
+/* custom object-fit for ie  */
+
 .flex-center {
   align-items: center;
   display: flex;
@@ -104,7 +122,7 @@ button.close, .btn-lang {
   @include media-breakpoint-up(sm) {
     margin-top: 100px;
   }
-  img {
+  .desktop, .mobile {
     object-fit: cover;
     height: 100%;
     width: 100%

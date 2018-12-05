@@ -21,4 +21,12 @@
     .cookie {
         color: white;
     }
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+        color: white;
+        text-decoration: none;
+    }
 }

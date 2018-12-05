@@ -11008,6 +11008,10 @@ input::-webkit-inner-spin-button {
   /* <-- Apparently some margin are still there even though it's hidden */
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* Dropdown select styling */
 
 /*the container must be positioned relative:*/
@@ -11105,7 +11109,7 @@ input::-webkit-inner-spin-button {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* hide form section on successfully completing form */
+/* hide form and display thank you */
 
 .success {
   display: none;
@@ -11213,6 +11217,17 @@ footer a {
   color: white;
 }
 
+.js-cookie-consent a {
+  color: white;
+  text-decoration: underline;
+}
+
+.js-cookie-consent .close:not(:disabled):not(.disabled):hover,
+.js-cookie-consent .close:not(:disabled):not(.disabled):focus {
+  color: white;
+  text-decoration: none;
+}
+
 html,
 body {
   background-color: #fff;
@@ -11298,6 +11313,29 @@ button.close:focus,
 
 /* bootstrap override */
 
+/* custom object-fit for ie */
+
+.ie {
+  display: none;
+}
+
+.ie-container {
+  height: 500px;
+  width: 100%;
+}
+
+.custom-object-fit {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.custom-object-fit .featured-image {
+  opacity: 0;
+}
+
+/* custom object-fit for ie  */
+
 .flex-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -11363,7 +11401,8 @@ button.close:focus,
   }
 }
 
-.hero-fit img {
+.hero-fit .desktop,
+.hero-fit .mobile {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
