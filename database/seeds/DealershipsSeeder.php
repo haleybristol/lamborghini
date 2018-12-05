@@ -16,6 +16,15 @@ class DealershipsSeeder extends Seeder
 
         $dealerships = [
             [
+                'store_name'    => 'ENGLAND TEST',
+                'contact_name'  => 'Jeff Hall',
+                'email'         => 'Jeff.Hall@Ansira.com',
+                'country'       => 'England',
+                'address'       => '4 Parliament avenue, Azerbaijan',
+                'website'       => 'baku.lamborghini/en',
+                
+            ],
+            [
                 'store_name'    => 'Lamborghini Baku',
                 'contact_name'  => 'Asiya S. Jafarova',
                 'email'         => 'a.jafarova@autolux-az.com',
@@ -138,7 +147,7 @@ class DealershipsSeeder extends Seeder
                 'email'         => 'claudia.cassano@bolognapremium.it',
                 'country'       => 'Italy',
                 'address'       => 'Via Isonzo, 16, 40033 Casalecchio di Reno BO, Italy',
-                'website'       => 'https://www.lamborghini.com/en-en/ownership/dealer-locator',
+                'website'       => 'https://www.bolognaovest.lamborghini/it',
                 
             ],
             [
@@ -170,8 +179,8 @@ class DealershipsSeeder extends Seeder
             ],
             [
                 'store_name'    => 'Lamborghini Singen',
-                'contact_name'  => 'Marketing Manager',
-                'email'         => 'NULLLLLLLLLLLL',
+                'contact_name'  => 'Tatjana  StauÃŸ',
+                'email'         => 'tatjana.stauss@gohm.de',
                 'country'       => 'Germany',
                 'address'       => 'D-78224 Singen/Htwl. Georg-Fischer-Strasse 65',
                 'website'       => 'singen.lamborghini',
@@ -202,15 +211,6 @@ class DealershipsSeeder extends Seeder
                 'country'       => 'France',
                 'address'       => 'Pierre Pflimlin Avenue, 68390 Sausheim, France',
                 'website'       => 'mulhouse.lamborghini',
-                
-            ],
-            [
-                'store_name'    => 'Lamborghini Bologna',
-                'contact_name'  => 'Claudia Cassano',
-                'email'         => 'claudia.cassano@bolognapremium.it',
-                'country'       => 'Italy',
-                'address'       => 'Via Isonzo, 16, 40033 Casalecchio di Reno BO, Italy',
-                'website'       => 'NULLLLLLLLL',
                 
             ],
             [
