@@ -12,8 +12,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<span class="circle email"></span><input type="text" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'" required>
-				<span class="{{ $errors->has('email') ? 'required' : '' }} valid-email">{!! trans('form.placeholder.valid-email') !!}</span>
+				<span class="circle email"></span><input type="email" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'" required>
 			</div>
 			<div class="col-12 col-sm-6">
 				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" required>

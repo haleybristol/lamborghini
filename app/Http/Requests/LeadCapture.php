@@ -29,7 +29,7 @@ class LeadCapture extends FormRequest
         return [
             'firstname'             => 'required|max:255|string',
             'lastname'              => 'required|max:255|string',
-            'email'                 => 'required|max:255|string',
+            'email'                 => 'required|email',
             'phone'                 => 'required|max:255|string|nullable',
             'country'               => 'required|max:255|string',
             'dealer'                => 'required|max:255|string',

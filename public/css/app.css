@@ -11000,14 +11000,6 @@ form input::placeholder {
   text-transform: capitalize;
 }
 
-form .required {
-  display: block;
-}
-
-form .valid-email {
-  display: none;
-}
-
 /* Dropdown select styling */
 
 /*the container must be positioned relative:*/
