@@ -56,7 +56,7 @@
 @if(session()->has('thanks'))
 <div class="column small-five small-push-one reset last">
 	<div class="thanks">
-		<h2>{!! trans('thanks') !!}</h2>
+		<h2>{!! trans('form.thanksSection.thanks') !!}</h2>
 		<p>	{!! trans('form.thanksSection.thanksCopy') !!} </p>
 		<a class="btn btn-primary" href="http://www.{!! session('website') !!}">	{!! trans('form.thanksSection.dealerButton') !!} </a>
 	</div>

@@ -11453,7 +11453,7 @@ button.close:focus,
 }
 
 .hero-fit .hero-copy p {
-  width: 257px;
+  width: 243px;
   padding: 5px 5px 3px;
   color: #000000;
   font-family: 'Roboto';
@@ -11462,6 +11462,7 @@ button.close:focus,
   font-weight: 300;
   line-height: 25px;
   background: white;
+  font-family: "Open Sans";
 }
 
 @media (min-width: 576px) {
@@ -11474,8 +11475,8 @@ button.close:focus,
 
 @media (min-width: 992px) {
   .hero-fit .hero-copy p {
-    font-size: 30px;
-    width: 412px;
+    font-size: 34px;
+    width: 416px;
     margin-left: 20px;
     padding: 12px;
   }

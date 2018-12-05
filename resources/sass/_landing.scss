@@ -157,7 +157,7 @@ button.close, .btn-lang {
       color: #fff;
     }
       p {
-        width: 257px;
+        width: 243px;
         padding: 5px 5px 3px;
         color: #000000;	
         font-family: 'Roboto';
@@ -166,14 +166,15 @@ button.close, .btn-lang {
         font-weight: 300;	
         line-height: 25px;
         background: white;
+        font-family: "Open Sans";
         @include media-breakpoint-up(sm) {
           font-size: 28px;
           width: 381px;
           padding: 10px;
         }
         @include media-breakpoint-up(lg) {
-          font-size: 30px;
-          width: 412px;
+          font-size: 34px;
+          width: 416px;
           margin-left: 20px;
           padding: 12px;
         }
