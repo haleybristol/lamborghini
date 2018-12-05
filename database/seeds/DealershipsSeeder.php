@@ -13,14 +13,22 @@ class DealershipsSeeder extends Seeder
     public function run()
     {   
 
-
         $dealerships = [
             [
-                'store_name'    => 'PORTLAND TEST',
-                'contact_name'  => 'Haley Bristol',
+                'store_name'    => 'PORTLAND HALEY TEST',
+                'contact_name'  => 'Haley B.',
                 'email'         => 'haley.bristol@sq1.com',
-                'country'       => 'Africa',
-                'address'       => 'somewher in africa',
+                'country'       => 'USA',
+                'address'       => '200 SW Oak St',
+                'website'       => 'sq1.com',
+                
+            ],
+            [
+                'store_name'    => 'PORTLAND DONICA TEST',
+                'contact_name'  => 'Donica Polce',
+                'email'         => 'donica.polce@sq1.com',
+                'country'       => 'USA',
+                'address'       => '200 SW Oak St',
                 'website'       => 'sq1.com',
                 
             ],
