@@ -43,7 +43,7 @@
 	<div class="check-send">
 		<div class="check-box">
 			<input type="checkbox" id="policy" name="checkbox" required>
-			<label for="policy"><a href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
+			<label for="policy"><a href="https://www.lamborghini.com/en-en/privacy-policy" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send">
 			<button type="submit">
