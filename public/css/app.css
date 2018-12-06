@@ -10965,6 +10965,7 @@ form select {
   font-weight: 300;
   width: 98%;
   margin-bottom: 30px;
+  color: #252424;
 }
 
 @media (min-width: 576px) {
@@ -10987,15 +10988,18 @@ form input {
 
 form input::-webkit-input-placeholder {
   color: #252424;
-  text-transform: capitalize;
 }
 
 form input::-ms-input-placeholder {
   color: #252424;
-  text-transform: capitalize;
 }
 
 form input::placeholder {
+  color: #252424;
+}
+
+form input:-moz-placeholder,
+form input::-moz-fieldtext {
   color: #252424;
   text-transform: capitalize;
 }
@@ -11047,7 +11051,7 @@ input[type=number] {
 /*style the arrow inside the select element:*/
 
 .select-selected:after {
-  background: url("data:image/svg+xml;utf8,<svg fill='#666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg fill='%23666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
   content: "";
   height: 24px;
   width: 24px;

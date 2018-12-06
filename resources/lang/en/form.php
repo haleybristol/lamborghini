@@ -10,13 +10,10 @@ return [
         'country'       => 'Country/Region',
         'dealer'        => 'Preferred Dealership',
         'send'          => 'Send me information',
-        'valid-email'   => 'Please enter a valid email address',
-
     ],
 
     'policy' => [
-        'view'      => 'View our',
-        'privacy'   => 'privacy policy',
+        'view'      => 'View our privacy policy',
         'agree'     => 'I agree to the processing of my personal data for marketing purposes'
     ],
     

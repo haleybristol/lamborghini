@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'info'      => "demande d'information",
-    'choose'    => 'choisissez',
-    'yourlang'  => 'votre langue',
-
+    'info'      => 'TROUVEZ UN CONCESSIONNAIRE',
+    'choose'    => 'choose',
+    'yourlang'  => 'your language',
 ];

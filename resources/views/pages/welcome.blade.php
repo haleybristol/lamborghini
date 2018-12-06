@@ -84,15 +84,15 @@
 <section class="container emotion">
 
         <div class="column small-five small-push-one reset last">
-            <h1><b>EMOTION</b></h1>
+            <h1><b>{!! trans('app.block2.header') !!}</b></h1>
             <p>
-                The Urus was made to evoke emotions. None of them subtle.
+            {!! trans('app.block2.line1') !!}
             </p>
             <p>
-                One glimpse of the Urus and you’ll see the Lamborghini pedigree. In its silhouette there’s a little Murcielago; in the muscular proportions, the Countach. But now the drama comes with a dash of discernment: four seats, four-wheel steering, and four-wheel drive. It’s form and function in equal measure.
+            {!! trans('app.block2.line2') !!}
             </p>
             <p>
-                Still convinced this isn’t a pure Lamborghini? Push the accelerator. You’ll unleash a 4.0 litre bi-turbo engine good for 650 HP and an exhaust note that would make Pavarotti proud.
+            {!! trans('app.block2.line3') !!}
             </p>
         </div>
 </section>

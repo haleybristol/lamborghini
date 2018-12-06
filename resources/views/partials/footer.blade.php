@@ -1,10 +1,10 @@
 <footer>
   <div class="container row">
     <div class="col-12 col-sm-8">
-      <p>Copyright ©2018 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204</p>
+      <p>{!! trans('app.footer.copyright') !!}</p>
     </div>
     <div class="col-12 col-sm-4 foot-right">
-      <a href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">Privacy Policy</a>
+      <a href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">{!! trans('app.footer.policy') !!}</a>
     </div>
   </div>
 </footer>

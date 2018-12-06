@@ -4,24 +4,24 @@ return [
 
     'placeholder' => [
         'firstname'     => 'Prénom',
-        'lastname'      => 'Nom De Famille',
-        'email'         => 'courriel',
-        'number'         => 'numéro de téléphone',
-        'country'       => 'le pays ou la région',
-        'dealer'        => 'concessionnaire préféré',
-        'send'          => "m'envoyer des informations"
+        'lastname'      => 'Nom de famille',
+        'email'         => 'Adresse électronique',
+        'number'        => 'Numéro de téléphone',
+        'country'       => 'Pays ou région ',
+        'dealer'        => 'Concessionnaire de préférence',
+        'send'          => 'ENVOYEZ-MOI DES INFORMATIONS',
     ],
 
     'policy' => [
-        'view'      => 'Voir notre',
-        'privacy'   => 'confidentialité',
-        'agree'     => 'Je consens au traitement de mes données personnelles à des fins de marketing'
+        'view'      => 'Consultez notre politique de confidentialité',
+        'agree'     => 'J’accepte le traitement de mes données personnelles à des fins de marketing'
     ],
     
     'thanksSection' => [
-        'thanks' => '<b>Je vous</b> <span>remercie pour votre intérêt</span>',
-        'thanksCopy' => "Nous traitons vos informations et vous recevrez plus de détails par e-mail. Pendant que vous attendez, s'il vous plaît visitez le site Web du concessionnaire dans votre région pour en savoir plus sur Lamborghini.",
-        'dealerButton'  => 'Aller à la concession',
+        'thanks'            => '<b>Merci</b> <span>de votre intérêt</span>',
+        'thanksCopy'        => 'Nous traitons vos informations et vous recevrez de plus amples détails par courrier électronique. En attendant, veuillez consulter le site Web du concessionnaire de votre région pour en apprendre davantage sur Lamborghini.',
+
+        'dealerButton'      => 'Voir le concessionnaire',
     ]
 
 ];
