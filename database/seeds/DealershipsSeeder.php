@@ -70,8 +70,8 @@ class DealershipsSeeder extends Seeder
             ],
             [
                 'store_name'    => 'Lamborghini Tunbridge Wells',
-                'contact_name'  => 'Marketing Manager',
-                'email'         => 'sales.lamborghinikent@grange.co.uk',
+                'contact_name'  => 'Sian Dillamore',
+                'email'         => 'sian.dillamore@grange.co.uk',
                 'country'       => 'England',
                 'address'       => 'Dowding Way Tunbridge Wells',
                 'website'       => 'grange.co.uk/',

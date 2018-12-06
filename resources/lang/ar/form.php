@@ -3,28 +3,25 @@
 return [
 
     'placeholder' => [
-        'firstname'     => 'First Name',
-        'lastname'      => 'Last Name',
-        'email'         => 'Email',
-        'number'         => 'Phone Number',
-        'country'       => 'Country/Region',
-        'dealer'        => 'Preferred Dealership',
-        'send'          => 'Send me information',
-        'valid-email'   => 'Must include valid email',
+        'firstname'     => 'الاسم الأول',
+        'lastname'      => 'الاسم الأخير',
+        'email'         => 'البريد الإلكتروني',
+        'number'         => 'رقم الهاتف',
+        'country'       => 'الدولة أو المنطقة ',
+        'dealer'        => 'الموزّع المفضل',
+        'send'          => 'إرسال المعلومات',
     ],
 
     'policy' => [
-        'view'      => 'View our',
-        'privacy'   => 'privacy policy',
-        'agree'     => 'I agree to the processing of my personal data for marketing purposes'
+        'view'      => 'عرض سياسة الخصوصية الخاصة بنا',
+        'agree'     => 'أوافق على استخدام بياناتي الشخصية للأغراض المتعلقة بالتسويق.'
     ],
     
     'thanksSection' => [
-        'thanks'            => '<b>Thank you</b></span>for your interest</span>',
+        'thanks'            => '<b>شكراً</b> <span>على اهتمامك</span>',
+        'thanksCopy'        => 'يُرجى العلم بأننا نعالج بياناتك حالياً وسوف نوافيك بمزيد من التفاصيل عبر البريد الإلكتروني. وخلال هذه الفترة، تفضل بزيارة الموقع الإلكتروني للموزّع في منطقتك لمعرفة المزيد حول لامبورغيني',
 
-        'thanksCopy'        => 'We are processing your information and you will be receiving more details via email. While you wait, please visit the dealership website in your region to learn more about Lamborghini.',
-
-        'dealerButton'      => 'Go to Dealership',
+        'dealerButton'      => 'الذهاب إلى الموزّع',
     ]
 
 ];

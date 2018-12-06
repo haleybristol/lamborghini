@@ -3,7 +3,7 @@
         <img style="height: 80px; padding-top: 10px;" src="https://www.lamborghini.com/themes/custom/lambo/img/base/logo.png">
     </div>
 </div>
-<div style="margin: 0 auto; max-width: 520px; min-height: 100%">
+<div style="margin: 0 auto; width: 520px; min-height: 100%">
     <h1>{!! trans('email.hi') !!} {{ $contactName }}, </h1>
     <p style="font-size: 18px;">{!! trans('email.copy') !!}</p>
     <table style="border-collapse: collapse;width: 100%;">

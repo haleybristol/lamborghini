@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'info'      => 'request info',
+    'info'      => 'البحث عن موزّع',
     'choose'    => 'choose',
     'yourlang'  => 'your language',
 
