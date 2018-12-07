@@ -26,5 +26,5 @@ return [
         'policy'        => 'Datenschutzgrundsatz'
     ],
 
-    'policy-link'       => 'https://www.lamborghini.com/en-en/privacy-policy'
+    'policy-link'       => 'https://www.lamborghini.com/de-en/privacy-policy'
 ];

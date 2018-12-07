@@ -4,24 +4,24 @@
 	<div class="dot-container">
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<span class="circle first"></span><input class="{{ $errors->has('firstname') ? 'required' : '' }}" type="text" name="firstname" placeholder="{!! trans('form.placeholder.firstname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.firstname') !!}'" >
+				<span class="circle first"></span><input value="{{ old('firstname') }}" class="{{ $errors->has('firstname') ? 'required' : '' }}" type="text" name="firstname" placeholder="{!! trans('form.placeholder.firstname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.firstname') !!}'" >
 			</div>
 			<div class="col-12 col-sm-6">
-				<span class="circle last"></span><input class="{{ $errors->has('lastname') ? 'required' : '' }}" type="text" name="lastname" placeholder="{!! trans('form.placeholder.lastname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.lastname') !!}'" >
+				<span class="circle last"></span><input value="{{ old('lastname') }}" class="{{ $errors->has('lastname') ? 'required' : '' }}" type="text" name="lastname" placeholder="{!! trans('form.placeholder.lastname') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.lastname') !!}'" >
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<span class="circle email"></span><input class="{{ $errors->has('email') ? 'required' : '' }}" type="email" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'">
+				<span class="circle email"></span><input value="{{ old('email') }}" class="{{ $errors->has('email') ? 'required' : '' }}" type="email" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'">
 			</div>
 			<div class="col-12 col-sm-6">
-				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" >
+				<span class="circle phone"></span><input value="{{ old('phone') }}" class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" >
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-sm-6 autocomplete">
 				<span class="circle country"></span>
-				<input class="{{ $errors->has('country') ? 'required' : '' }}" id="myInput" type="text" name="country" placeholder="{!! trans('form.placeholder.country') !!}"  onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.country') !!}'" >
+				<input value="{{ old('country') }}" class="{{ $errors->has('country') ? 'required' : '' }}" id="myInput" type="text" name="country" placeholder="{!! trans('form.placeholder.country') !!}"  onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.country') !!}'" >
 			</div>
 			<div class="col-12 col-sm-6">
 				<span class="circle"></span>

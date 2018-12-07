@@ -207,10 +207,10 @@ $(document).ready(function() {
 
 /* ie fix for object-fit for hero img */
 
-var userAgent, ieReg, ie;
-userAgent = window.navigator.userAgent;
-ieReg = /msie|Trident.*rv[ :]*11\./gi;
-ie = ieReg.test(userAgent);
+// var userAgent, ieReg, ie;
+// userAgent = window.navigator.userAgent;
+// ieReg = /msie|Trident.*rv[ :]*11\./gi;
+// ie = ieReg.test(userAgent);
 
 if(ie) {
 	$(".mobile").remove();
@@ -218,7 +218,8 @@ if(ie) {
 	$(".ie").removeClass('ie');
 	$(".ie-container").each(function () {
 		var $container = $(this),
-			imgUrl = $container.find("img").prop("src");
+      imgUrl = $container.find("img").prop("src");
+      console.log(imgUrl)
 		if (imgUrl) {
 		$container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("custom-object-fit");
 		}
