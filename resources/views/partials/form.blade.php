@@ -25,9 +25,9 @@
 			</div>
 			<div class="col-12 col-sm-6">
 				<span class="circle"></span>
-				<div id="dealership" class="custom-select">
+				<div id="dealership" class="custom-select {{ $errors->has('dealer') ? 'required' : '' }}">
 					<select name="dealer" class="dealer-select" required>
-						<option>{!! trans('form.placeholder.dealer') !!}</option>
+						<option value="">{!! trans('form.placeholder.dealer') !!}</option>
 
 						@foreach ($dealerShips as $dealership)
 
