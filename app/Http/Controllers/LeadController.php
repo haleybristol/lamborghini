@@ -36,6 +36,7 @@ class LeadController extends Controller
      */
 	public function processLead(LeadCapture $request)
     {
+
         $validatedFormData = $request->validated();
 
         $lead = new Lead();

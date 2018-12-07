@@ -24,7 +24,9 @@ return [
     'footer' => [
         'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés.nº TVA IT 00591801204',
         'policy'        => 'Politique de confidentialité'
-    ]
+    ],
+
+    'policy-link'       => 'https://www.lamborghini.com/fr-en/privacy-policy'
 
 
 ];

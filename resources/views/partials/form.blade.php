@@ -15,7 +15,7 @@
 				<span class="circle email"></span><input class="{{ $errors->has('email') ? 'required' : '' }}" type="email" name="email" placeholder="{!! trans('form.placeholder.email') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.email') !!}'">
 			</div>
 			<div class="col-12 col-sm-6">
-				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="number" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" >
+				<span class="circle phone"></span><input class="{{ $errors->has('phone') ? 'required' : '' }}" type="text" name="phone" placeholder="{!! trans('form.placeholder.number') !!}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.number') !!}'" >
 			</div>
 		</div>
 		<div class="row">
@@ -43,7 +43,7 @@
 	<div class="check-send">
 		<div class="check-box {{ $errors->has('checkbox') ? 'check-required' : '' }}">
 			<input type="checkbox" id="policy" name="checkbox">
-			<label for="policy"><a href="https://www.lamborghini.com/en-en/privacy-policy" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
+			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send">
 			<button type="submit">
