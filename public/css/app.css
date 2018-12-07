@@ -11157,6 +11157,39 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
+.required {
+  border-bottom: 1px solid red;
+}
+
+.required::-webkit-input-placeholder {
+  color: red;
+}
+
+.required::-ms-input-placeholder {
+  color: red;
+}
+
+.required::placeholder {
+  color: red;
+}
+
+.required .select-selected {
+  color: red;
+}
+
+.required .select-selected:after {
+  background: url("data:image/svg+xml;utf8,<svg fill='%23FF0000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+}
+
+.check-required label,
+.check-required a {
+  color: red;
+}
+
+.check-required label:before {
+  border: 1px solid red !important;
+}
+
 footer {
   background-color: #333333;
   width: 100%;

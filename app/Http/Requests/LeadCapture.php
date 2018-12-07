@@ -33,7 +33,7 @@ class LeadCapture extends FormRequest
             'phone'                 => 'required|max:255|string|nullable',
             'country'               => 'required|max:255|string',
             'dealer'                => 'required|max:255|string',
-            'checkbox'              => 'required'
+            'checkbox'              => 'accepted'
         ];
     }
 

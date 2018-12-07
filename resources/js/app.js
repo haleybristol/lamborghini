@@ -224,3 +224,11 @@ if(ie) {
 		}
 	});
 }
+
+$( ".required" ).keyup(function() {
+  $(this).removeClass('required');
+});
+
+$( ".required" ).click(function() {
+  $(this).removeClass('required');
+});

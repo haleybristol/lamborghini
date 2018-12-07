@@ -14123,6 +14123,14 @@ if (ie) {
   });
 }
 
+$(".required").keyup(function () {
+  $(this).removeClass('required');
+});
+
+$(".required").click(function () {
+  $(this).removeClass('required');
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
