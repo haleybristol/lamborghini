@@ -10868,6 +10868,7 @@ form .check-box input {
 form .check-box label {
   cursor: pointer;
   font-size: 12px;
+  position: relative;
 }
 
 form .check-box label:before {
@@ -10907,6 +10908,8 @@ form .check-box input:checked + label:after {
 
 form .dot-container {
   padding: 12px 20px 0;
+  max-width: 750px;
+  margin-right: auto;
 }
 
 @media (min-width: 576px) {
@@ -10916,23 +10919,32 @@ form .dot-container {
   }
 }
 
-form .check-send,
-form .dot-container {
-  max-width: 750px;
-  margin-right: auto;
-}
-
 @media (min-width: 992px) {
-  form .check-send,
   form .dot-container {
     max-width: 66%;
   }
 }
 
 @media (min-width: 1200px) {
-  form .check-send,
   form .dot-container {
     max-width: 62%;
+  }
+}
+
+form .check-send {
+  max-width: 750px;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  form .check-send {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  form .check-send {
+    max-width: 58%;
   }
 }
 
@@ -11133,7 +11145,7 @@ input[type=number] {
 
 @media (min-width: 992px) {
   .thanks {
-    max-width: 67%;
+    max-width: 65%;
   }
 }
 
@@ -11534,13 +11546,25 @@ button.close:focus,
 }
 
 @media (min-width: 992px) {
-  .boxcontent {
-    max-width: 85%;
+  .boxcontent h1 {
+    max-width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
-  .boxcontent {
+  .boxcontent h1 {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .boxcontent p {
+    max-width: 83%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .boxcontent p {
     max-width: 75%;
   }
 }
@@ -11668,5 +11692,17 @@ section {
 .required {
   color: red;
   border-bottom: 1px solid red;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.right-align .select-selected::after {
+  display: none;
+}
+
+.display-none {
+  display: none;
 }
 

@@ -28,7 +28,8 @@
         </svg>
     </svg>
     <div class="copy-left">
-        <div class="boxcontent"> 
+    
+    <div class="boxcontent {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}"> 
             <h1>{!! trans('app.block1.header') !!}</h1>
             <p> {!! trans('app.block1.line1') !!} </p>
             <p> {!! trans('app.block1.line2') !!} </p>
@@ -81,7 +82,7 @@
     <img class="img-fluid" src="{{ asset('img/back-seats.jpg') }}">
 </div>
 
-<section class="container emotion">
+<section class="container emotion {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
 
         <div class="column small-five small-push-one reset last">
             <h1><b>{!! trans('app.block2.header') !!}</b></h1>

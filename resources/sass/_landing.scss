@@ -187,16 +187,28 @@ button.close, .btn-lang {
 
 
 .boxcontent {
-  padding-top: 20px;
-  @include media-breakpoint-up(sm) {
-  padding-top: 60px;
+    padding-top: 20px;
+    @include media-breakpoint-up(sm) {
+    padding-top: 60px;
+    }
+    h1 {
+      @include media-breakpoint-up(lg) {
+        max-width: 90%
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 75%
+      }
+    }
+
+  p{
+    @include media-breakpoint-up(lg) {
+      max-width: 83%
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 75%
+    }
   }
-  @include media-breakpoint-up(lg) {
-    max-width: 85%
-  }
-  @include media-breakpoint-up(xl) {
-    max-width: 75%
-  }
+
   h1 {
     font-size: 23px;
     margin-bottom: 20px;
@@ -299,4 +311,14 @@ section {
 .required {
   color: red;
   border-bottom: 1px solid red;
+}
+
+.right-align {
+  text-align: right;
+  .select-selected::after {
+    display:none;
+  }
+}
+.display-none {
+  display: none;
 }

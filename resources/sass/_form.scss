@@ -37,6 +37,7 @@ form {
   .check-box label {
     cursor: pointer;
     font-size: 12px;
+    position: relative;
   }
 
   .check-box label:before {
@@ -72,16 +73,13 @@ form {
  
   .dot-container {
     padding: 12px 20px 0;
-
+    max-width: 750px;
+    margin-right: auto;
     @include media-breakpoint-up(sm) {
       .row:nth-child(1), .row:nth-child(2) {
         margin-bottom: 30px;
       }
     }
-  }
-  .check-send, .dot-container {
-    max-width: 750px;
-    margin-right: auto;
     @include media-breakpoint-up(lg) {
       max-width:66%;
     }
@@ -89,6 +87,17 @@ form {
       max-width:62%;
     }
   }
+ .check-send {
+    max-width: 750px;
+    margin-right: auto;
+    @include media-breakpoint-up(lg) {
+      max-width:60%;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width:58%;
+    }
+  }
+
   .circle {
     position: absolute;
     margin: auto;
@@ -237,7 +246,7 @@ input[type=number] {
   margin-bottom: 0;
   }
   @include media-breakpoint-up(lg) {
-    max-width: 67%
+    max-width: 65%
   }
   h2 {
     text-transform: uppercase;
