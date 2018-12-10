@@ -34,11 +34,11 @@ class DealershipsSeeder extends Seeder
             ],
             [
                 'store_name'    => 'ENGLAND TEST',
-                'contact_name'  => 'Jeff Hall',
-                'email'         => 'Jeff.Hall@Ansira.com',
+                'contact_name'  => 'Lisa Gaertner',
+                'email'         => 'lisa.gaertner@Ansira.com',
                 'country'       => 'England',
-                'address'       => '4 Parliament avenue, Azerbaijan',
-                'website'       => 'baku.lamborghini/en',
+                'address'       => 'Ansira office in dallas',
+                'website'       => 'ansira.com',
                 
             ],
             [
