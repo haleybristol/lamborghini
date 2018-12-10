@@ -10,7 +10,7 @@ return [
     */
     'block1' => [
         'header'        => '<b>LA FONCTIONNALITÉ D’UN SUV.</b> <span>L’ÂME D’UN SUPER SPORTIF.</span>',
-        'line1'         => 'Le Urus : un pur Lamborghini à part entière.',
+        'line1'         => 'Le Urus : une Lamborghini à part entière.',
         'line2'         => 'Vous pouvez voir cet ADN caractéristique dans des dimensions extrêmes : une silhouette distinctive avec une ligne de coupé puissante et dynamique. Et, bien sûr, une performance et une dynamique de conduite exceptionnelles. Tout cela culmine dans le premier véhicule super sportif utilitaire.',
         'line3'         => 'Commencez votre voyage dès maintenant. Précisez vos coordonnées ci-dessous pour que notre concierge organise un rendez-vous.'
     ],
