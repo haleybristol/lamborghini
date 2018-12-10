@@ -18,11 +18,11 @@ return [
         'header'        => 'ÉMOTION',
         'line1'         => 'L’Urus a été conçu pour susciter les émotions. Aucune d’entre elles n’est subtile.',
         'line2'         => 'Jetez un coup d’œil à l’Urus et vous verrez le pedigree Lamborghini. Il y a un peu du Murcielago dans sa silhouette; du Countach dans les proportions de sa musculature. Mais avec une pointe de discernement, on découvre sa personnalité propre : quatre sièges, quatre roues directrices et une traction intégrale. Forme et fonctionnalité s’y côtoient à égalité.',
-        'line3'         => 'Toujours pas convaincus que c’est une pure Lamborghini?  Appuyez sur l’accélérateur. Vous lâcherez bride à un moteur biturbo de 4 litres, 650 ch et un échappement dont le son rendrait fier Pavarotti.'
+        'line3'         => 'Toujours pas convaincus que c’est une pure Lamborghini ?  Appuyez sur l’accélérateur. Vous lâcherez bride à un moteur biturbo de 4 litres, 650 ch et un échappement dont le son rendrait fier Pavarotti.'
     ],
 
     'footer' => [
-        'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés.nº TVA IT 00591801204',
+        'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés. Nº TVA IT 00591801204',
         'policy'        => 'Politique de confidentialité'
     ],
 

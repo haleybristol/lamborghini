@@ -13,8 +13,8 @@ return [
     ],
 
     'policy' => [
-        'view'      => 'Bitte lesen Sie unseren Datenschutzgrundsatz.',
-        'agree'     => 'Ich stimme der Verarbeitung meiner personenbezogenen Daten zu Marketingzwecken zu.'
+        'view'      => 'Bitte lesen Sie unseren Datenschutzgrundsatz',
+        'agree'     => 'Ich stimme der Verarbeitung meiner personenbezogenen Daten zu Marketingzwecken zu'
     ],
     
     'thanksSection' => [

@@ -9,7 +9,7 @@ return [
     |
     */
     'block1' => [
-        'header'        => '<b>FUNKTIONALITÄT EINES SUV.</b> <span>TEMPERAMENT EINES SUPERSPORTWAGENS.</span>',
+        'header'        => '<b>FUNKTIONALITÄT EINES SUV.</b> <span>SEELE EINES SUPERSPORTWAGENS.</span>',
         'line1'         => 'Der Urus: Ein echter Lamborghini mit individuellem Charakter.',
         'line2'         => 'Seine unverkennbare DNA tritt in den extremen Proportionen klar hervor – in der markanten Silhouette mit dynamischer Coupé-Linienführung. Auch seine Spitzenperformance und Fahrdynamik lassen keinen Zweifel. Lernen Sie das weltweit erste Super-SUV kennen.',
         'line3'         => 'Beginnen Sie Ihre Entdeckungsreise. Tragen Sie unten Ihre Informationen ein, und unser Concierge wird mit Ihnen einen Termin vereinbaren.'
