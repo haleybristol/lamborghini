@@ -10844,6 +10844,10 @@ form .btn-form:focus {
   outline: none;
 }
 
+form .btn-form.btn-arabic {
+  width: 200px;
+}
+
 form .check-box,
 form .autocomplete {
   position: relative;
