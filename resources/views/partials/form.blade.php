@@ -58,7 +58,7 @@
 	<div class="thanks {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
 		<h2>{!! trans('form.thanksSection.thanks') !!}</h2>
 		<p>	{!! trans('form.thanksSection.thanksCopy') !!} </p>
-		<a class="btn btn-primary {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}" href="http://www.{!! session('website') !!}">	{!! trans('form.thanksSection.dealerButton') !!} </a>
+		<a class="btn btn-primary {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="http://www.{!! session('website') !!}">	{!! trans('form.thanksSection.dealerButton') !!} </a>
 	</div>
 	
 </div>

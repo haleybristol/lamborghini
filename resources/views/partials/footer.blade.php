@@ -1,6 +1,7 @@
+
 <footer>
   <div class="container row">
-    <div class="col-12 col-sm-8">
+    <div class="col-12 col-sm-8 {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
       <p>{!! trans('app.footer.copyright') !!}</p>
     </div>
     <div class="col-12 col-sm-4 foot-right">

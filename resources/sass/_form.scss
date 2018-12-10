@@ -154,6 +154,11 @@ form {
   }
 }
 
+.btn-primary.btn-arabic {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */

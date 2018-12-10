@@ -11029,6 +11029,12 @@ form input::-moz-fieldtext {
   text-transform: capitalize;
 }
 
+.btn-primary.btn-arabic,
+.js-cookie-consent .btn-arabic.js-cookie-consent-agree.cookie-consent__agree {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -11386,7 +11392,7 @@ button.close:focus,
   display: none;
 }
 
-.ie-container {
+.img-container {
   height: 500px;
   width: 100%;
 }
