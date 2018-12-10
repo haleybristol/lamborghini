@@ -9,7 +9,7 @@ form {
     font-size: 16px;
     cursor: pointer;
     @include media-breakpoint-up(sm) {
-      width: 226px;
+      width: auto;
     }
     &:hover {
       background:#cca300;

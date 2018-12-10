@@ -10832,7 +10832,7 @@ form .btn-form {
 
 @media (min-width: 576px) {
   form .btn-form {
-    width: 226px;
+    width: auto;
   }
 }
 
