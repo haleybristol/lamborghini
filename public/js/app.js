@@ -14105,23 +14105,26 @@ $(document).ready(function () {
 
 /* ie fix for object-fit for hero img */
 
-// var userAgent, ieReg, ie;
-// userAgent = window.navigator.userAgent;
-// ieReg = /msie|Trident.*rv[ :]*11\./gi;
-// ie = ieReg.test(userAgent);
+function msieversion() {
 
-if (ie) {
-  $(".mobile").remove();
-  $(".desktop").remove();
-  $(".ie").removeClass('ie');
-  $(".ie-container").each(function () {
-    var $container = $(this),
-        imgUrl = $container.find("img").prop("src");
-    console.log(imgUrl);
-    if (imgUrl) {
-      $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("custom-object-fit");
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf("MSIE ");
+
+  if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer, return version number
+    {
+      console.log('this is ie');
+      $(".mobile").remove();
+      $(".desktop").remove();
+      $(".ie").removeClass('ie');
+      $(".img-container").each(function () {
+        var $container = $(this),
+            imgUrl = $container.find("img").prop("src");
+        console.log(imgUrl);
+        if (imgUrl) {
+          $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("custom-object-fit");
+        }
+      });
     }
-  });
 }
 
 $(".required").keyup(function () {

@@ -46,9 +46,9 @@
 			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
-			<button type="submit">
-				{!! trans('form.placeholder.send') !!}
-			</button>
+			<input type="submit" value="{!! trans('form.placeholder.send') !!}" class="btn btn-form">
+				
+			</input>
 		</div>
 	</div>
 </form>

@@ -40,9 +40,9 @@
         <a style="background: #e0b401; color: white; text-decoration: none; text-transform: uppercase; padding: 10px 20px;" href="mailto:{{ $email }}">Respond to lead</a>
     </div>
 </div>
-<footer style="background-color: #333333;width: 100%;color: white; padding: 10px; height: 100px;">
-  <div style="margin: 0 auto; max-width: 520px; font-size: 14px">
+<div style="background-color: #333333;width: 100%;color: white; padding: 10px; height: 100px;">
+  <div style="margin: 0 auto; width: 520px; font-size: 14px">
       <p>Copyright ©2018 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204</p>
       <a style="color: white; text-decoration: underline;" href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">Privacy Policy</a>
   </div>
-</footer>
+</div>

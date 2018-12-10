@@ -10819,7 +10819,7 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
-form button {
+form .btn-form {
   background: #e0b401;
   color: white;
   border: none;
@@ -10827,12 +10827,21 @@ form button {
   height: 36px;
   font-weight: 300;
   font-size: 16px;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
-  form button {
+  form .btn-form {
     width: 226px;
   }
+}
+
+form .btn-form:hover {
+  background: #cca300;
+}
+
+form .btn-form:focus {
+  outline: none;
 }
 
 form .check-box,
