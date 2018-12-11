@@ -5,7 +5,7 @@
 		</div>
 		
 		<div class="right-nav">
-			<div class="request">
+			<div class="request {{Config::get('app.locale') == 'fr' ? 'small' : ''}}">
 			<a href="{!! trans('nav.link') !!}" target="_blank" class="btn btn-brand">{!! trans('nav.info') !!}</a>
 			</div>
 			<div class="lang-container">

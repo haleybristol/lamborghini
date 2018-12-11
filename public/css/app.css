@@ -10779,6 +10779,10 @@ a.text-dark:focus {
   }
 }
 
+.small a {
+  font-size: 13px;
+}
+
 /* bootstrap modal overrides */
 
 .modal {
