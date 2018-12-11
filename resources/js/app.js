@@ -230,7 +230,6 @@ function msieversion() {
 
 }
 
-
 $( ".required" ).keyup(function() {
   $(this).removeClass('required');
 });
@@ -238,3 +237,5 @@ $( ".required" ).keyup(function() {
 $( ".required" ).click(function() {
   $(this).removeClass('required');
 });
+
+console.log('=^.^=');
