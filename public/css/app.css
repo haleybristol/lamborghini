@@ -11480,24 +11480,30 @@ button.close:focus,
 
 .hero-fit .desktop,
 .hero-fit .mobile {
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.hero-fit img.desktop {
+.hero-fit .desktop {
   display: none;
+  background-image: url("/img/yellow-urus-zoom.jpg");
 }
 
 @media (min-width: 576px) {
-  .hero-fit img.desktop {
+  .hero-fit .desktop {
     display: block;
   }
 }
 
+.hero-fit .mobile {
+  background-image: url("/img/yellow-urus.jpg");
+}
+
 @media (min-width: 576px) {
-  .hero-fit img.mobile {
+  .hero-fit .mobile {
     display: none;
   }
 }

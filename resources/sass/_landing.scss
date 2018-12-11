@@ -126,17 +126,21 @@ button.close, .btn-lang {
     margin-top: 100px;
   }
   .desktop, .mobile {
-    object-fit: cover;
     height: 100%;
-    width: 100%
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  img.desktop {
+  .desktop {
     display: none;
+    background-image: url("/img/yellow-urus-zoom.jpg");
     @include media-breakpoint-up(sm) {
       display: block;
     }
   }
-  img.mobile {
+  .mobile {
+    background-image: url("/img/yellow-urus.jpg");
     @include media-breakpoint-up(sm) {
       display: none;
     }

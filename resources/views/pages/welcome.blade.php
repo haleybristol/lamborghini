@@ -2,11 +2,8 @@
 
 @section('content')
 <div class="hero-fit">
-    <img class="img-fluid mobile" src="{{ asset('img/yellow-urus.jpg') }}">
-    <img class="img-fluid desktop" src="{{ asset('img/yellow-urus-zoom.jpg') }}">
-    <div class="img-container ie">
-        <img src="{{ asset('img/yellow-urus-zoom.jpg') }}">
-    </div>
+    <div class="img-fluid mobile"></div>
+    <div class="img-fluid desktop"></div>
         <div class="hero-copy">
             <div class="container">
                 <h1><strong>URUS</strong></h1>
