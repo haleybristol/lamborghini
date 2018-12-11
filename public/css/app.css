@@ -10821,13 +10821,12 @@ a.text-dark:focus {
 
 form .btn-form {
   background: #e0b401;
-  color: white;
   border: none;
   width: 100%;
   height: 36px;
   font-weight: 300;
   font-size: 16px;
-  cursor: pointer;
+  color: white;
 }
 
 @media (min-width: 576px) {
@@ -10838,6 +10837,7 @@ form .btn-form {
 
 form .btn-form:hover {
   background: #cca300;
+  cursor: pointer;
 }
 
 form .btn-form:focus {
@@ -11679,6 +11679,7 @@ button.close:focus,
 @media (min-width: 992px) {
   #block0_skew {
     display: block;
+    z-index: -5;
   }
 }
 

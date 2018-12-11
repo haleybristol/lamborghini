@@ -1,4 +1,4 @@
-<form method="POST" action="{{ route('sendLead') }}" class="{{ session()->has('thanks') ? 'success' : '' }}">
+<form id="form" method="POST" action="{{ route('sendLead') }}" class="{{ session()->has('thanks') ? 'success' : '' }}">
 	{!! csrf_field() !!}
 	
 	<div class="dot-container {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
@@ -46,9 +46,7 @@
 			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
-			<input type="submit" value="{!! trans('form.placeholder.send') !!}" class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}">
-				
-			</input>
+			<a class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="#" onclick="document.getElementById('form').submit()">{!! trans('form.placeholder.send') !!}</a>
 		</div>
 	</div>
 </form>

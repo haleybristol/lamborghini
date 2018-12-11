@@ -282,6 +282,7 @@ button.close, .btn-lang {
   display: none;
   @include media-breakpoint-up(lg) {
     display: block;
+    z-index: -5;
   }
 }
 

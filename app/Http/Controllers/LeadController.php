@@ -57,6 +57,6 @@ class LeadController extends Controller
             'website'               => $dealerObj->website,
         ];
 
-        return redirect('/')->with($data);  // Redeirect thank you view rathar then home view.
+        return redirect('/')->with($data);  // Redeirect thank you view rather than home view.
 	}
 }
