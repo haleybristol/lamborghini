@@ -36,6 +36,7 @@ class LeadController extends Controller
      */
 	public function processLead(LeadCapture $request)
     {
+        
 
         $validatedFormData = $request->validated();
 
@@ -56,7 +57,7 @@ class LeadController extends Controller
             'selectedDealership'    => $selectedDealership,
             'website'               => $dealerObj->website,
         ];
-
+        
         return redirect('/')->with($data);  // Redeirect thank you view rather than home view.
 	}
 }

@@ -10919,7 +10919,7 @@ form .check-box input:checked + label:after {
 
 @media (min-width: 576px) {
   form .check-box input:checked + label:after {
-    top: 7px;
+    top: 5px;
   }
 }
 
