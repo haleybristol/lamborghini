@@ -14111,6 +14111,18 @@ $(".required").click(function () {
   $(this).removeClass('required');
 });
 
+var dealerVal = document.getElementsByName("dealer");
+console.log(dealerVal.getAttribute('data-country'));
+
+/* event listener */
+document.getElementsByName("country")[0].addEventListener('change', checkDealer);
+
+function checkDealer() {
+  if (this.value === dealerVal) {
+    console.log('they same');
+  }
+}
+
 console.log('=^.^=');
 
 /***/ }),

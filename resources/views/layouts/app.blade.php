@@ -15,7 +15,12 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://use.fontawesome.com/6f1feaf27e.js"></script>
 
+        <!-- Global site tag (gtag.js) - Google Ads: 774690848 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-774690848"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-774690848'); </script>
 
+        <!-- Event snippet for Send Me Information conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-774690848/zi8wCJ7OjpEBEKCws_EC', 'event_callback': callback }); return false; } </script>
+ 
+        <!-- Event snippet for Find A Dealer conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-774690848/FKrWCL3XoZEBEKCws_EC', 'event_callback': callback }); return false; } </script>
+        
         @stack('head')
     </head>
     <body >

@@ -1,7 +1,7 @@
 <nav class="nav fixed-top">
   <div class="navbar-inner">
 		<div class="logo-container">
-		<img src="{{ asset('img/lambo-logo.png') }}">
+			<img src="{{ asset('img/lambo-logo.png') }}">
 		</div>
 		
 		<div class="right-nav">

@@ -46,7 +46,7 @@
 			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
 		</div>
 		<div class="send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
-			<a class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="#" onclick="document.getElementById('form').submit()">{!! trans('form.placeholder.send') !!}</a>
+			<a class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="#" onclick="return gtag_report_conversion(document.getElementById('form').submit());">{!! trans('form.placeholder.send') !!}</a>
 		</div>
 	</div>
 </form>
@@ -56,7 +56,7 @@
 	<div class="thanks {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
 		<h2>{!! trans('form.thanksSection.thanks') !!}</h2>
 		<p>	{!! trans('form.thanksSection.thanksCopy') !!} </p>
-		<a class="btn btn-primary {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="http://www.{!! session('website') !!}">	{!! trans('form.thanksSection.dealerButton') !!} </a>
+		<a onclick="return gtag_report_conversion('http://www.{!! session('website') !!}');" class="btn btn-primary {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="http://www.{!! session('website') !!}">{!! trans('form.thanksSection.dealerButton') !!} </a>
 	</div>
 	
 </div>

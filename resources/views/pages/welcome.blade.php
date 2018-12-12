@@ -4,12 +4,12 @@
 <div class="hero-fit">
     <div class="img-fluid mobile"></div>
     <div class="img-fluid desktop"></div>
-        <div class="hero-copy">
-            <div class="container">
-                <h1><strong>URUS</strong></h1>
-                <div class="hash-container"><p class="hashtag">#SINCEWEMADEITPOSSIBLE</p></div>
-            </div>
+    <div class="hero-copy">
+        <div class="container">
+            <h1><strong>URUS</strong></h1>
+            <div class="hash-container"><p class="hashtag">#SINCEWEMADEITPOSSIBLE</p></div>
         </div>
+    </div>
 </div>
 
 <section id="block0" class="stripe container block0 fullwidth">
