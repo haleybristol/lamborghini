@@ -20,10 +20,64 @@
         <!-- Event snippet for Send Me Information conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-774690848/zi8wCJ7OjpEBEKCws_EC', 'event_callback': callback }); return false; } </script>
  
         <!-- Event snippet for Find A Dealer conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-774690848/FKrWCL3XoZEBEKCws_EC', 'event_callback': callback }); return false; } </script>
+
+        <script> gtag('event', 'page_view', { 'send_to': 'AW-774690848', 'user_id': 'replace with value' }); </script>
+
         
         @stack('head')
     </head>
-    <body >
+    <body>
+        <!--
+        Start of Floodlight Tag: Please do not remove
+        Activity name of this tag: Lamborghini Find Dealer
+        URL of the webpage where the tag is expected to be placed: https://discoverlamborghini.com/
+        This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+        Creation Date: 12/12/2018
+        -->
+        <script type="text/javascript">
+        var axel = Math.random() + "";
+        var a = axel * 10000000000000;
+        document.write('<iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=butto0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+        </script>
+        <noscript>
+        <iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=butto0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        </noscript>
+        <!-- End of Floodlight Find a Dealer Tag: Please do not remove -->
+        
+        <!--
+        Start of Floodlight Tag: Please do not remove
+        Activity name of this tag: Lamborghini Form Fill
+        URL of the webpage where the tag is expected to be placed: https://discoverlamborghini.com/
+        This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+        Creation Date: 12/12/2018
+        -->
+        <script type="text/javascript">
+        var axel = Math.random() + "";
+        var a = axel * 10000000000000;
+        document.write('<iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=formf0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+        </script>
+        <noscript>
+        <iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=formf0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        </noscript>
+        <!-- End of Floodlight Form Fill Tag: Please do not remove -->
+
+        <!--
+        Start of Floodlight Tag: Please do not remove
+        Activity name of this tag: Lamborghini Site Retargeting
+        URL of the webpage where the tag is expected to be placed: https://discoverlamborghini.com/
+        This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+        Creation Date: 12/12/2018
+        -->
+        <script type="text/javascript">
+        var axel = Math.random() + "";
+        var a = axel * 10000000000000;
+        document.write('<iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=rmktg0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+        </script>
+        <noscript>
+        <iframe src="https://9075836.fls.doubleclick.net/activityi;src=9075836;type=rmktg0;cat=lambo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        </noscript>
+        <!-- End of Floodlight Tag: Please do not remove -->
+
         <div id="app">
             @include('partials.nav')
 
