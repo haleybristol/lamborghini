@@ -13,8 +13,8 @@ return [
     ],
 
     'policy' => [
-        'view'      => 'Consultez notre politique de confidentialité',
-        'agree'     => 'J’accepte le traitement de mes données personnelles à des fins de marketing'
+        'view'      => 'Consultez notre politique de confidentialité.',
+        'agree'     => 'J’accepte le traitement de mes données personnelles à des fins de marketing.'
     ],
     
     'thanksSection' => [

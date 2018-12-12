@@ -13,8 +13,8 @@ return [
     ],
 
     'policy' => [
-        'view'      => 'View our privacy policy',
-        'agree'     => 'I agree to the processing of my personal data for marketing purposes'
+        'view'      => 'View our privacy policy.',
+        'agree'     => 'I agree to the processing of my personal data for marketing purposes.'
     ],
     
     'thanksSection' => [

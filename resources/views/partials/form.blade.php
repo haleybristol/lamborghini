@@ -43,7 +43,7 @@
 	<div class="check-send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
 		<div class="check-box {{ $errors->has('checkbox') ? 'check-required' : '' }}">
 			<input type="checkbox" id="policy" name="checkbox">
-			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a>. {!! trans('form.policy.agree') !!}.</label>
+			<label for="policy"><a href="{!! trans('app.policy-link') !!}" target="_blank"><u>{!! trans('form.policy.view') !!}</u></a> {!! trans('form.policy.agree') !!}</label>
 		</div>
 		<div class="send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
 			<a class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="#" onclick="return gtag_report_conversion(document.getElementById('form').submit());">{!! trans('form.placeholder.send') !!}</a>

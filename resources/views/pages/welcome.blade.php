@@ -13,9 +13,9 @@
 </div>
 
 <section id="block0" class="stripe container block0 fullwidth">
-      
+
     <svg id="block0_skew" class="skew" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
-        <desc>The rear of a dark Urus as it travels in a metropolitan setting.</desc>            
+        <desc>The rear of a dark Urus as it travels in a metropolitan setting.</desc>
         <svg viewBox="0 0 1 1.19" preserveAspectRatio="xMidYMid slice">
             <polygon fill="white" points="0 1.19, 1 0, 1 1.19, 0 1.19"></polygon>
             <clipPath id="block0_skew-mask">
@@ -25,8 +25,8 @@
         </svg>
     </svg>
     <div class="copy-left">
-    
-    <div class="boxcontent {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}"> 
+
+    <div class="boxcontent {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
             <h1>{!! trans('app.block1.header') !!}</h1>
             <p> {!! trans('app.block1.line1') !!} </p>
             <p> {!! trans('app.block1.line2') !!} </p>
@@ -40,7 +40,7 @@
 </section>
 
 
-    <div class="skew-images">  
+    <div class="skew-images">
         <svg id="block2-skew-3" class="skew-left" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
             <desc>A blue Urus seen from the front as it travels down a dusty dirt road</desc>
             <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
@@ -63,7 +63,7 @@
             </svg>
         </svg>
         <svg id="block2-skew-1" class="skew-bottom" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
-                <desc>A yellow Urus stopped on a dirt road, as seen from the rear.</desc>            
+                <desc>A yellow Urus stopped on a dirt road, as seen from the rear.</desc>
                 <svg viewBox="0 0 1.5 1" preserveAspectRatio="xMidYMid slice">
                 <clipPath id="block2-skew-1-mask">
                     <polygon fill="red" points="0 0.028571428571429, 1.4760257248235 0.028571428571429, 0.66090036882272 1 , 0 1, 0 0.028571428571429"></polygon>
