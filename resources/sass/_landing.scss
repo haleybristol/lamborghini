@@ -320,9 +320,13 @@ section {
 
 .right-align {
   text-align: right;
+  direction: rtl;
   .select-selected::after {
     display:none;
   }
+}
+.boxcontent.right-align p, .boxcontent.right-align h1 {
+  margin-right: auto;
 }
 .display-none {
   display: none;

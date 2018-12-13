@@ -64,6 +64,10 @@ form {
     cursor: pointer;
     margin-right: 10px;
   }
+  .right-align .check-box label:before {
+    margin-left: 10px;
+    margin-right: 0;
+  }
 
   .check-box input:checked + label:after {
     content: '';

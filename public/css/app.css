@@ -10903,6 +10903,11 @@ form .check-box label:before {
   margin-right: 10px;
 }
 
+form .right-align .check-box label:before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
 form .check-box input:checked + label:after {
   content: '';
   display: block;
@@ -11726,10 +11731,16 @@ section {
 
 .right-align {
   text-align: right;
+  direction: rtl;
 }
 
 .right-align .select-selected::after {
   display: none;
+}
+
+.boxcontent.right-align p,
+.boxcontent.right-align h1 {
+  margin-right: auto;
 }
 
 .display-none {
