@@ -18,7 +18,7 @@ class CreateDealershipsTable extends Migration
             $table->string('store_name', 255);
             $table->string('contact_name', 255)->default('Marketing Manager');
             $table->string('email', 191);
-            $table->string('country', 255)->nullable();
+            $table->string('placeoflife', 255)->nullable();
             $table->string('address', 255)->nullable();
             $table->string('website', 255)->default('https://www.lamborghini.com/en-en/');
             $table->timestamps();

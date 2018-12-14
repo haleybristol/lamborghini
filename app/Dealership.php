@@ -31,7 +31,7 @@ class Dealership extends Model
         'store_name',
         'contact_name',
         'email',
-        'country',
+        'region',
         'address',
         'website',
         
@@ -56,7 +56,7 @@ class Dealership extends Model
         'store_name'    => 'string',
         'contact_name'  => 'string',
         'email'         => 'string',
-        'country'       => 'string',
+        'placeoflife'       => 'string',
         'address'       => 'string',
         'website'       => 'string',
         

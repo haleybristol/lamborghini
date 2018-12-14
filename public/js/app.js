@@ -13972,7 +13972,7 @@ for (i = 0; i < x.length; i++) {
 }
 
 /* event listener to country select */
-document.getElementsByName("country")[0].addEventListener('change', checkDealer);
+document.getElementsByName("placeoflife")[0].addEventListener('change', checkDealer);
 
 function checkDealer() {
   // console.log(typeof this.value);

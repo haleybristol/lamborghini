@@ -21,7 +21,7 @@
 		<div class="row">
 			<div class="col-12 col-sm-6 autocomplete">
 				<span class="circle country {{Config::get('app.locale') == 'ar' ? 'display-none' : ''}}"></span>
-				<input value="{{ old('country') }}" class="{{Config::get('app.locale') == 'ar' ? 'right-align' : ''}} {{ $errors->has('country') ? 'required' : '' }}" id="myInput" type="text" name="country" placeholder="{!! trans('form.placeholder.country') !!}"  onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.country') !!}'" >
+				<input value="{{ old('placeoflife') }}" class="{{Config::get('app.locale') == 'ar' ? 'right-align' : ''}} {{ $errors->has('placeoflife') ? 'required' : '' }}" id="myInput" type="text" name="placeoflife" placeholder="{!! trans('form.placeholder.country') !!}"  onfocus="this.placeholder = ''" onblur="this.placeholder = '{!! trans('form.placeholder.country') !!}'" >
 			</div>
 			<div class="col-12 col-sm-6">
 				<span class="circle {{Config::get('app.locale') == 'ar' ? 'display-none' : ''}}"></span>

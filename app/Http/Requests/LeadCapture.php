@@ -31,7 +31,7 @@ class LeadCapture extends FormRequest
             'lastname'              => 'required|max:255|string',
             'email'                 => 'required|email',
             'phone'                 => 'required|max:255|string|nullable',
-            'country'               => 'required|max:255|string',
+            'placeoflife'               => 'required|max:255|string',
             'dealer'                => 'required|max:255|string',
             'checkbox'              => 'accepted'
         ];
