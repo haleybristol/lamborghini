@@ -24,7 +24,7 @@ window.Vue = require('vue');
 
 // if (screen.width >= 576) {}
 
-// var country = [];
+var country = [];
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -45,7 +45,9 @@ for (i = 0; i < x.length; i++) {
     c.innerHTML = selElmnt.options[j].innerHTML;
     /* add data-country attribute */
     c.dataset.country = selElmnt[j].dataset.country;
-    // country.push(c.dataset.country);
+    c.setAttribute('class', selElmnt[j].dataset.country);
+    country.push(c.dataset.country);
+
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,
         and the selected item:*/
@@ -78,6 +80,19 @@ for (i = 0; i < x.length; i++) {
       this.classList.toggle("select-arrow-active");
   });
 }
+
+  /* event listener to country select */
+  document.getElementsByName("country")[0].addEventListener('change', checkDealer);
+
+  function checkDealer(){
+    // console.log(typeof this.value);
+    for (var i = 0; i < country.length; i++){
+      if(this.value == country[i]) {
+
+        $('.' + this.value).first().trigger('click');
+        }
+    }
+  }
 
 function closeAllSelect(elmnt) {
   /*a function that will close all select boxes in the document,
@@ -219,20 +234,6 @@ $( ".required" ).keyup(function() {
 $( ".required" ).click(function() {
   $(this).removeClass('required');
 });
-
-// console.log(country);
-$('.select-items div').length;
- 
-var selectData = document.getElementsByClassName('select-items').dataset.country;
-  console.log(selectData);
-    /* event listener */
-    document.getElementsByName("country")[0].addEventListener('change', checkDealer);
-    
-    function checkDealer(){
-       if (this.value === dealerVal) {
-        console.log('they same');
-       }
-    }
 
 console.log('=^.^=');
 
