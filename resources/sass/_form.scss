@@ -84,7 +84,9 @@ form {
       top: 5px;
     }
   }
-
+  .right-align input:checked + label:after {
+    left: 15px;
+  }
  
   .dot-container {
     padding: 12px 20px 0;

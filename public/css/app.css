@@ -10928,6 +10928,10 @@ form .check-box input:checked + label:after {
   }
 }
 
+form .right-align input:checked + label:after {
+  left: 15px;
+}
+
 form .dot-container {
   padding: 12px 20px 0;
   max-width: 750px;
