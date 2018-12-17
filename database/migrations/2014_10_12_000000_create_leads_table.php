@@ -19,7 +19,7 @@ class CreateLeadsTable extends Migration
             $table->string('lastname', 255);
             $table->string('phone', 100);
             $table->string('email', 191);
-            $table->string('country', 255);
+            $table->string('placeoflife', 255);
             $table->string('dealer', 255);
             $table->timestamps();
         });

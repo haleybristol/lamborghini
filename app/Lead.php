@@ -35,7 +35,7 @@ class Lead extends Model
         'lastname',
         'email',
         'phone',
-        'country',
+        'placeoflife',
         'dealer',
     ];
 
@@ -59,7 +59,7 @@ class Lead extends Model
         'lastname'      => 'string',
         'email'         => 'string',
         'phone'         => 'string',
-        'country'       => 'string',
+        'placeoflife'       => 'string',
         'dealer'        => 'string',
     ];
 
