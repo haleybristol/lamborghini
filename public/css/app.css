@@ -11751,3 +11751,7 @@ section {
   display: none;
 }
 
+.dir-right {
+  direction: rtl;
+}
+
