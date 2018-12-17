@@ -97,7 +97,7 @@
 
 <br>
 
-<div class="eu-cookies text-center">
+<div class="eu-cookies text-center {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
     @include('cookieConsent::index')
 </div>
 
