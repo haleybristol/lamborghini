@@ -230,16 +230,16 @@ button.close, .btn-lang {
 
   p {
     @include media-breakpoint-up(lg) {
-      max-width: 82%
+      max-width: 75%
     }
     @include media-breakpoint-up(xl) {
-      max-width: 75%
+      max-width: 70%
     }
   }
 
   p:first-of-type {
     @include media-breakpoint-up(lg) {
-      max-width: 94%
+      max-width: 83%
     }
   }
 
@@ -259,9 +259,9 @@ button.close, .btn-lang {
   }
 }
 .skew {
-  left: 50%;
-  height: 72rem;
-  width: 66rem;
+  left: 26%;
+  height: 92rem;
+  width: 76rem;
   top: -31rem;
 }
 
@@ -282,8 +282,11 @@ button.close, .btn-lang {
 .skew-images {
   position: relative;
   height: 36rem;
-  z-index: 0;
+  z-index: 4;
   display: none;
+  margin-top: -210px;
+  margin-left: 450px;
+
   @include media-breakpoint-up(sm) {
     display: block;
   }

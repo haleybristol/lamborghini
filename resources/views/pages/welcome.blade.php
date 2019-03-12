@@ -33,7 +33,7 @@
                 <polygon fill="green" points="0.02 1.19, 1 0.0238, 1 1.19, 0 1.19"></polygon>
             </clipPath>
 
-            <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMinYMax slice" cx="100%" x="0" y="0" height="100%" width="100%" xlink:href="/img/emotion-0342-rgb.jpg" lazy-src="/img/emotion-0342-rgb.jpg" class="ng-scope" style="opacity: 1;"></image>
+            <image clip-path="url(#block0_skew-mask)" preserveAspectRatio="xMinYMid slice" cx="100%" x="0" y="0" height="100%" width="100%" xlink:href="/img/emotion-0342-rgb.jpg" lazy-src="/img/emotion-0342-rgb.jpg" class="ng-scope" style="opacity: 1;"></image>
         </svg>
     </svg>
 

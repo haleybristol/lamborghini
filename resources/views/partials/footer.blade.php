@@ -29,34 +29,34 @@
 
             <div class="social-icons">
                 <a href="//www.facebook.com/Lamborghini/">
-                    <span class="icon icon-facebook"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Facbook Icon' class="icon icon-facebook"></span>
                 </a>
                 <a href="//twitter.com/lamborghini">
-                    <span class="icon icon-twitter-bird"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Twitter Icon' class="icon icon-twitter-bird"></span>
                 </a>
                 <a href="//www.youtube.com/c/lamborghini">
-                    <span class="icon icon-youtube-play"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Youtube Icon' class="icon icon-youtube-play"></span>
                 </a>
                 <a href="//www.instagram.com/lamborghini/">
-                    <span class="icon icon-instagram"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Instagram Icon' class="icon icon-instagram"></span>
                 </a>
                 <a href="//www.linkedin.com/company/automobili-lamborghini-s-p-a-/">
-                    <span class="icon icon-linkedin"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Linkedin Icon' class="icon icon-linkedin"></span>
                 </a>
                 <a href="//www.pinterest.com/lamborghini/">
-                    <span class="icon icon-pinterest"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Pinterest Icon' class="icon icon-pinterest"></span>
                 </a>
                 <a href="//plus.google.com/+Lamborghini">
-                    <span class="icon icon-gplus"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Google Plus Icon' class="icon icon-gplus"></span>
                 </a>
                 <a href="//www.weibo.com/lamborghinichina">
-                    <span class="icon icon-weibo"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Weibo Icon' class="icon icon-weibo"></span>
                 </a>
                 <a href="//i.youku.com/i/UMjg0MDg1ODMy">
-                    <span class="icon icon-play-circled"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Youku Icon' class="icon icon-play-circled"></span>
                 </a>
                 <a href="//www.lamborghini.com/en-en/wechat">
-                    <span class="icon icon-wechat"></span>
+                    <span aria-hidden='true' role='presentation' aria-label='Wechat Icon' class="icon icon-wechat"></span>
                 </a>
             </div>
         </div>
