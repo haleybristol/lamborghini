@@ -99,7 +99,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-sm-6 privacy-policy">
+            <div class="col-12 col-md-6 privacy-policy">
                 <span class="circle"></span>
                 <h4 class='privacy-policy-header'>
                     Privacy
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 privacy-confirmation">
+            <div class="col-12 col-md-6 privacy-confirmation">
                 <div class="check-box {{ $errors->has('checkbox') ? 'check-required' : '' }}">
                     <input type="checkbox" id="policy" name="checkbox">
                     <label for="policy">
