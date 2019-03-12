@@ -113,19 +113,19 @@
             <div class="check-box {{ $errors->has('checkbox') ? 'check-required' : '' }}">
                 <input type="checkbox" id="policy" name="checkbox">
                 <label for="policy">
-                    I have read the information
+                    {!! trans('form.checkbox-agree') !!}
                 </label>
             </div>
 
             <div class="agree-disagree">
                 <div class="radio-holder">
                     <input type="radio" name="information_processing" id="agree" value='agree'>
-                    <label for="agree">I agree</label>
+                    <label for="agree">{!! trans('form.agree') !!}</label>
                 </div>
 
                 <div class="radio-holder">
                     <input type="radio" name="information_processing" id="disagree" value='disagree' checked>
-                    <label for="disagree">I do not agree</label>
+                    <label for="disagree">{!! trans('form.disagree') !!}</label>
                 </div>
 
                 <div class="agreement-text">

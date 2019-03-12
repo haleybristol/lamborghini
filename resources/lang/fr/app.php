@@ -17,7 +17,7 @@ return [
         Démarrez dès à présent votre voyage en nous laissant vos coordonnées afin de convenir d’un rendez-vous avec notre concierge.',
     ],
     'footer' => [
-        'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés. Nº TVA IT 00591801204',
+        'copyright'     => 'Copyright ©2019 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés. Nº TVA IT 00591801204',
         'policy'        => 'Politique de confidentialité'
     ],
     'policy-link'       => 'https://www.lamborghini.com/fr-en/privacy-policy',

@@ -18,7 +18,7 @@ return [
         ',
     ],
     'footer' => [
-        'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A. – eine Alleingesellschafter-Unternehmenssparte der Audi Group. Alle Rechte vorbehalten. USt-IdNr.: IT 00591801204',
+        'copyright'     => 'Copyright ©2019 Automobili Lamborghini S.p.A. – eine Alleingesellschafter-Unternehmenssparte der Audi Group. Alle Rechte vorbehalten. USt-IdNr.: IT 00591801204',
         'policy'        => 'Datenschutzgrundsatz'
     ],
     'policy-link'       => 'https://www.lamborghini.com/de-en/privacy-policy',

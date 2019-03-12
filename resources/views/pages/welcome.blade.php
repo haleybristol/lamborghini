@@ -67,7 +67,7 @@
     </svg>
 
     <svg id="block2-skew-2" class="skew-right" xmlns="http://www.w3.org/2000/svg" aria-labelledby="desc">
-            <desc>A coal gray Urus, seen from the side, as it travels along a city street </desc>            <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
+            <desc>A beautiful orange Huracán sitting poolside</desc>            <svg viewBox="0 0 2.5 1" preserveAspectRatio="xMidYMid slice">
             <clipPath id="block2-skew-2-mask">
                 <polygon fill="yellow" points="0.83909963117728 0, 2.5 0, 1.6609003688227 1 , 0 1, 0.83909963117728 0"></polygon>
             </clipPath>

@@ -24,6 +24,10 @@ return [
         'dealerButton'      => 'Go to Dealership',
     ],
 
+    'checkbox-agree'        => 'I have read the information',
+    'agree'                 => 'I agree',
+    'disagree'              => 'I do not agree',
+
     'agreement-notice'      => 'After reading the privacy notice, to the processing of my personal data for marketing purposes by means of both automated tools (email, sms, mms, fax, autoresponders) and non-automated tools (mail, phone) depending on the information provided.',
 
     'privacy-policy'        => '<p>Please be informed that Automobili Lamborghini S.p.A. in its quality of data controller ("Lamborghini") will process your personal data in for the purposes specified below in accordance and in compliance with the EU Regulation 679</p>

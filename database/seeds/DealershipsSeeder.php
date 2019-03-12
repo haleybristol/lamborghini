@@ -43,9 +43,9 @@ class DealershipsSeeder extends Seeder
             ],
             [
                 'store_name'    => 'ENGLAND TEST',
-                'contact_name'  => 'Lisa Gaertner',
-                'email'         => 'lisa.gaertner@ansira.com',
-                'placeoflife'       => 'England',
+                'contact_name'  => 'Jeff Hall',
+                'email'         => 'jeff.hall@ansira.com',
+                'placeoflife'   => 'England',
                 'address'       => 'Ansira office in dallas',
                 'website'       => 'ansira.com',
 

@@ -57,6 +57,6 @@
 
 <table cellpadding="40" cellspacing="0" border="0" width="100%">
     <tr style="background-color: #333333;width: 100%;color: white;">
-        <td>Copyright ©2018 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204 <br><a style="color: white; text-decoration: underline;" href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">Privacy Policy</a></td>
+        <td>Copyright ©2019 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204 <br><a style="color: white; text-decoration: underline;" href="https://www.lamborghini.com/en-en/privacy-legal" target="_blank">Privacy Policy</a></td>
     </tr>
 </table>

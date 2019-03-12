@@ -16,7 +16,7 @@ return [
         Start your journey now. Leave your details below to have our concierge set up an appointment.',
     ],
     'footer' => [
-        'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204',
+        'copyright'     => 'Copyright ©2019 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204',
         'policy'        => 'Privacy&Legal'
     ],
     'policy-link'       => 'https://www.lamborghini.com/en-en/privacy-policy',
