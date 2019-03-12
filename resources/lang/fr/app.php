@@ -9,24 +9,17 @@ return [
     |
     */
     'block1' => [
-        'header'        => '<b>LA FONCTIONNALITÉ D’UN SUV.</b> <span>L’ÂME D’UN SUPER SPORTIF.</span>',
-        'line1'         => 'Le Urus : une Lamborghini à part entière.',
-        'line2'         => 'Vous pouvez voir cet ADN caractéristique dans des dimensions extrêmes : une silhouette distinctive avec une ligne de coupé puissante et dynamique. Et, bien sûr, une performance et une dynamique de conduite exceptionnelles. Tout cela culmine dans le premier véhicule super sportif utilitaire.',
-        'line3'         => 'Commencez votre voyage dès maintenant. Précisez vos coordonnées ci-dessous pour que notre concierge organise un rendez-vous.'
+        'header'        => '<strong>Nouvelle Lamborghini Huracán EVO.</strong> <span>L’évolution naturelle du V10 le plus réussi de Lamborghini.</span>',
+        'line1'         => 'La dernière évolution du modèle Huracán est équipée du moteur V10 atmosphérique le plus puissant jamais produit par Lamborghini tout en offrant également de nombreuses fonctionnalités high-tech.
+        La Lamborghini Dinamica Veicolo Integrata (LDVI) est en mesure d’anticiper les intentions du conducteur afin d’optimiser la configuration du véhicule. L’interface homme-machine connectée permet quant à elle de gérer facilement les fonctions et le système d’info-divertissement grâce à un écran tactile innovant. Vivez une expérience inouïe à bord d’une Lamborghini.',
+        'line2'         => 'À cela s’ajoute un nouveau design épuré, fidèle à l’ADN emblématique de Lamborghini, minutieusement conçu pour améliorer les performances aérodynamiques.
+        Le résultat offre un véhicule extrêmement moderne et technologique, faisant de chaque jour un moment unique pour une expérience de conduite amplifiée.
+        Démarrez dès à présent votre voyage en nous laissant vos coordonnées afin de convenir d’un rendez-vous avec notre concierge.',
     ],
-    'block2' => [
-        'header'        => 'ÉMOTION',
-        'line1'         => 'L’Urus a été conçu pour susciter les émotions. Aucune d’entre elles n’est subtile.',
-        'line2'         => 'Jetez un coup d’œil à l’Urus et vous verrez le pedigree Lamborghini. Il y a un peu du Murcielago dans sa silhouette; du Countach dans les proportions de sa musculature. Mais avec une pointe de discernement, on découvre sa personnalité propre : quatre sièges, quatre roues directrices et une traction intégrale. Forme et fonctionnalité s’y côtoient à égalité.',
-        'line3'         => 'Toujours pas convaincus que c’est une pure Lamborghini ?  Appuyez sur l’accélérateur. Vous lâcherez bride à un moteur biturbo de 4 litres, 650 ch et un échappement dont le son rendrait fier Pavarotti.'
-    ],
-
     'footer' => [
         'copyright'     => 'Copyright ©2018 Automobili Lamborghini S.p.A., société à actionnaire unique du groupe Audi. Tous droits réservés. Nº TVA IT 00591801204',
         'policy'        => 'Politique de confidentialité'
     ],
-
-    'policy-link'       => 'https://www.lamborghini.com/fr-en/privacy-policy'
-
-
+    'policy-link'       => 'https://www.lamborghini.com/fr-en/privacy-policy',
+    'lambo-home'        => 'https://www.lamborghini.com/fr-en/'
 ];

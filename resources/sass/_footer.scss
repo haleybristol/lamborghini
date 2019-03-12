@@ -1,31 +1,124 @@
 footer {
-  background-color: #333333;
+  background-color: $black;
   width: 100%;
+  margin-top: 20px;
+
   p {
-    margin: 0;
+    margin: 10px 0 30px;
     font-size: 14px;
+    color: $white;
+    text-align: center;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
   }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    color: white;
-    padding-right: 0;
-    padding-left: 0;
-    .foot-right {
-      margin-top: 20px;
-      @include media-breakpoint-up(sm) {
-        text-align: right;
-        margin-top: 0;
+  .container, .row, .container.row {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    // .foot-right {
+    //   margin-top: 20px;
+    //   @include media-breakpoint-up(sm) {
+    //     text-align: right;
+    //     margin-top: 0;
+    //   }
+    // }
+
+    .privacy-and-social {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 10px 0;
+      }
+
+      .privacy-and-legal {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+
+        @include media-breakpoint-up(lg) {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin: 0;
+        }
+
+        a span {
+          font-size: 18px;
+        }
+
+        a:first-of-type {
+          margin-right: 10px;
+        }
+        a:last-of-type {
+          margin-left: 10px;
+        }
+      }
+
+      .social-icons {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a:first-of-type span {
+          padding-left: 0;
+        }
+
+        a:last-of-type span {
+          padding-right: 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: 0;
+        }
+
+        .icon {
+          color: #F2F2F2;
+          padding-left: 6px;
+          padding-right: 6px;
+          font-size: 18px;
+          transition: opacity 300ms ease-in-out;
+
+          @include media-breakpoint-up(sm) {
+            font-size: 20px;
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+
+          @include media-breakpoint-up(md) {
+            font-size: 23px;
+            padding-left: 17px;
+            padding-right: 17px;
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
       }
     }
-
   }
 
   a {
-    margin-top: 10px;
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+
+    span {
+      text-transform: uppercase;
+    }
   }
 }

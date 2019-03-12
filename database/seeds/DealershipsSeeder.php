@@ -11,17 +11,26 @@ class DealershipsSeeder extends Seeder
      * @return void
      */
     public function run()
-    {   
+    {
 
         $dealerships = [
+            [
+                'store_name'    => 'PORTLAND RYAN TEST',
+                'contact_name'  => 'Ryan B.',
+                'email'         => 'ryan.back@sq1.com',
+                'placeoflife'   => 'USA',
+                'address'       => '209 SW Oak St',
+                'website'       => 'sq1.com',
+
+            ],
             [
                 'store_name'    => 'PORTLAND HALEY TEST',
                 'contact_name'  => 'Haley B.',
                 'email'         => 'haley.bristol@sq1.com',
-                'placeoflife'       => 'USA',
+                'placeoflife'   => 'USA',
                 'address'       => '200 SW Oak St',
                 'website'       => 'sq1.com',
-                
+
             ],
             [
                 'store_name'    => 'PORTLAND DONICA TEST',
@@ -30,7 +39,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'USA',
                 'address'       => '200 SW Oak St',
                 'website'       => 'sq1.com',
-                
+
             ],
             [
                 'store_name'    => 'ENGLAND TEST',
@@ -39,7 +48,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'Ansira office in dallas',
                 'website'       => 'ansira.com',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Baku',
@@ -48,7 +57,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Azerbaijan',
                 'address'       => '4 Parliament avenue, Flame Towers, Baku 1006, Azerbaijan',
                 'website'       => 'baku.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Cape Town',
@@ -57,7 +66,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'South Africa',
                 'address'       => '8 Bridgeway, Century City, Cape Town, 7441, South Africa',
                 'website'       => 'capetown.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Khobar',
@@ -66,7 +75,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Saudi Arabia',
                 'address'       => 'Prince Sultan Road, Qurtoba, Al Khobar 34235, Saudi Arabia',
                 'website'       => 'lamborghini.com/en-en/ownership/dealer-locator',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Tunbridge Wells',
@@ -75,7 +84,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'Dowding Way Tunbridge Wells',
                 'website'       => 'grange.co.uk/',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Bordeaux',
@@ -84,7 +93,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => 'addr7, Avenue Pierre Mendes France 33700 MERIGNAC 33700 Bordeauxess',
                 'website'       => 'bordeaux.lamborghini/fr',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Istanbul',
@@ -93,7 +102,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Turkey',
                 'address'       => 'Maslak Mahallesi, Doğuş Center, Maslak Mah, Ahi Evran Cd. No: 4, 34485 Sarıyer, Turkey',
                 'website'       => 'istanbul.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Bucarest',
@@ -102,7 +111,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Romania',
                 'address'       => 'x, Bulevardul Pipera 1 -sect. L, Voluntari 077190, Voluntari 077190, Romania',
                 'website'       => 'bucharest.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Beirut',
@@ -111,7 +120,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Beirut',
                 'address'       => 'Corniche Du Fleuve, Achrafieh 1100 2806 Beirut',
                 'website'       => 'beirut.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Johannesburg',
@@ -120,7 +129,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'South Africa',
                 'address'       => 'William Nicol and Bryanston Drive Bryanston - Johannesburg',
                 'website'       => 'johannesburg.lamborghini/en',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Riyadh',
@@ -129,7 +138,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Saudi Arabia',
                 'address'       => 'Pr. Mohammed Bin Abdul Aziz Street Riyadh',
                 'website'       => 'riyadh.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Tallin',
@@ -138,7 +147,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Estonia',
                 'address'       => 'Navigatori ärimaja, Laeva 2, 10111 Tallinn, Estonia',
                 'website'       => 'tallinn.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Roma',
@@ -147,7 +156,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Italy',
                 'address'       => 'Via Leonida Bissolati 62 Roma',
                 'website'       => 'roma.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Chelmsford',
@@ -156,7 +165,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'Eastern Approach, Chelmsford CM2 6PN, UK',
                 'website'       => 'chelmsford.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Bologna "New"',
@@ -165,7 +174,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Italy',
                 'address'       => 'Via Isonzo, 16, 40033 Casalecchio di Reno BO, Italy',
                 'website'       => 'https://www.bolognaovest.lamborghini/it',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Jeddah',
@@ -174,7 +183,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Saudi Arabia',
                 'address'       => 'Prince Mohammed Bin Abdul Aziz Street (Tahlia Street) Jeddah',
                 'website'       => 'jeddah.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Athens',
@@ -183,7 +192,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Greece',
                 'address'       => 'Char. Trikoupi 197, Kifisia 145 61, Greece',
                 'website'       => 'athens.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Muscat',
@@ -192,7 +201,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Oman',
                 'address'       => 'AL KHUWAIR NEXT TO ZAKHER MALL 114 Muscat',
                 'website'       => 'muscat.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Singen',
@@ -201,7 +210,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'D-78224 Singen/Htwl. Georg-Fischer-Strasse 65',
                 'website'       => 'singen.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Lisboa',
@@ -210,7 +219,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Portugal',
                 'address'       => 'R. São Francisco 582, 2645-019 Alcabideche, Portugal',
                 'website'       => 'lisbon.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Koeln',
@@ -219,7 +228,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'Butzweilerstr. 35-39 Köln',
                 'website'       => 'koln.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Mulhouse',
@@ -228,7 +237,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => 'Pierre Pflimlin Avenue, 68390 Sausheim, France',
                 'website'       => 'mulhouse.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Lyon',
@@ -237,7 +246,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => 'Chemin des Cuers 2 Dardilly',
                 'website'       => 'lyon.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Kuwait',
@@ -246,7 +255,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Kuwait',
                 'address'       => 'Shuwaikh Industrial Area. Street No. 11 "Pepsi Cola Street", Block No. 11, Building No. 56A Kuwait City',
                 'website'       => 'dealerkuwait.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Bristol',
@@ -255,7 +264,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => '1 The Laurels, Patchway, Bristol BS10 7TT, UK',
                 'website'       => 'bristol.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Madrid',
@@ -264,7 +273,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Spain',
                 'address'       => 'Vía de las Dos Castillas, 9, 28224 Pozuelo de Alarcón, Madrid, Spain',
                 'website'       => 'madrid.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Paris',
@@ -273,7 +282,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => '2 Rue Bellini, 92800 Puteaux, France',
                 'website'       => 'paris.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Warsaw',
@@ -282,7 +291,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Poland',
                 'address'       => 'Połczyńska 120 B, 01-304 Warszawa, Poland',
                 'website'       => 'warszawa.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Prague',
@@ -291,7 +300,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Czechia',
                 'address'       => 'Vrchlického 31/18, 150 00 Praha 5, Czechia',
                 'website'       => 'praha.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Bergamo',
@@ -300,7 +309,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Italy',
                 'address'       => 'Via Piemonte, 12, 24052 Località del Cucco, Azzano San Paolo BG, Italy',
                 'website'       => 'bergamo.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Lugano',
@@ -309,7 +318,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Switzerland',
                 'address'       => 'Via San Gottardo 27 CH 6593 Lugano',
                 'website'       => 'lugano.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Zurich',
@@ -318,7 +327,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Switzerland',
                 'address'       => 'Industriestrasse 6 Kloten',
                 'website'       => 'zurich.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Geneva',
@@ -327,7 +336,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Switzerland',
                 'address'       => 'Route de Saint-Julien 184, 1228 Plan-les-Ouates, Switzerland',
                 'website'       => 'geneve.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Brussels',
@@ -336,7 +345,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Belgium',
                 'address'       => 'Grote Baan 399, 1620 Drogenbos, Belgium',
                 'website'       => 'brussels.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini St. Gallen',
@@ -345,7 +354,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Switzerland',
                 'address'       => 'Zürcherstrasse 202, 9014 St. Gallen, Switzerland',
                 'website'       => 'stgallen.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Sevenoaks',
@@ -354,7 +363,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => '92 London Road Sevenoaks - Kent',
                 'website'       => 'sevenoaks.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Luxembourg',
@@ -363,7 +372,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Luxembourg',
                 'address'       => '1 Boulevard F.W. Raiffeisen Lussemburgo',
                 'website'       => 'luxenbourg.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Munich',
@@ -372,7 +381,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'Albrechtstraße 16, 80636 München, Germany',
                 'website'       => 'munich.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Abu Dhabi',
@@ -381,7 +390,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'UAE',
                 'address'       => 'Nation Towers, Corniche Road, PO Box 6481 Abu Dhabi',
                 'website'       => 'abudhabi.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Nuernberg',
@@ -390,7 +399,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => '3a, Nopitschstraße, 90441 Nürnberg, Germany',
                 'website'       => 'nurnberg.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Leusden',
@@ -399,7 +408,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Netherlands',
                 'address'       => 'Zuiderinslag 6, 3833 BP Leusden, Netherlands',
                 'website'       => 'leusden.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Milano',
@@ -408,7 +417,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Italy',
                 'address'       => 'Viale Renato Serra, 61, 20149 Milano MI, Italy',
                 'website'       => 'milano.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Doha',
@@ -417,7 +426,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Qatar',
                 'address'       => 'Al Muftah Plaza Bldg, Al Rayyan 17444 Doha',
                 'website'       => 'doha.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Cannes',
@@ -426,7 +435,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => '440 Avenue Du Campon - 06110 Le Cannet',
                 'website'       => 'cannes.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Malmoe',
@@ -435,7 +444,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Sweden',
                 'address'       => 'Testvägen 4A, 232 37 Arlöv, Sweden',
                 'website'       => 'malmoe.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Edinburgh',
@@ -444,7 +453,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Scotland',
                 'address'       => 'Kinnaird Park, Edinburgh, EH15 3HR Edinburgh',
                 'website'       => 'edinburgh.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Porrentruy',
@@ -453,7 +462,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Switzerland',
                 'address'       => 'Le Voyeboeuf 1A, 2900 Porrentruy, Switzerland',
                 'website'       => 'porrentruy.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Copenhagen',
@@ -462,7 +471,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Denmark',
                 'address'       => 'Banevingen 6, 2200 København, Denmark',
                 'website'       => 'copenhaggen.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Monte Carlo',
@@ -471,7 +480,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'France',
                 'address'       => "Place de la Liberté, 06320 Cap-d'Ail, France",
                 'website'       => 'dealermonaco.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Pangbourne',
@@ -480,7 +489,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'Station Rd, Pangbourne RG8 7AN, UK',
                 'website'       => 'pangbourne.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Leicester',
@@ -489,7 +498,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'Watermead Business Park Rayns Way, Syston, Leicester LE7 1PF, UK',
                 'website'       => 'leicester.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Manchester',
@@ -498,7 +507,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => 'St. Marys Way, Manchester SK1 4AQ, UK',
                 'website'       => 'manchester.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Birmingham',
@@ -507,7 +516,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => '2 Wingfoot Way, Fort Pkwy, Birmingham B24 9HF, UK',
                 'website'       => 'birmingham.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Frankfurt',
@@ -516,7 +525,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'Orber Str. 4A, 60386 Frankfurt am Main, Germany',
                 'website'       => 'frankfurt.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Hamburg',
@@ -525,7 +534,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'MERKURRING 2 Hamburg',
                 'website'       => 'hamburg.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Wien',
@@ -534,7 +543,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Austria',
                 'address'       => 'Liesinger-Flur-Gasse 14-18, 1230 Wien, Austria',
                 'website'       => 'wien.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Dusseldorf',
@@ -543,7 +552,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'Rather Strasse 78-80 Duesseldorf',
                 'website'       => 'duesseldorf.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Dubai',
@@ -552,7 +561,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'UAE',
                 'address'       => 'Sheikh Zayed road exit 41-Dubai-United Arab Emirates Dubai',
                 'website'       => 'dubai.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini London',
@@ -561,7 +570,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'England',
                 'address'       => '27 Old Brompton Rd, Kensington, London SW7 3TD, UK',
                 'website'       => 'london.lamborghini',
-                
+
             ],
             [
                 'store_name'    => 'Lamborghini Stuttgart',
@@ -570,7 +579,7 @@ class DealershipsSeeder extends Seeder
                 'placeoflife'       => 'Germany',
                 'address'       => 'Graf-Zeppelin-Platz 1, 71034 Böblingen, Germany',
                 'website'       => 'stuttgart.lamborghini',
-                
+
             ],
 
         ];
@@ -578,7 +587,7 @@ class DealershipsSeeder extends Seeder
         usort($dealerships, function ($item1, $item2) {
             return $dealerships = $item1['store_name'] <=> $item2['store_name'];
         });
-        
+
         foreach ($dealerships as $dealership) {
             $newDealer = Dealership::where('store_name', '=', $dealership['store_name'])->first();
             if ($newDealer === null) {
@@ -590,7 +599,7 @@ class DealershipsSeeder extends Seeder
                     'placeoflife'       => $dealership['placeoflife'],
                     'address'       => $dealership['address'],
                     'website'       => $dealership['website'],
-                    
+
                 ]);
             }
         }

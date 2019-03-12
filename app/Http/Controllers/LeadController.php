@@ -17,16 +17,15 @@ class LeadController extends Controller
      * @return Response
      */
     public function index()
-	{
-
+    {
         $dealerShips = Dealership::all();
 
         $data = [
             'dealerShips'   => $dealerShips,
         ];
 
-		return view('pages.welcome', $data);
-	}
+        return view('pages.welcome', $data);
+    }
 
     /**
      * Method to process and store a new lead.
@@ -34,10 +33,8 @@ class LeadController extends Controller
      * @param  LeadCapture $request
      * @return Response
      */
-	public function processLead(LeadCapture $request)
+    public function processLead(LeadCapture $request)
     {
-        
-
         $validatedFormData = $request->validated();
 
         $lead = new Lead();
@@ -49,7 +46,7 @@ class LeadController extends Controller
         $contactName = $dealerObj->contact_name;
 
         $selectedDealership = Dealership::find('dealer');
-        
+
         Mail::to($dealerObj->email)->send(new ContactMail($validatedFormData, $contactName));
 
         $data = [
@@ -57,7 +54,7 @@ class LeadController extends Controller
             'selectedDealership'    => $selectedDealership,
             'website'               => $dealerObj->website,
         ];
-        
+
         return redirect('/')->with($data);  // Redeirect thank you view rather than home view.
-	}
+    }
 }

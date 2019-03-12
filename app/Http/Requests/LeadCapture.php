@@ -27,14 +27,14 @@ class LeadCapture extends FormRequest
     public function rules()
     {
         return [
-            'firstname'             => 'required|max:255|string',
-            'lastname'              => 'required|max:255|string',
-            'email'                 => 'required|email',
-            'phone'                 => 'required|max:255|string|nullable',
+            'firstname'                 => 'required|max:255|string',
+            'lastname'                  => 'required|max:255|string',
+            'email'                     => 'required|email',
+            'phone'                     => 'required|max:255|string|nullable',
             'placeoflife'               => 'required|max:255|string',
-            'dealer'                => 'required|max:255|string',
-            'checkbox'              => 'accepted'
+            'dealer'                    => 'required|max:255|string',
+            'checkbox'                  => 'accepted',
+            'information_processing'    => 'required|string'
         ];
     }
-
 }

@@ -37,6 +37,7 @@ class Lead extends Model
         'phone',
         'placeoflife',
         'dealer',
+        'information_processing'
     ];
 
     /**
@@ -55,12 +56,12 @@ class Lead extends Model
      * @var array
      */
     protected $casts = [
-        'firstname'     => 'string',
-        'lastname'      => 'string',
-        'email'         => 'string',
-        'phone'         => 'string',
-        'placeoflife'       => 'string',
-        'dealer'        => 'string',
+        'firstname'                 => 'string',
+        'lastname'                  => 'string',
+        'email'                     => 'string',
+        'phone'                     => 'string',
+        'placeoflife'               => 'string',
+        'dealer'                    => 'string',
+        'information_processing'    => 'string'
     ];
-
 }

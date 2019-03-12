@@ -1,7 +1,8 @@
 .nav {
   height: 60px;
   width: 100%;
-  background-color: #333333;
+  background-color: rgba($black, 0.8);
+
   @include media-breakpoint-up(sm) {
     height: 100px;
   }
@@ -13,8 +14,8 @@
     width: 100%;
     @include media-breakpoint-up(sm) {
       max-width: 540px;
-      padding-right: 25px;
-      padding-left: 25px;
+      padding-right: 35px;
+      padding-left: 35px;
       margin-right: auto;
       margin-left: auto;
     }
@@ -41,22 +42,34 @@
     .right-nav {
       display: flex;
       justify-content: space-between;
-      width: calc(100% - 60px);
+      width: 100%;
       @include media-breakpoint-up(sm) {
-        width: auto;
-        margin-left: auto;
+        width: 100%;
+        margin-left: 40px;
       }
     }
     .request {
       height: 60px;
-      width: calc(100% - 60px);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
       &:hover {
         cursor: grab;
+      }
+      a.btn {
+        color: $white;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        &:active {
+          outline: none;
+        }
       }
       @include media-breakpoint-up(sm) {
         height: auto;
         width: auto;
-        margin-right: 20px;
       }
     }
     .lang-container {

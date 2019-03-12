@@ -18,10 +18,10 @@
         <table style="border-collapse: collapse; width: 520px;">
             <tr>
                 <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">First Name</td>
-                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">{{ $firstname }}</td>   
+                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">{{ $firstname }}</td>
             </tr>
             <tr style="background-color: #dddddd; background: #dddddd;">
-                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">Last Name</td> 
+                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">Last Name</td>
                 <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">{{ $lastname }}</td>
             </tr>
             <tr>
@@ -39,6 +39,10 @@
             <tr style="background-color: #dddddd; background: #dddddd;">
                 <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">Dealership</td>
                 <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">{{ $dealer }}</td>
+            </tr>
+            <tr>
+                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">Information Processing Agreement</td>
+                <td style="border:  1px solid #B1B1B1; text-align: left; padding: 8px;">{{ $agreesToPolicy }}</td>
             </tr>
         </table>
     </div>

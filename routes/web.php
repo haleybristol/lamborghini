@@ -14,8 +14,7 @@
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
-], function()
-{
+], function () {
     Route::get('/', 'LeadController@index');
     Route::post('/send', 'LeadController@processLead')->name('sendLead');
 });
