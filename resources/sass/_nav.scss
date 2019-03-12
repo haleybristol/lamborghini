@@ -12,22 +12,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+
     @include media-breakpoint-up(sm) {
-      max-width: 540px;
       padding-right: 35px;
       padding-left: 35px;
-      margin-right: auto;
-      margin-left: auto;
     }
-    @include media-breakpoint-up(md) {
-        max-width: 768px;
-    }
-    @include media-breakpoint-up(lg) {
-      max-width: 100%;
-    }
-    @include media-breakpoint-up(xl) {
-        max-width: 1540px;
-    }
+
     .logo-container {
       width: 60px;
       display: flex;
