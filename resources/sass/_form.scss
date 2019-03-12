@@ -1,4 +1,4 @@
-form {
+.form-wrapper {
   background-color: #F2F2F2;
   padding: 70px 70px;
   position: relative;
@@ -7,7 +7,9 @@ form {
   @include media-breakpoint-up(sm) {
     padding: 90px 70px;
   }
+}
 
+form {
   .inputs-holder {
     margin-top: 30px;
 
