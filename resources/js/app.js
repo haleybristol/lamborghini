@@ -235,3 +235,56 @@ $(".required").click(function () {
     $(this).removeClass('required');
 });
 
+$('#form').submit(function (e) {
+    e.preventDefault();
+
+
+
+
+    var form = $(this);
+    var url = form.attr('action');
+
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: form.serialize()
+    })
+        .done(function (response) {
+            $('#form').hide();
+            document.getElementById('website-clicker').setAttribute('href', '//' + response.data.website);
+            $('.thank-you-block').show();
+        })
+        .fail(function (error) {
+            let errors = error.responseJSON.errors;
+
+            Object.keys(errors).forEach((e) => {
+                if (e === 'checkbox') {
+                    document.getElementsByClassName(e)[0].classList.add('required');
+                    return;
+                }
+
+                if (e === 'dealer') {
+                    document.getElementsByClassName('select-selected')[0].classList.add('required');
+                    return;
+                }
+
+                if (e === 'g-recaptcha-response') {
+                    let recap = document.getElementsByClassName('recap-error')[0];
+                    recap.classList.add('required');
+                    recap.innerHTML = "Please mark that you're not a robot."
+                    recap.style.width = '304px';
+                    return;
+                }
+
+                document.getElementsByName(e)[0].classList.add('required');
+            });
+
+            $(".required").keyup(function () {
+                $(this).removeClass('required');
+            });
+
+            $(".required").click(function () {
+                $(this).removeClass('required');
+            });
+        });
+});

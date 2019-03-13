@@ -9,7 +9,7 @@
                     </span>
                 </a>
 
-                <a href="{!! trans('app.policy-link') !!}" target="_blank">
+                <a href="{!! trans('app.lambo-home') !!}" target="_blank">
                     <span>
                         LAMBORGHINI.COM
                     </span>

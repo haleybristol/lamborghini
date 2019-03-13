@@ -8,6 +8,7 @@ use App\Mail\ContactMail;
 use App\Http\Requests\LeadCapture;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use function GuzzleHttp\json_encode;
 
 class LeadController extends Controller
 {
@@ -35,6 +36,7 @@ class LeadController extends Controller
      */
     public function processLead(LeadCapture $request)
     {
+
         $validatedFormData = $request->validated();
 
         $lead = new Lead();
@@ -50,11 +52,16 @@ class LeadController extends Controller
         Mail::to($dealerObj->email)->send(new ContactMail($validatedFormData, $contactName));
 
         $data = [
-            'thanks'                => trans('form.thanksSection.thanks'),
-            'selectedDealership'    => $selectedDealership,
-            'website'               => $dealerObj->website,
         ];
 
-        return redirect('/')->with($data);  // Redeirect thank you view rather than home view.
+        return response()->json([
+            'data' => [
+                'thanks'                => trans('form.thanksSection.thanks'),
+                'selectedDealership'    => $selectedDealership,
+                'website'               => $dealerObj->website,
+            ],
+        ], 200);
+
+        // return redirect('/')->with($data);  // Redeirect thank you view rather than home view.
     }
 }
