@@ -136,6 +136,8 @@
             </div>
         </div>
 
+        {!! ReCaptcha::htmlFormSnippet() !!}
+
         <div class="send {{Config::get('app.locale') == 'ar' ? 'right-align' : ''}}">
             <a class="btn btn-form {{Config::get('app.locale') == 'ar' ? 'btn-arabic' : ''}}" href="#" onclick="return gtag_report_conversion(document.getElementById('form').submit());">{!! trans('form.placeholder.send') !!}<span aria-hidden='true' role='presentation' aria-label='Envelope Icon' class="icon icon-mail"></span></a>
         </div>

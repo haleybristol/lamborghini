@@ -34,7 +34,8 @@ class LeadCapture extends FormRequest
             'placeoflife'               => 'required|max:255|string',
             'dealer'                    => 'required|max:255|string',
             'checkbox'                  => 'accepted',
-            'information_processing'    => 'required|string'
+            'information_processing'    => 'required|string',
+            'g-recaptcha-response'      => 'recaptcha',
         ];
     }
 }

@@ -49,7 +49,12 @@ form {
     }
   }
   .btn-form.btn-arabic {
-    width: 200px;
+    // width: 200px;
+    .icon.icon-mail {
+      margin-left: 0;
+      margin-right: 35px;
+    }
+
   }
   .check-box, .autocomplete {
     position: relative;
@@ -210,6 +215,10 @@ form {
     @include media-breakpoint-up(md) {
       padding-left: 40px;
     }
+  }
+
+  .g-recaptcha {
+    margin: 15px 0 15px -15px;
   }
 
   .agree-disagree {

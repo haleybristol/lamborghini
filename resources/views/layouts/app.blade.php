@@ -23,7 +23,8 @@
 
         <script> gtag('event', 'page_view', { 'send_to': 'AW-774690848', 'user_id': 'replace with value' }); </script>
 
-
+        {{-- {!! ReCaptcha::htmlScriptTagJsApi() !!} --}}
+        <script src="https://www.google.com/recaptcha/api.js?hl={{ Config::get('app.locale') }}" async defer></script>
         @stack('head')
     </head>
     <body>

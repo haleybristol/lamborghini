@@ -32,7 +32,7 @@ class ContactMail extends Mailable
         $this->lastname = array_key_exists('lastname', $validatedData) ? $validatedData['lastname'] : null;
         $this->phone = array_key_exists('phone', $validatedData) ? $validatedData['phone'] : null;
         $this->email = array_key_exists('email', $validatedData) ? $validatedData['email'] : null;
-        $this->country = array_key_exists('country', $validatedData) ? $validatedData['country'] : null;
+        $this->country = array_key_exists('placeoflife', $validatedData) ? $validatedData['placeoflife'] : null;
         $this->dealer = array_key_exists('dealer', $validatedData) ? $validatedData['dealer'] : null;
         $this->contactName = $contactName;
         $this->agreesToPolicy = array_key_exists('information_processing', $validatedData) ? $validatedData['information_processing'] : null;
